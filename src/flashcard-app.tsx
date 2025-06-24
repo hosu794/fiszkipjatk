@@ -485,32 +485,6 @@ const FlashcardApp: React.FC = () => {
             </button>
           </div>
 
-          {/* Instrukcja */}
-          <div className="card">
-            <h3 style={{ fontWeight: '600', color: '#1f2937', marginBottom: '12px', margin: '0 0 12px 0' }}>
-              Jak skonfigurować plik z pytaniami:
-            </h3>
-            <div style={{ fontSize: '14px', color: '#374151', lineHeight: '1.6' }}>
-              <div style={{ marginBottom: '12px' }}>
-                <strong style={{ color: '#1f2937' }}>Krok 1:</strong>
-                <p style={{ margin: '4px 0', color: '#4b5563' }}>
-                  Umieść plik <code style={{ backgroundColor: '#f3f4f6', padding: '2px 4px', borderRadius: '4px', color: '#1f2937' }}>questions.json</code> w folderze <code style={{ backgroundColor: '#f3f4f6', padding: '2px 4px', borderRadius: '4px', color: '#1f2937' }}>public/</code> twojego projektu React
-                </p>
-              </div>
-              <div style={{ marginBottom: '12px' }}>
-                <strong style={{ color: '#1f2937' }}>Krok 2:</strong>
-                <p style={{ margin: '4px 0', color: '#4b5563' }}>
-                  Plik zostanie automatycznie wczytany przy starcie aplikacji
-                </p>
-              </div>
-              <div style={{ marginBottom: '12px' }}>
-                <strong style={{ color: '#1f2937' }}>Uwaga:</strong>
-                <p style={{ margin: '4px 0', color: '#4b5563' }}>
-                  Jeśli plik <code style={{ backgroundColor: '#f3f4f6', padding: '2px 4px', borderRadius: '4px', color: '#1f2937' }}>questions.json</code> nie zostanie znaleziony, aplikacja użyje przykładowych pytań.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
   );
