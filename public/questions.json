@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "question": "Twoje pytanie?",
+    "options": {
+      "A": "Pierwsza opcja",
+      "B": "Druga opcja",
+      "C": "Trzecia opcja",
+      "D": "Czwarta opcja"
+    },
+    "correctAnswer": "A"
+  }
+]
