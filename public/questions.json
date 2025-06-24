@@ -1,13 +1,167 @@
 [
   {
     "id": 1,
-    "question": "Twoje pytanie?",
+    "question": "Jakie są główne cechy oprogramowania według inżynierii oprogramowania?",
     "options": {
-      "A": "Pierwsza opcja",
-      "B": "Druga opcja",
-      "C": "Trzecia opcja",
-      "D": "Czwarta opcja"
+      "A": "Szybkie, tanie, kolorowe, głośne",
+      "B": "Zgodne z wymaganiami, niezawodne, efektywne, łatwe do zmian, ergonomiczne",
+      "C": "Duże, skomplikowane, drogie, wolne",
+      "D": "Uniwersalne, automatyczne, bezpłatne, wieczne"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 2,
+    "question": "Co jest podstawowym powodem kryzysu oprogramowania?",
+    "options": {
+      "A": "Brak funduszy na projekty informatyczne",
+      "B": "Niewystarczająca moc obliczeniowa komputerów",
+      "C": "Złożoność produktów informatyki i procesów ich wytwarzania",
+      "D": "Brak wykwalifikowanych programistów"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 3,
+    "question": "Które z poniższych NIE jest zasadą walki ze złożonością?",
+    "options": {
+      "A": "Zasada dekompozycji",
+      "B": "Zasada abstrakcji",
+      "C": "Zasada ponownego użycia",
+      "D": "Zasada maksymalnej komplikacji"
+    },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 4,
+    "question": "Co to jest metodyka w kontekście inżynierii oprogramowania?",
+    "options": {
+      "A": "Język programowania używany do tworzenia aplikacji",
+      "B": "Zestaw pojęć, notacji, modeli, języków, technik i sposobów postępowania służący do analizy i projektowania",
+      "C": "Rodzaj bazy danych",
+      "D": "Narzędzie do testowania oprogramowania"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 5,
+    "question": "Jakie założenie charakteryzuje model kaskadowy (wodospadowy)?",
+    "options": {
+      "A": "Możliwość rozpoczęcia kolejnej fazy przed zakończeniem poprzedniej",
+      "B": "Nie ma powrotu do poprzednich faz",
+      "C": "Równoległe wykonywanie wszystkich faz",
+      "D": "Losowa kolejność wykonywania faz"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 6,
+    "question": "Jaka jest główna wada modelu spiralnego?",
+    "options": {
+      "A": "Zbyt szybkie tempo realizacji",
+      "B": "Brak kontaktu z klientem",
+      "C": "Nieprzewidywalność kosztu i czasu",
+      "D": "Niemożliwość testowania"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 7,
+    "question": "Które z poniższych NIE jest celem prototypowania?",
+    "options": {
+      "A": "Wykrycie nieporozumień pomiędzy klientem a twórcami systemu",
+      "B": "Wykrycie brakujących funkcji",
+      "C": "Zwiększenie kosztów projektu",
+      "D": "Wykrycie braków w specyfikacji wymagań"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 8,
+    "question": "Modelowanie pojęciowe odnosi się do:",
+    "options": {
+      "A": "Procesów myślowych i wyobrażeń towarzyszących pracy nad oprogramowaniem",
+      "B": "Tworzenia dokumentacji technicznej",
+      "C": "Instalacji oprogramowania",
+      "D": "Testowania funkcjonalności systemu"
     },
     "correctAnswer": "A"
+  },
+  {
+    "id": 9,
+    "question": "Który model rozwoju oprogramowania zakłada wybór i realizację podstawowego zestawu funkcji, a następnie iteracyjne dodawanie kolejnych?",
+    "options": {
+      "A": "Model kaskadowy",
+      "B": "Realizacja przyrostowa",
+      "C": "Metody matematyczne",
+      "D": "Prototypowanie"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 10,
+    "question": "Jakie są zalety montażu z gotowych komponentów?",
+    "options": {
+      "A": "Wysoka niezawodność, zmniejszenie ryzyka, efektywne wykorzystanie specjalistów",
+      "B": "Zwiększenie kosztów, wydłużenie czasu realizacji",
+      "C": "Konieczność pisania kodu od podstaw",
+      "D": "Brak możliwości modyfikacji systemu"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 11,
+    "question": "Dlaczego metody matematyczne nie sprawdziły się w praktyce inżynierii oprogramowania?",
+    "options": {
+      "A": "Są zbyt proste do zastosowania",
+      "B": "Nie są znane szersze ich zastosowania, a metodyki włączają elementy nie podlegające formalnemu traktowaniu",
+      "C": "Są za bardzo popularne",
+      "D": "Wymagają za mało czasu na implementację"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 12,
+    "question": "Które źródło złożoności projektu oprogramowania odnosi się do ograniczeń zespołu?",
+    "options": {
+      "A": "Dziedzina problemowa",
+      "B": "Środki i technologie informatyczne",
+      "C": "Zespół projektantów podlegający ograniczeniom pamięci, percepcji, wyrażania informacji",
+      "D": "Potencjalni użytkownicy"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 13,
+    "question": "Jaka jest trwała tendencja w rozwoju metod projektowania SI?",
+    "options": {
+      "A": "Zwiększanie skomplikowania systemów",
+      "B": "Minimalizacja luki pomiędzy myśleniem o rzeczywistym problemie a myśleniem o danych i procesach",
+      "C": "Eliminacja kontaktu z użytkownikami",
+      "D": "Maksymalizacja kosztów projektu"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 14,
+    "question": "Która faza NIE należy do cyklu życiowego oprogramowania?",
+    "options": {
+      "A": "Określenie wymagań",
+      "B": "Analiza",
+      "C": "Sprzedaż licencji",
+      "D": "Konserwacja"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 15,
+    "question": "Co charakteryzuje zmodyfikowany model kaskadowy?",
+    "options": {
+      "A": "Brak jakichkolwiek iteracji",
+      "B": "Możliwość powrotu do wcześniejszych faz (iteracje)",
+      "C": "Równoległe wykonywanie wszystkich faz",
+      "D": "Pomijanie fazy testowania"
+    },
+    "correctAnswer": "B"
   }
 ]
