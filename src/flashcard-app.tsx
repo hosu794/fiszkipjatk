@@ -1,18 +1,41 @@
 import React, { useState, useEffect } from 'react';
 import { Shuffle, RotateCcw, Brain, CheckCircle, XCircle, FileText } from 'lucide-react';
 
-const FlashcardApp = () => {
-  const [questions, setQuestions] = useState([]);
-  const [currentQuestion, setCurrentQuestion] = useState(null);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [showResult, setShowResult] = useState(false);
-  const [usedQuestions, setUsedQuestions] = useState([]);
-  const [stats, setStats] = useState({ correct: 0, incorrect: 0, total: 0 });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+// Interfejsy TypeScript
+interface QuestionOptions {
+  A: string;
+  B: string;
+  C: string;
+  D: string;
+}
+
+interface Question {
+  id: number;
+  question: string;
+  options: QuestionOptions;
+  correctAnswer: 'A' | 'B' | 'C' | 'D';
+}
+
+interface Stats {
+  correct: number;
+  incorrect: number;
+  total: number;
+}
+
+type AnswerOption = 'A' | 'B' | 'C' | 'D';
+
+const FlashcardApp: React.FC = () => {
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<AnswerOption | null>(null);
+  const [showResult, setShowResult] = useState<boolean>(false);
+  const [usedQuestions, setUsedQuestions] = useState<number[]>([]);
+  const [stats, setStats] = useState<Stats>({ correct: 0, incorrect: 0, total: 0 });
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Przykładowe pytania jako fallback
-  const defaultQuestions = [
+  const defaultQuestions: Question[] = [
     {
       id: 1,
       question: "Co to jest React?",
@@ -49,18 +72,18 @@ const FlashcardApp = () => {
     }
   }, [questions]);
 
-  const loadQuestionsFromFile = async () => {
+  const loadQuestionsFromFile = async (): Promise<void> => {
     setLoading(true);
     setError(null);
 
     try {
       // Próba wczytania z public/questions.json
-      const response = await fetch('/questions.json');
+      const response: Response = await fetch('/questions.json');
       if (response.ok) {
-        const data = await response.json();
+        const data: unknown = await response.json();
         if (validateQuestions(data)) {
-          setQuestions(data);
-          console.log(`Wczytano ${data.length} pytań z pliku questions.json`);
+          setQuestions(data as Question[]);
+          console.log(`Wczytano ${(data as Question[]).length} pytań z pliku questions.json`);
         } else {
           throw new Error('Nieprawidłowy format pliku JSON');
         }
@@ -69,39 +92,50 @@ const FlashcardApp = () => {
         console.log('Nie znaleziono pliku questions.json, używam przykładowych pytań');
         setQuestions(defaultQuestions);
       }
-    } catch (err) {
-      console.log('Błąd wczytywania pliku:', err.message);
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : 'Nieznany błąd';
+      console.log('Błąd wczytywania pliku:', errorMessage);
       setQuestions(defaultQuestions);
     } finally {
       setLoading(false);
     }
   };
 
-  const validateQuestions = (data) => {
+  const validateQuestions = (data: unknown): data is Question[] => {
     if (!Array.isArray(data)) return false;
 
-    return data.every(q =>
-        q.id &&
-        q.question &&
-        q.options &&
-        q.options.A && q.options.B && q.options.C && q.options.D &&
-        q.correctAnswer &&
-        ['A', 'B', 'C', 'D'].includes(q.correctAnswer)
-    );
+    return data.every((q: unknown): q is Question => {
+      if (typeof q !== 'object' || q === null) return false;
+
+      const question = q as Record<string, unknown>;
+
+      return (
+          typeof question.id === 'number' &&
+          typeof question.question === 'string' &&
+          typeof question.options === 'object' &&
+          question.options !== null &&
+          typeof (question.options as Record<string, unknown>).A === 'string' &&
+          typeof (question.options as Record<string, unknown>).B === 'string' &&
+          typeof (question.options as Record<string, unknown>).C === 'string' &&
+          typeof (question.options as Record<string, unknown>).D === 'string' &&
+          typeof question.correctAnswer === 'string' &&
+          ['A', 'B', 'C', 'D'].includes(question.correctAnswer as string)
+      );
+    });
   };
 
-  const getRandomQuestion = () => {
+  const getRandomQuestion = (): void => {
     if (questions.length === 0) return;
 
-    const availableQuestions = questions.filter(q => !usedQuestions.includes(q.id));
+    const availableQuestions: Question[] = questions.filter(q => !usedQuestions.includes(q.id));
 
     if (availableQuestions.length === 0) {
       // Jeśli wszystkie pytania zostały użyte, resetuj
       setUsedQuestions([]);
-      const randomIndex = Math.floor(Math.random() * questions.length);
+      const randomIndex: number = Math.floor(Math.random() * questions.length);
       setCurrentQuestion(questions[randomIndex]);
     } else {
-      const randomIndex = Math.floor(Math.random() * availableQuestions.length);
+      const randomIndex: number = Math.floor(Math.random() * availableQuestions.length);
       setCurrentQuestion(availableQuestions[randomIndex]);
     }
 
@@ -109,11 +143,13 @@ const FlashcardApp = () => {
     setShowResult(false);
   };
 
-  const handleAnswerSelect = (answer) => {
+  const handleAnswerSelect = (answer: AnswerOption): void => {
     setSelectedAnswer(answer);
     setShowResult(true);
 
-    const isCorrect = answer === currentQuestion.correctAnswer;
+    if (!currentQuestion) return;
+
+    const isCorrect: boolean = answer === currentQuestion.correctAnswer;
 
     setStats(prev => ({
       correct: isCorrect ? prev.correct + 1 : prev.correct,
@@ -121,33 +157,31 @@ const FlashcardApp = () => {
       total: prev.total + 1
     }));
 
-    if (currentQuestion) {
-      setUsedQuestions(prev => [...prev, currentQuestion.id]);
-    }
+    setUsedQuestions(prev => [...prev, currentQuestion.id]);
   };
 
-  const handleNextQuestion = () => {
+  const handleNextQuestion = (): void => {
     getRandomQuestion();
   };
 
-  const resetStats = () => {
+  const resetStats = (): void => {
     setStats({ correct: 0, incorrect: 0, total: 0 });
     setUsedQuestions([]);
     getRandomQuestion();
   };
 
-  const progressPercentage = usedQuestions.length > 0 ? (usedQuestions.length / questions.length) * 100 : 0;
+  const progressPercentage: number = usedQuestions.length > 0 ? (usedQuestions.length / questions.length) * 100 : 0;
 
-  const getOptionButtonClass = (option) => {
+  const getOptionButtonClass = (option: AnswerOption): string => {
     if (!showResult) {
       return "option-button-default";
     }
 
-    if (option === currentQuestion.correctAnswer) {
+    if (currentQuestion && option === currentQuestion.correctAnswer) {
       return "option-button-correct";
     }
 
-    if (option === selectedAnswer && option !== currentQuestion.correctAnswer) {
+    if (option === selectedAnswer && currentQuestion && option !== currentQuestion.correctAnswer) {
       return "option-button-incorrect";
     }
 
@@ -291,7 +325,7 @@ const FlashcardApp = () => {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '16px' }}>
               <Brain color="#4f46e5" size={32} />
               <h1 style={{ fontSize: '32px', fontWeight: 'bold', color: '#1f2937', margin: 0 }}>
-                Fiszki ODBYTY - Nauka
+                Fiszki ABCD - Nauka
               </h1>
             </div>
 
@@ -370,7 +404,7 @@ const FlashcardApp = () => {
                 </h2>
 
                 <div>
-                  {Object.entries(currentQuestion.options).map(([option, text]) => (
+                  {(Object.entries(currentQuestion.options) as [AnswerOption, string][]).map(([option, text]) => (
                       <button
                           key={option}
                           onClick={() => !showResult && handleAnswerSelect(option)}
