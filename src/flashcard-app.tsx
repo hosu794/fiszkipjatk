@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Shuffle, RotateCcw, Brain, CheckCircle, XCircle, FileText } from 'lucide-react';
 
-// Interfejsy TypeScript
 interface QuestionOptions {
   A: string;
   B: string;
@@ -14,6 +13,37 @@ interface Question {
   question: string;
   options: QuestionOptions;
   correctAnswer: 'A' | 'B' | 'C' | 'D';
+}
+
+interface FlashcardMetadata {
+  id: string;
+  name: string;
+  description: string;
+  subject: string;
+  difficulty: string;
+  totalQuestions: number;
+  tags: string[];
+  created: string;
+  version: string;
+}
+
+interface FlashcardSet {
+  metadata: FlashcardMetadata;
+  questions: Question[];
+}
+
+interface FlashcardSetSummary {
+  id: string;
+  filename: string;
+  name: string;
+  subject: string;
+  difficulty: string;
+  totalQuestions: number;
+  tags: string[];
+}
+
+interface FlashcardIndex {
+  availableFlashcardSets: FlashcardSetSummary[];
 }
 
 interface Stats {
@@ -33,8 +63,11 @@ const FlashcardApp: React.FC = () => {
   const [stats, setStats] = useState<Stats>({ correct: 0, incorrect: 0, total: 0 });
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [availableFlashcardSets, setAvailableFlashcardSets] = useState<FlashcardSetSummary[]>([]);
+  const [currentFlashcardSet, setCurrentFlashcardSet] = useState<FlashcardSet | null>(null);
+  const [selectedSetId, setSelectedSetId] = useState<string | null>(null);
+  const [showSetSelection, setShowSetSelection] = useState<boolean>(true);
 
-  // Przykładowe pytania jako fallback
   const defaultQuestions: Question[] = [
     {
       id: 1,
@@ -60,9 +93,9 @@ const FlashcardApp: React.FC = () => {
     }
   ];
 
-  // Próba wczytania pytań z pliku przy starcie
+  // Próba wczytania dostępnych zestawów przy starcie
   useEffect(() => {
-    loadQuestionsFromFile();
+    loadAvailableFlashcardSets();
   }, []);
 
   // Losowanie pytania gdy questions się zmienią
@@ -72,30 +105,167 @@ const FlashcardApp: React.FC = () => {
     }
   }, [questions]);
 
-  const loadQuestionsFromFile = async (): Promise<void> => {
+  // Wczytanie pytań gdy zestaw zostanie wybrany
+  useEffect(() => {
+    if (selectedSetId) {
+      loadSelectedFlashcardSet(selectedSetId);
+    }
+  }, [selectedSetId]);
+
+  // Funkcja zwracająca style CSS
+  const getStyles = () => `
+    .option-button-default {
+      width: 100%;
+      text-align: left;
+      padding: 16px;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      background: white;
+      color: #374151;
+      transition: all 0.2s;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+    .option-button-default:hover {
+      border-color: #a78bfa;
+      background-color: #f3f4f6;
+    }
+    .option-button-correct {
+      width: 100%;
+      text-align: left;
+      padding: 16px;
+      border: 2px solid #10b981;
+      border-radius: 8px;
+      background: #d1fae5;
+      color: #065f46;
+      margin-bottom: 8px;
+    }
+    .option-button-incorrect {
+      width: 100%;
+      text-align: left;
+      padding: 16px;
+      border: 2px solid #ef4444;
+      border-radius: 8px;
+      background: #fee2e2;
+      color: #991b1b;
+      margin-bottom: 8px;
+    }
+    .option-button-disabled {
+      width: 100%;
+      text-align: left;
+      padding: 16px;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      background: #f9fafb;
+      color: #9ca3af;
+      opacity: 0.6;
+      margin-bottom: 8px;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 500;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .button-primary {
+      background-color: #4f46e5;
+    }
+    .button-primary:hover {
+      background-color: #4338ca;
+    }
+    .button-success {
+      background-color: #10b981;
+    }
+    .button-success:hover {
+      background-color: #059669;
+    }
+    .button-danger {
+      background-color: #ef4444;
+    }
+    .button-danger:hover {
+      background-color: #dc2626;
+    }
+    .button-secondary {
+      background-color: #6b7280;
+    }
+    .button-secondary:hover {
+      background-color: #4b5563;
+    }
+  `;
+
+  const loadAvailableFlashcardSets = async (): Promise<void> => {
     setLoading(true);
     setError(null);
 
     try {
-      // Próba wczytania z public/questions.json
-      const response: Response = await fetch('/questions.json');
+      const response: Response = await fetch('/flashcards/index.json');
       if (response.ok) {
         const data: unknown = await response.json();
-        if (validateQuestions(data)) {
-          setQuestions(data as Question[]);
-          console.log(`Wczytano ${(data as Question[]).length} pytań z pliku questions.json`);
+        if (validateFlashcardIndex(data)) {
+          setAvailableFlashcardSets((data as FlashcardIndex).availableFlashcardSets);
+          console.log(`Wczytano ${(data as FlashcardIndex).availableFlashcardSets.length} dostępnych zestawów fiszek`);
         } else {
-          throw new Error('Nieprawidłowy format pliku JSON');
+          throw new Error('Nieprawidłowy format pliku index.json');
         }
       } else {
-        // Jeśli nie ma pliku, użyj przykładowych pytań
-        console.log('Nie znaleziono pliku questions.json, używam przykładowych pytań');
+        // Jeśli nie ma pliku, użyj starych domyślnych pytań
+        console.log('Nie znaleziono pliku index.json, używam domyślnych pytań');
         setQuestions(defaultQuestions);
+        setShowSetSelection(false);
       }
     } catch (err: unknown) {
       const errorMessage = err instanceof Error ? err.message : 'Nieznany błąd';
-      console.log('Błąd wczytywania pliku:', errorMessage);
+      console.log('Błąd wczytywania dostępnych zestawów:', errorMessage);
       setQuestions(defaultQuestions);
+      setShowSetSelection(false);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const loadSelectedFlashcardSet = async (setId: string): Promise<void> => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response: Response = await fetch(`/flashcards/${setId}.json`);
+      if (response.ok) {
+        const data: unknown = await response.json();
+        if (validateFlashcardSet(data)) {
+          const flashcardSet = data as FlashcardSet;
+          setCurrentFlashcardSet(flashcardSet);
+          setQuestions(flashcardSet.questions);
+          setShowSetSelection(false);
+          console.log(`Wczytano zestaw: ${flashcardSet.metadata.name} (${flashcardSet.questions.length} pytań)`);
+        } else {
+          throw new Error('Nieprawidłowy format zestawu fiszek');
+        }
+      } else {
+        throw new Error('Nie można wczytać wybranego zestawu fiszek');
+      }
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : 'Nieznany błąd';
+      setError(`Błąd wczytywania zestawu: ${errorMessage}`);
+      console.log('Błąd wczytywania zestawu:', errorMessage);
     } finally {
       setLoading(false);
     }
@@ -122,6 +292,23 @@ const FlashcardApp: React.FC = () => {
           ['A', 'B', 'C', 'D'].includes(question.correctAnswer as string)
       );
     });
+  };
+
+  const validateFlashcardIndex = (data: unknown): data is FlashcardIndex => {
+    if (typeof data !== 'object' || data === null) return false;
+    const index = data as Record<string, unknown>;
+    return Array.isArray(index.availableFlashcardSets);
+  };
+
+  const validateFlashcardSet = (data: unknown): data is FlashcardSet => {
+    if (typeof data !== 'object' || data === null) return false;
+    const set = data as Record<string, unknown>;
+    return (
+      typeof set.metadata === 'object' &&
+      set.metadata !== null &&
+      Array.isArray(set.questions) &&
+      validateQuestions(set.questions)
+    );
   };
 
   const getRandomQuestion = (): void => {
@@ -170,6 +357,22 @@ const FlashcardApp: React.FC = () => {
     getRandomQuestion();
   };
 
+  const handleSetSelection = (setId: string): void => {
+    setSelectedSetId(setId);
+    setStats({ correct: 0, incorrect: 0, total: 0 });
+    setUsedQuestions([]);
+  };
+
+  const handleBackToSetSelection = (): void => {
+    setShowSetSelection(true);
+    setSelectedSetId(null);
+    setCurrentFlashcardSet(null);
+    setQuestions([]);
+    setCurrentQuestion(null);
+    setStats({ correct: 0, incorrect: 0, total: 0 });
+    setUsedQuestions([]);
+  };
+
   const progressPercentage: number = usedQuestions.length > 0 ? (usedQuestions.length / questions.length) * 100 : 0;
 
   const getOptionButtonClass = (option: AnswerOption): string => {
@@ -214,110 +417,92 @@ const FlashcardApp: React.FC = () => {
     );
   }
 
+  // Komponent wyboru zestawu fiszek
+  const renderSetSelection = () => (
+    <div style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%)',
+      padding: '16px'
+    }}>
+      <div style={{ maxWidth: '768px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '16px' }}>
+            <Brain color="#4f46e5" size={32} />
+            <h1 style={{ fontSize: '32px', fontWeight: 'bold', color: '#1f2937', margin: 0 }}>
+              Wybierz zestaw fiszek
+            </h1>
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gap: '16px' }}>
+          {availableFlashcardSets.map((set) => (
+            <div key={set.id} className="card" style={{ cursor: 'pointer', transition: 'all 0.2s' }}
+                 onClick={() => handleSetSelection(set.id)}
+                 onMouseEnter={(e) => {
+                   e.currentTarget.style.transform = 'translateY(-2px)';
+                   e.currentTarget.style.boxShadow = '0 8px 16px -4px rgba(0, 0, 0, 0.1)';
+                 }}
+                 onMouseLeave={(e) => {
+                   e.currentTarget.style.transform = 'translateY(0)';
+                   e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+                 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
+                <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#1f2937', margin: 0 }}>
+                  {set.name}
+                </h3>
+                <span style={{
+                  backgroundColor: set.difficulty === 'łatwy' ? '#dcfce7' : set.difficulty === 'średni' ? '#fef3c7' : '#fee2e2',
+                  color: set.difficulty === 'łatwy' ? '#166534' : set.difficulty === 'średni' ? '#92400e' : '#991b1b',
+                  padding: '4px 8px',
+                  borderRadius: '4px',
+                  fontSize: '12px',
+                  fontWeight: '500'
+                }}>
+                  {set.difficulty}
+                </span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', color: '#6b7280', fontSize: '14px', marginBottom: '8px' }}>
+                <span>{set.totalQuestions} pytań</span>
+                <span>•</span>
+                <span>{set.subject}</span>
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                {set.tags.map((tag) => (
+                  <span key={tag} style={{
+                    backgroundColor: '#f3f4f6',
+                    color: '#374151',
+                    padding: '2px 6px',
+                    borderRadius: '4px',
+                    fontSize: '12px'
+                  }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  if (showSetSelection) {
+    return (
+      <>
+        <style>{getStyles()}</style>
+        {renderSetSelection()}
+      </>
+    );
+  }
+
   return (
       <div style={{
         minHeight: '100vh',
         background: 'linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%)',
         padding: '16px'
       }}>
-        <style>{`
-        .option-button-default {
-          width: 100%;
-          text-align: left;
-          padding: 16px;
-          border: 2px solid #e5e7eb;
-          border-radius: 8px;
-          background: white;
-          color: #374151;
-          transition: all 0.2s;
-          cursor: pointer;
-          margin-bottom: 8px;
-        }
-        .option-button-default:hover {
-          border-color: #a78bfa;
-          background-color: #f3f4f6;
-        }
-        .option-button-correct {
-          width: 100%;
-          text-align: left;
-          padding: 16px;
-          border: 2px solid #10b981;
-          border-radius: 8px;
-          background: #d1fae5;
-          color: #065f46;
-          margin-bottom: 8px;
-        }
-        .option-button-incorrect {
-          width: 100%;
-          text-align: left;
-          padding: 16px;
-          border: 2px solid #ef4444;
-          border-radius: 8px;
-          background: #fee2e2;
-          color: #991b1b;
-          margin-bottom: 8px;
-        }
-        .option-button-disabled {
-          width: 100%;
-          text-align: left;
-          padding: 16px;
-          border: 2px solid #e5e7eb;
-          border-radius: 8px;
-          background: #f9fafb;
-          color: #9ca3af;
-          opacity: 0.6;
-          margin-bottom: 8px;
-        }
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-        .card {
-          background: white;
-          border-radius: 12px;
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-          padding: 24px;
-          margin-bottom: 24px;
-        }
-        .button {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 12px 24px;
-          border-radius: 8px;
-          font-weight: 500;
-          color: white;
-          border: none;
-          cursor: pointer;
-          transition: all 0.2s;
-          text-decoration: none;
-          font-size: 14px;
-        }
-        .button-primary {
-          background-color: #4f46e5;
-        }
-        .button-primary:hover {
-          background-color: #4338ca;
-        }
-        .button-success {
-          background-color: #10b981;
-        }
-        .button-success:hover {
-          background-color: #059669;
-        }
-        .button-danger {
-          background-color: #ef4444;
-        }
-        .button-danger:hover {
-          background-color: #dc2626;
-        }
-        .button-secondary {
-          background-color: #6b7280;
-        }
-        .button-secondary:hover {
-          background-color: #4b5563;
-        }
-      `}</style>
+        <style>{getStyles()}</style>
+
 
         <div style={{ maxWidth: '768px', margin: '0 auto' }}>
           {/* Header */}
@@ -329,12 +514,45 @@ const FlashcardApp: React.FC = () => {
               </h1>
             </div>
 
-            {/* Info o pytaniach */}
+            {/* Info o zestawie */}
             <div className="card">
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', color: '#374151' }}>
-                <FileText size={16} />
-                <span style={{ fontSize: '16px', fontWeight: '500' }}>Wczytano pytań: {questions.length}</span>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#374151' }}>
+                  <FileText size={16} />
+                  <span style={{ fontSize: '16px', fontWeight: '500' }}>
+                    {currentFlashcardSet ? currentFlashcardSet.metadata.name : `Pytania: ${questions.length}`}
+                  </span>
+                </div>
+                <button
+                  onClick={handleBackToSetSelection}
+                  className="button button-secondary"
+                  style={{ fontSize: '12px', padding: '8px 16px' }}
+                >
+                  Zmień zestaw
+                </button>
               </div>
+              
+              {currentFlashcardSet && (
+                <div style={{ fontSize: '14px', color: '#6b7280', marginBottom: '8px' }}>
+                  {currentFlashcardSet.metadata.description}
+                </div>
+              )}
+              
+              {currentFlashcardSet && (
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                  {currentFlashcardSet.metadata.tags.map((tag) => (
+                    <span key={tag} style={{
+                      backgroundColor: '#f3f4f6',
+                      color: '#374151',
+                      padding: '2px 6px',
+                      borderRadius: '4px',
+                      fontSize: '12px'
+                    }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
 
               {error && (
                   <div style={{
