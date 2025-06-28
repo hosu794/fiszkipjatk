@@ -1,11 +1,10 @@
 import './App.css'
-import FlashcardApp from "./flashcard-app.tsx";
+import { FlashcardApp } from './components/FlashcardApp';
 
 function App() {
-
   return (
     <div>
-        <FlashcardApp />
+      <FlashcardApp />
     </div>
   )
 }
