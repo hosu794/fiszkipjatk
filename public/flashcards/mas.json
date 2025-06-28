@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "id": "mas",
+    "name": "MAS - Modelowanie i Analiza Systemów", 
+    "description": "Fiszki do przedmiotu MAS obejmujące zagadnienia z modelowania i analizy systemów informatycznych",
+    "subject": "MAS",
+    "difficulty": "trudny",
+    "totalQuestions": 8,
+    "tags": ["modelowanie", "UML", "analiza systemów", "projektowanie"],
+    "created": "2024-06-25", 
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co to jest diagram przypadków użycia (Use Case Diagram)?",
+      "options": {
+        "A": "Diagram pokazujący strukturę klas w systemie",
+        "B": "Diagram przedstawiający funkcjonalności systemu z perspektywy użytkownika",
+        "C": "Diagram sekwencji operacji",
+        "D": "Diagram stanu obiektów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 2,
+      "question": "Który diagram UML najlepiej pokazuje interakcje między obiektami w czasie?",
+      "options": {
+        "A": "Diagram klas",
+        "B": "Diagram przypadków użycia",
+        "C": "Diagram sekwencji",
+        "D": "Diagram aktywności"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 3,
+      "question": "Co oznacza związek agregacji w diagramie klas?",
+      "options": {
+        "A": "Relację 'część-całość' gdzie części mogą istnieć niezależnie",
+        "B": "Relację dziedziczenia",
+        "C": "Relację implementacji interfejsu",
+        "D": "Relację zależności"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 4,
+      "question": "Czym różni się kompozycja od agregacji?",
+      "options": {
+        "A": "Kompozycja to słabsza forma związku",
+        "B": "W kompozycji części nie mogą istnieć bez całości",
+        "C": "Kompozycja dotyczy tylko interfejsów",
+        "D": "Nie ma różnicy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 5,
+      "question": "Co to jest aktor w diagramie przypadków użycia?",
+      "options": {
+        "A": "Konkretna osoba używająca systemu",
+        "B": "Rola odgrywana przez użytkownika lub system zewnętrzny",
+        "C": "Funkcja systemu",
+        "D": "Klasa w systemie"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 6,
+      "question": "Który diagram UML najlepiej przedstawia przepływ sterowania w systemie?",
+      "options": {
+        "A": "Diagram klas",
+        "B": "Diagram obiektów",
+        "C": "Diagram aktywności",
+        "D": "Diagram komponentów"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 7,
+      "question": "Co oznacza stereotyp <<include>> w diagramie przypadków użycia?",
+      "options": {
+        "A": "Przypadek użycia może wystąpić opcjonalnie",
+        "B": "Przypadek użycia zawsze jest wykonywany jako część innego",
+        "C": "Przypadek użycia rozszerza funkcjonalność",
+        "D": "Przypadek użycia jest abstrakcyjny"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 8,
+      "question": "Jaka jest różnica między analizą a projektowaniem systemu?",
+      "options": {
+        "A": "Analiza dotyczy 'co', projektowanie 'jak'",
+        "B": "Analiza to projektowanie interfejsu użytkownika",
+        "C": "Projektowanie poprzedza analizę",
+        "D": "Nie ma różnicy"
+      },
+      "correctAnswer": "A"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export { FlashcardApp } from './FlashcardApp';

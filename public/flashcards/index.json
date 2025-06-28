@@ -1,0 +1,31 @@
+{
+  "availableFlashcardSets": [
+    {
+      "id": "apbd",
+      "filename": "apbd.json",
+      "name": "APBD - Administrowanie i Projektowanie Baz Danych",
+      "subject": "APBD",
+      "difficulty": "średni",
+      "totalQuestions": 10,
+      "tags": ["bazy danych", "SQL", "projektowanie", "administracja"]
+    },
+    {
+      "id": "mas", 
+      "filename": "mas.json",
+      "name": "MAS - Modelowanie i Analiza Systemów",
+      "subject": "MAS", 
+      "difficulty": "trudny",
+      "totalQuestions": 8,
+      "tags": ["modelowanie", "UML", "analiza systemów", "projektowanie"]
+    },
+    {
+      "id": "byt",
+      "filename": "byt.json", 
+      "name": "BYT - Podstawy Inżynierii Oprogramowania",
+      "subject": "BYT",
+      "difficulty": "średni",
+      "totalQuestions": 15,
+      "tags": ["inżynieria oprogramowania", "metodyki", "SDLC", "zarządzanie projektami"]
+    }
+  ]
+}

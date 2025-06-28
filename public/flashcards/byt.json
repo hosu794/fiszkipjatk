@@ -1,0 +1,400 @@
+{
+  "metadata": {
+    "id": "byt",
+    "name": "BYT - Podstawy Inżynierii Oprogramowania",
+    "description": "Fiszki do przedmiotu podstawy inżynierii oprogramowania obejmujące metodyki, modele rozwoju i zarządzanie projektami",
+    "subject": "BYT",
+    "difficulty": "średni",
+    "totalQuestions": 15,
+    "tags": ["inżynieria oprogramowania", "metodyki", "SDLC", "zarządzanie projektami"],
+    "created": "2024-06-25",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jakie są główne cechy oprogramowania według inżynierii oprogramowania?",
+      "options": {
+        "A": "Szybkie, tanie, kolorowe, głośne",
+        "B": "Zgodne z wymaganiami, niezawodne, efektywne, łatwe do zmian, ergonomiczne",
+        "C": "Duże, skomplikowane, drogie, wolne",
+        "D": "Uniwersalne, automatyczne, bezpłatne, wieczne"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 2,
+      "question": "Co jest podstawowym powodem kryzysu oprogramowania?",
+      "options": {
+        "A": "Brak funduszy na projekty informatyczne",
+        "B": "Niewystarczająca moc obliczeniowa komputerów",
+        "C": "Złożoność produktów informatyki i procesów ich wytwarzania",
+        "D": "Brak wykwalifikowanych programistów"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 3,
+      "question": "Które z poniższych NIE jest zasadą walki ze złożonością?",
+      "options": {
+        "A": "Zasada dekompozycji",
+        "B": "Zasada abstrakcji",
+        "C": "Zasada ponownego użycia",
+        "D": "Zasada maksymalnej komplikacji"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 4,
+      "question": "Co to jest metodyka w kontekście inżynierii oprogramowania?",
+      "options": {
+        "A": "Język programowania używany do tworzenia aplikacji",
+        "B": "Zestaw pojęć, notacji, modeli, języków, technik i sposobów postępowania służący do analizy i projektowania",
+        "C": "Rodzaj bazy danych",
+        "D": "Narzędzie do testowania oprogramowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 5,
+      "question": "Jakie założenie charakteryzuje model kaskadowy (wodospadowy)?",
+      "options": {
+        "A": "Możliwość rozpoczęcia kolejnej fazy przed zakończeniem poprzedniej",
+        "B": "Nie ma powrotu do poprzednich faz",
+        "C": "Równoległe wykonywanie wszystkich faz",
+        "D": "Losowa kolejność wykonywania faz"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 6,
+      "question": "Jaka jest główna wada modelu spiralnego?",
+      "options": {
+        "A": "Zbyt szybkie tempo realizacji",
+        "B": "Brak kontaktu z klientem",
+        "C": "Nieprzewidywalność kosztu i czasu",
+        "D": "Niemożliwość testowania"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 7,
+      "question": "Które z poniższych NIE jest celem prototypowania?",
+      "options": {
+        "A": "Wykrycie nieporozumień pomiędzy klientem a twórcami systemu",
+        "B": "Wykrycie brakujących funkcji",
+        "C": "Zwiększenie kosztów projektu",
+        "D": "Wykrycie braków w specyfikacji wymagań"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 8,
+      "question": "Modelowanie pojęciowe odnosi się do:",
+      "options": {
+        "A": "Procesów myślowych i wyobrażeń towarzyszących pracy nad oprogramowaniem",
+        "B": "Tworzenia dokumentacji technicznej",
+        "C": "Instalacji oprogramowania",
+        "D": "Testowania funkcjonalności systemu"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 9,
+      "question": "Który model rozwoju oprogramowania zakłada wybór i realizację podstawowego zestawu funkcji, a następnie iteracyjne dodawanie kolejnych?",
+      "options": {
+        "A": "Model kaskadowy",
+        "B": "Realizacja przyrostowa",
+        "C": "Metody matematyczne",
+        "D": "Prototypowanie"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 10,
+      "question": "Jakie są zalety montażu z gotowych komponentów?",
+      "options": {
+        "A": "Wysoka niezawodność, zmniejszenie ryzyka, efektywne wykorzystanie specjalistów",
+        "B": "Zwiększenie kosztów, wydłużenie czasu realizacji",
+        "C": "Konieczność pisania kodu od podstaw",
+        "D": "Brak możliwości modyfikacji systemu"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 11,
+      "question": "Dlaczego metody matematyczne nie sprawdziły się w praktyce inżynierii oprogramowania?",
+      "options": {
+        "A": "Są zbyt proste do zastosowania",
+        "B": "Nie są znane szersze ich zastosowania, a metodyki włączają elementy nie podlegające formalnemu traktowaniu",
+        "C": "Są za bardzo popularne",
+        "D": "Wymagają za mało czasu na implementację"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 12,
+      "question": "Które źródło złożoności projektu oprogramowania odnosi się do ograniczeń zespołu?",
+      "options": {
+        "A": "Dziedzina problemowa",
+        "B": "Środki i technologie informatyczne",
+        "C": "Zespół projektantów podlegający ograniczeniom pamięci, percepcji, wyrażania informacji",
+        "D": "Potencjalni użytkownicy"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 13,
+      "question": "Jaka jest trwała tendencja w rozwoju metod projektowania SI?",
+      "options": {
+        "A": "Zwiększanie skomplikowania systemów",
+        "B": "Minimalizacja luki pomiędzy myśleniem o rzeczywistym problemie a myśleniem o danych i procesach",
+        "C": "Eliminacja kontaktu z użytkownikami",
+        "D": "Maksymalizacja kosztów projektu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 14,
+      "question": "Która faza NIE należy do cyklu życiowego oprogramowania?",
+      "options": {
+        "A": "Określenie wymagań",
+        "B": "Analiza",
+        "C": "Sprzedaż licencji",
+        "D": "Konserwacja"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 15,
+      "question": "Co charakteryzuje zmodyfikowany model kaskadowy?",
+      "options": {
+        "A": "Brak jakichkolwiek iteracji",
+        "B": "Możliwość powrotu do wcześniejszych faz (iteracje)",
+        "C": "Równoległe wykonywanie wszystkich faz",
+        "D": "Pomijanie fazy testowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 16,
+      "question": "Faza strategiczna jest wykonywana:",
+      "options": {
+        "A": "Po podjęciu decyzji o realizacji przedsięwzięcia",
+        "B": "Zanim podejmowana jest decyzja o realizacji przedsięwzięcia",
+        "C": "W trakcie implementacji systemu",
+        "D": "Po zakończeniu testowania systemu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 17,
+      "question": "Które z poniższych NIE należy do czynności w fazie strategicznej?",
+      "options": {
+        "A": "Określenie celów przedsięwzięcia z punktu widzenia klienta",
+        "B": "Oszacowanie kosztów oprogramowania",
+        "C": "Szczegółowe kodowanie modułów systemu",
+        "D": "Analiza rozwiązań"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 18,
+      "question": "W fazie strategicznej po stronie klienta warto wyróżnić:",
+      "options": {
+        "A": "Tylko zleceniodawcę",
+        "B": "Tylko przyszłych użytkowników",
+        "C": "Zleceniodawcę i przyszłych użytkowników",
+        "D": "Tylko kierownictwo firmy"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 19,
+      "question": "Kontekst przedsięwzięcia to:",
+      "options": {
+        "A": "Fragment procesów informacyjnych objętych przedsięwzięciem",
+        "B": "Systemy, organizacje, użytkownicy zewnętrzni, z którymi tworzony system ma współpracować",
+        "C": "Harmonogram czasowy projektu",
+        "D": "Budżet przeznaczony na realizację"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 20,
+      "question": "Które z poniższych NIE należy do decyzji strategicznych?",
+      "options": {
+        "A": "Wybór modelu realizacji przedsięwzięcia",
+        "B": "Wybór środowiska implementacji",
+        "C": "Szczegółowe projektowanie interfejsu użytkownika",
+        "D": "Wybór narzędzia CASE"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 21,
+      "question": "Faza strategiczna nazywana jest także:",
+      "options": {
+        "A": "Fazą implementacji",
+        "B": "Studium osiągalności (feasibility study)",
+        "C": "Fazą konserwacji",
+        "D": "Fazą dokumentacji"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 22,
+      "question": "Który z poniższych czynników NIE jest uwzględniany w studium osiągalności?",
+      "options": {
+        "A": "Rozmiar projektu w porównaniu do zespołu projektowego",
+        "B": "Dostępność zasobów budżetowych",
+        "C": "Szczegółowa architektura bazy danych",
+        "D": "Ograniczenia czasowe"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 23,
+      "question": "Częste kryteria oceny rozwiązań w fazie strategicznej to:",
+      "options": {
+        "A": "Tylko koszt i czas realizacji",
+        "B": "Koszt, czas realizacji, niezawodność, wydajność",
+        "C": "Tylko wydajność systemu",
+        "D": "Tylko przenośność na inne platformy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 24,
+      "question": "Prawo GIGO (Garbage In – Garbage Out) oznacza:",
+      "options": {
+        "A": "Że można uzyskać wiarygodną informację z każdego źródła",
+        "B": "Że nie da się uzyskać wiarygodnej informacji z szumu informacyjnego",
+        "C": "Że wszystkie metody szacowania są równie dokładne",
+        "D": "Że sztuczna inteligencja rozwiąże wszystkie problemy szacowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 25,
+      "question": "Obiektywny koszt oprogramowania:",
+      "options": {
+        "A": "Zawsze istnieje i jest łatwy do obliczenia",
+        "B": "Nie istnieje",
+        "C": "Istnieje tylko dla dużych projektów",
+        "D": "Można go obliczyć tylko metodą COCOMO"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 26,
+      "question": "Na koszt oprogramowania składają się główne czynniki:",
+      "options": {
+        "A": "Tylko nakład pracy",
+        "B": "Koszt sprzętu, wyjazdów i szkoleń, zakupu narzędzi, nakład pracy",
+        "C": "Tylko koszt sprzętu",
+        "D": "Tylko koszt zakupu narzędzi"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 27,
+      "question": "Która technika szacowania nakładów pracy opiera się na doświadczonych osobach?",
+      "options": {
+        "A": "Modele algorytmiczne",
+        "B": "Ocena przez eksperta",
+        "C": "Metoda COCOMO",
+        "D": "Punkty funkcyjne"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 28,
+      "question": "Metoda COCOMO jest oparta na:",
+      "options": {
+        "A": "Punktach funkcyjnych",
+        "B": "Liczbie linii kodu źródłowego",
+        "C": "Opinii ekspertów",
+        "D": "Analogii historycznej"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 29,
+      "question": "Główną słabością metody COCOMO jest:",
+      "options": {
+        "A": "Zbyt wysoka dokładność",
+        "B": "Brak uwzględnienia kosztów sprzętu",
+        "C": "Liczba linii kodu staje się przewidywalna dopiero po fazie projektowania architektury",
+        "D": "Niemożność zastosowania w małych projektach"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 30,
+      "question": "Metoda punktów funkcyjnych (FPA) oszacowuje koszt na podstawie:",
+      "options": {
+        "A": "Liczby linii kodu",
+        "B": "Funkcji użytkowych, które system ma realizować",
+        "C": "Czasu pracy programistów",
+        "D": "Kosztów sprzętu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 31,
+      "question": "W metodzie Delphi eksperci:",
+      "options": {
+        "A": "Muszą się ze sobą komunikować i naradzać",
+        "B": "Nie mogą się ze sobą komunikować w sprawie oszacowania",
+        "C": "Pracują tylko w grupach",
+        "D": "Muszą używać tej samej metody szacowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 32,
+      "question": "Które z poniższych jest kluczowym czynnikiem sukcesu w fazie strategicznej?",
+      "options": {
+        "A": "Maksymalne wydłużenie czasu pracy",
+        "B": "Koncentracja tylko na fragmentach systemu",
+        "C": "Szybkość pracy i zaangażowanie kluczowych osób ze strony klienta",
+        "D": "Brak komunikacji z klientem"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 33,
+      "question": "Podstawowe rezultaty fazy strategicznej obejmują raport zawierający:",
+      "options": {
+        "A": "Tylko oszacowanie kosztów",
+        "B": "Definicję celów, opis zakresu, model systemu, oszacowanie kosztów i harmonogram",
+        "C": "Tylko szczegółowy kod programu",
+        "D": "Tylko harmonogram prac"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 34,
+      "question": "Diagram Gantta służy do:",
+      "options": {
+        "A": "Oszacowania kosztów projektu",
+        "B": "Ustalenia planu czasowego dla poszczególnych faz i zadań",
+        "C": "Projektowania architektury systemu",
+        "D": "Testowania oprogramowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 35,
+      "question": "W drzewach ryzyka krawędzie oznaczają:",
+      "options": {
+        "A": "Koszty poszczególnych scenariuszy",
+        "B": "Prawdopodobieństwa zdarzeń",
+        "C": "Przejścia do nowych sytuacji z przypisanymi prawdopodobieństwami",
+        "D": "Tylko sytuacje początkowe"
+      },
+      "correctAnswer": "C"
+    }
+  ]
+}

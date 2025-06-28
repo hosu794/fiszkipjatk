@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "id": "apbd",
+    "name": "APBD - Administrowanie i Projektowanie Baz Danych",
+    "description": "Fiszki do przedmiotu APBD obejmujące zagadnienia z projektowania i administrowania baz danych",
+    "subject": "APBD", 
+    "difficulty": "średni",
+    "totalQuestions": 10,
+    "tags": ["bazy danych", "SQL", "projektowanie", "administracja"],
+    "created": "2024-06-25",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co to jest normalizacja bazy danych?",
+      "options": {
+        "A": "Proces tworzenia kopii zapasowych bazy danych",
+        "B": "Proces organizowania danych w celu zmniejszenia redundancji i poprawy integralności",
+        "C": "Proces szyfrowania danych w bazie",
+        "D": "Proces indeksowania tabel"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 2,
+      "question": "Która forma normalna eliminuje zależności funkcyjne częściowe?",
+      "options": {
+        "A": "1NF (Pierwsza Forma Normalna)",
+        "B": "2NF (Druga Forma Normalna)", 
+        "C": "3NF (Trzecia Forma Normalna)",
+        "D": "BCNF (Boyce-Codd Normal Form)"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 3,
+      "question": "Co to jest klucz obcy (Foreign Key)?",
+      "options": {
+        "A": "Pole używane do szyfrowania danych",
+        "B": "Pole które jednoznacznie identyfikuje rekord w tabeli",
+        "C": "Pole które odwołuje się do klucza głównego w innej tabeli",
+        "D": "Pole które nie może być null"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 4,
+      "question": "Które polecenie SQL służy do tworzenia nowej tabeli?",
+      "options": {
+        "A": "INSERT TABLE",
+        "B": "CREATE TABLE",
+        "C": "NEW TABLE", 
+        "D": "ADD TABLE"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 5,
+      "question": "Co oznacza ACID w kontekście baz danych?",
+      "options": {
+        "A": "Atomicity, Consistency, Isolation, Durability",
+        "B": "Access, Control, Integration, Design",
+        "C": "Advanced, Computing, Information, Database",
+        "D": "Automated, Controlled, Indexed, Data"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 6,
+      "question": "Który typ JOIN zwraca wszystkie rekordy z obu tabel?",
+      "options": {
+        "A": "INNER JOIN",
+        "B": "LEFT JOIN",
+        "C": "RIGHT JOIN",
+        "D": "FULL OUTER JOIN"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 7,
+      "question": "Co to jest indeks w bazie danych?",
+      "options": {
+        "A": "Lista wszystkich tabel w bazie",
+        "B": "Struktura danych poprawiająca szybkość operacji wyszukiwania",
+        "C": "Kopie zapasowe danych",
+        "D": "Ograniczenia nakładane na dane"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 8,
+      "question": "Które polecenie służy do modyfikacji struktury istniejącej tabeli?",
+      "options": {
+        "A": "MODIFY TABLE",
+        "B": "UPDATE TABLE",
+        "C": "ALTER TABLE",
+        "D": "CHANGE TABLE"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 9,
+      "question": "Co to jest transakcja w bazie danych?",
+      "options": {
+        "A": "Pojedyncze zapytanie SQL",
+        "B": "Logiczna jednostka pracy składająca się z jednej lub więcej operacji",
+        "C": "Proces tworzenia kopii zapasowej",
+        "D": "Procedura składowana"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 10,
+      "question": "Który poziom izolacji transakcji zapobiega wszystkim anomaliom odczytu?",
+      "options": {
+        "A": "READ UNCOMMITTED",
+        "B": "READ COMMITTED",
+        "C": "REPEATABLE READ",
+        "D": "SERIALIZABLE"
+      },
+      "correctAnswer": "D"
+    }
+  ]
+}
