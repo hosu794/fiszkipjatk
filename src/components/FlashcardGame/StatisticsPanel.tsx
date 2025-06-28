@@ -1,11 +1,12 @@
 import React from 'react';
-import type { Stats } from '../../types';
+import type { Stats, UserAnswer } from '../../types';
 import { CheckCircle, XCircle, RotateCcw, Shuffle } from 'lucide-react';
 
 interface StatisticsPanelProps {
   stats: Stats;
   accuracyPercentage: number;
   hasQuestionsRemaining: boolean;
+  userAnswers: UserAnswer[];
   onReset: () => void;
   onNextQuestion: () => void;
   onBackToSetSelection: () => void;
@@ -15,6 +16,7 @@ export const StatisticsPanel: React.FC<StatisticsPanelProps> = ({
   stats,
   accuracyPercentage,
   hasQuestionsRemaining,
+  userAnswers,
   onReset,
   onNextQuestion,
   onBackToSetSelection
@@ -92,8 +94,8 @@ export const StatisticsPanel: React.FC<StatisticsPanelProps> = ({
         </div>
         
         <div style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: '24px', fontWeight: 'bold' }}>{stats.total}</div>
-          <div style={{ fontSize: '12px', opacity: 0.8 }}>Łącznie</div>
+          <div style={{ fontSize: '24px', fontWeight: 'bold' }}>{stats.total}/20</div>
+          <div style={{ fontSize: '12px', opacity: 0.8 }}>Postęp</div>
         </div>
         
         <div style={{ textAlign: 'center' }}>
@@ -101,6 +103,46 @@ export const StatisticsPanel: React.FC<StatisticsPanelProps> = ({
           <div style={{ fontSize: '12px', opacity: 0.8 }}>Celność</div>
         </div>
       </div>
+      
+      {userAnswers.length > 0 && (
+        <div style={{
+          marginBottom: '15px',
+          padding: '15px',
+          background: 'rgba(255, 255, 255, 0.1)',
+          borderRadius: '8px'
+        }}>
+          <h4 style={{ margin: '0 0 10px 0', fontSize: '16px' }}>Prawidłowe odpowiedzi:</h4>
+          <div style={{
+            maxHeight: '200px',
+            overflowY: 'auto',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px'
+          }}>
+            {userAnswers
+              .filter(answer => answer.isCorrect)
+              .map((answer, index) => (
+                <div
+                  key={answer.questionId}
+                  style={{
+                    background: 'rgba(16, 185, 129, 0.2)',
+                    padding: '8px 12px',
+                    borderRadius: '6px',
+                    fontSize: '14px',
+                    border: '1px solid rgba(16, 185, 129, 0.3)'
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
+                    {index + 1}. {answer.question}
+                  </div>
+                  <div style={{ opacity: 0.9 }}>
+                    Odpowiedź: {answer.correctAnswer}) {answer.correctAnswerText}
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+      )}
       
       <button
         onClick={onNextQuestion}

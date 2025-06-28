@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Question, AnswerOption, Stats } from '../../types';
+import type { Question, AnswerOption, Stats, UserAnswer } from '../../types';
 import { QuestionCard } from './QuestionCard';
 import { StatisticsPanel } from './StatisticsPanel';
 
@@ -10,6 +10,7 @@ interface FlashcardGameProps {
   stats: Stats;
   accuracyPercentage: number;
   hasQuestionsRemaining: boolean;
+  userAnswers: UserAnswer[];
   loading: boolean;
   error: string | null;
   onAnswerSelect: (answer: AnswerOption) => void;
@@ -25,6 +26,7 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
   stats,
   accuracyPercentage,
   hasQuestionsRemaining,
+  userAnswers,
   loading,
   error,
   onAnswerSelect,
@@ -101,6 +103,7 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
         stats={stats}
         accuracyPercentage={accuracyPercentage}
         hasQuestionsRemaining={hasQuestionsRemaining}
+        userAnswers={userAnswers}
         onReset={onReset}
         onNextQuestion={onNextQuestion}
         onBackToSetSelection={onBackToSetSelection}

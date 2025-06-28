@@ -56,6 +56,7 @@ export interface UserAnswer {
   question: string;
   selectedAnswer: AnswerOption;
   correctAnswer: AnswerOption;
+  correctAnswerText: string;
   isCorrect: boolean;
 }
 

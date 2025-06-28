@@ -114,6 +114,7 @@ export const FlashcardApp: React.FC = () => {
             stats={stats}
             accuracyPercentage={getAccuracyPercentage()}
             hasQuestionsRemaining={hasQuestionsRemaining}
+            userAnswers={userAnswers}
             loading={gameLoading}
             error={gameError}
             onAnswerSelect={handleAnswerSelectWithStats}

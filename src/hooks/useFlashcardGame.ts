@@ -57,7 +57,8 @@ export const useFlashcardGame = (flashcardService: FlashcardService) => {
         question: currentQuestion.question,
         selectedAnswer: answer,
         correctAnswer: currentQuestion.correctAnswer,
-        isCorrect: answer === currentQuestion.correctAnswer
+        isCorrect: answer === currentQuestion.correctAnswer,
+        correctAnswerText: currentQuestion.options[currentQuestion.correctAnswer]
       };
 
 
@@ -66,7 +67,7 @@ export const useFlashcardGame = (flashcardService: FlashcardService) => {
   };
 
   const nextQuestion = () => {
-    if (!hasQuestionsRemaining(questions, usedQuestions)) {
+    if (!hasQuestionsRemaining(questions, usedQuestions) || usedQuestions.length >= 20) {
       setShowResults(true);
       return;
     }
@@ -102,6 +103,6 @@ export const useFlashcardGame = (flashcardService: FlashcardService) => {
     handleAnswerSelect,
     nextQuestion,
     resetGame,
-    hasQuestionsRemaining: hasQuestionsRemaining(questions, usedQuestions)
+    hasQuestionsRemaining: hasQuestionsRemaining(questions, usedQuestions) && usedQuestions.length < 20
   };
 };

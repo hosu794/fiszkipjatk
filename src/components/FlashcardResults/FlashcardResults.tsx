@@ -158,7 +158,7 @@ export const FlashcardResults: React.FC<FlashcardResultsProps> = ({
                   color: '#38a169',
                   fontWeight: 'bold'
                 }}>
-                  Odpowiedź: {answer.selectedAnswer}
+                  Odpowiedź: {answer.selectedAnswer}) {answer.correctAnswerText}
                 </div>
               </div>
             ))}
