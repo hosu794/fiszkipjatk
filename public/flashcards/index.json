@@ -15,7 +15,7 @@
       "name": "APBD",
       "subject": "APBD",
       "difficulty": "średni",
-      "totalQuestions": 100,
+      "totalQuestions": 150,
       "tags": ["bazy danych", "SQL", "projektowanie", "administracja"]
     }
   ]

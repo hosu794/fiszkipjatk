@@ -1110,6 +1110,556 @@
         "D": "Rozmiar aplikacji w pamięci"
       },
       "correctAnswer": "B"
+    },
+    {
+      "id": 101,
+      "question": "Która komenda Git pokazuje status plików w repozytorium?",
+      "options": {
+        "A": "git commit",
+        "B": "git status",
+        "C": "git push",
+        "D": "git pull"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 102,
+      "question": "Która komenda Git dodaje zmiany do staging area?",
+      "options": {
+        "A": "git commit",
+        "B": "git push",
+        "C": "git add",
+        "D": "git merge"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 103,
+      "question": "Która komenda Git wysyła commity z lokalnego repozytorium do zdalnego?",
+      "options": {
+        "A": "git pull",
+        "B": "git push",
+        "C": "git fetch",
+        "D": "git clone"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 104,
+      "question": "Co to jest working tree w Git?",
+      "options": {
+        "A": "Historia wszystkich commitów",
+        "B": "Aktualny stan plików na dysku, nad którym pracujesz",
+        "C": "Zdalne repozytorium",
+        "D": "Lista wszystkich gałęzi"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 105,
+      "question": "Który z poniższych należy do Framework Class Library (FCL) w .NET?",
+      "options": {
+        "A": "Common Language Runtime",
+        "B": "Biblioteki do operacji I/O, kolekcji, obsługi plików",
+        "C": "Common Type System",
+        "D": "Just-In-Time Compiler"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 106,
+      "question": "Co to jest BCL (Base Class Library) w ekosystemie .NET?",
+      "options": {
+        "A": "Cały Framework Class Library",
+        "B": "Podzbiór FCL z najbardziej podstawowymi klasami",
+        "C": "Common Language Runtime",
+        "D": "Kompilator C#"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 107,
+      "question": "Która technologia w .NET odpowiada za komunikację real-time?",
+      "options": {
+        "A": "Entity Framework",
+        "B": "SignalR",
+        "C": "Razor Pages",
+        "D": "Web API"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 108,
+      "question": "Co oznacza JIT compilation w .NET?",
+      "options": {
+        "A": "Just-In-Time Compilation - kompilacja w trakcie wykonywania",
+        "B": "Java Integration Technology",
+        "C": "JavaScript In Time",
+        "D": "Joint Interface Technology"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 109,
+      "question": "Która z poniższych cech charakteryzuje rozproszone systemy kontroli wersji?",
+      "options": {
+        "A": "Pojedynczy punkt awarii",
+        "B": "Wytrzymałość, elastyczność, współpraca",
+        "C": "Wymagają stałego połączenia z internetem",
+        "D": "Tylko jeden użytkownik może pracować naraz"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 110,
+      "question": "Jaka jest główna wada systemu scentralizowanego (CVCS)?",
+      "options": {
+        "A": "Za dużo miejsca na dysku",
+        "B": "Awaria serwera powoduje paraliż zespołu",
+        "C": "Zbyt szybkie działanie",
+        "D": "Obsługa tylko jednego języka programowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 111,
+      "question": "Którą z właściwości ACID reprezentuje 'Consistency'?",
+      "options": {
+        "A": "Transakcja jest wykonana w całości lub wcale",
+        "B": "Transakcja zachowuje spójność danych",
+        "C": "Transakcja jest izolowana od innych",
+        "D": "Zmiany są trwałe po zatwierdzeniu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 112,
+      "question": "Co oznacza właściwość 'Isolation' w transakcjach?",
+      "options": {
+        "A": "Zmiany są trwałe",
+        "B": "Transakcja jest izolowana od innych transakcji",
+        "C": "Dane są spójne",
+        "D": "Operacja jest atomowa"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 113,
+      "question": "Jaki rodzaj konserwacji oprogramowania dotyczy dostosowania do nowych wymagań środowiska?",
+      "options": {
+        "A": "Konserwacja korygująca",
+        "B": "Konserwacja adaptacyjna",
+        "C": "Konserwacja doskonalące",
+        "D": "Konserwacja prewencyjna"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 114,
+      "question": "Co to jest konserwacja doskonalące oprogramowania?",
+      "options": {
+        "A": "Usuwanie błędów",
+        "B": "Poprawa wydajności i funkcjonalności",
+        "C": "Dostosowanie do nowego środowiska",
+        "D": "Zapobieganie problemom"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 115,
+      "question": "Czym charakteryzuje się konserwacja prewencyjna?",
+      "options": {
+        "A": "Usuwaniem istniejących błędów",
+        "B": "Zapobieganiem przyszłym problemom",
+        "C": "Dodawaniem nowych funkcji",
+        "D": "Migracją do nowej platformy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 116,
+      "question": "Które z poniższych jest przykładem operacji I/O?",
+      "options": {
+        "A": "Obliczenia matematyczne",
+        "B": "Odczyt pliku z dysku",
+        "C": "Sortowanie tablicy w pamięci",
+        "D": "Operacje na zmiennych lokalnych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 117,
+      "question": "Dlaczego operacje I/O są wolniejsze od operacji CPU?",
+      "options": {
+        "A": "Używają więcej pamięci",
+        "B": "Wymagają dostępu do zewnętrznych urządzeń lub sieci",
+        "C": "Są bardziej skomplikowane",
+        "D": "Używają innych języków programowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 118,
+      "question": "W którym przypadku programowanie asynchroniczne jest najbardziej pomocne?",
+      "options": {
+        "A": "W zadaniach CPU bound",
+        "B": "W zadaniach IO bound",
+        "C": "W zadaniach matematycznych",
+        "D": "W sortowaniu danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 119,
+      "question": "Jak ręcznie utworzyć wątek w C#?",
+      "options": {
+        "A": "new Task()",
+        "B": "Thread thread = new Thread(new ThreadStart(MethodName))",
+        "C": "async/await",
+        "D": "Parallel.ForEach"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 120,
+      "question": "Dlaczego w praktyce zaleca się używanie Task zamiast ręcznego tworzenia wątków?",
+      "options": {
+        "A": "Task jest wolniejszy",
+        "B": "Task jest bardziej wydajny i łatwiejszy w zarządzaniu",
+        "C": "Thread nie działa w .NET Core",
+        "D": "Task używa mniej pamięci"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 121,
+      "question": "Co się stanie jeśli nie użyjesz bloku 'using' z SqlConnection?",
+      "options": {
+        "A": "Kod będzie działał szybciej",
+        "B": "Może dojść do wycieków zasobów",
+        "C": "Baza danych będzie szybsza",
+        "D": "Nic się nie stanie"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 122,
+      "question": "Dlaczego nie należy trzymać connection stringów w kodzie źródłowym?",
+      "options": {
+        "A": "Spowalnia aplikację",
+        "B": "Ze względów bezpieczeństwa",
+        "C": "Powoduje błędy kompilacji",
+        "D": "Nie działa w .NET Core"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 123,
+      "question": "Jaki jest poprawny sposób przekazywania parametrów do zapytania SQL?",
+      "options": {
+        "A": "Konkatenacja stringów",
+        "B": "cmd.Parameters.AddWithValue('@param', value)",
+        "C": "Wpisanie wartości bezpośrednio w SQL",
+        "D": "Używanie globalnych zmiennych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 124,
+      "question": "Którą składnię LINQ można uznać za bardziej elastyczną?",
+      "options": {
+        "A": "Query syntax",
+        "B": "Lambda syntax",
+        "C": "Obie są jednakowo elastyczne",
+        "D": "Żadna z nich"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 125,
+      "question": "Przykład query syntax w LINQ to:",
+      "options": {
+        "A": "users.Where(u => u.Age > 18)",
+        "B": "from u in users where u.Age > 18 select u",
+        "C": "users.Select(u => u.Name)",
+        "D": "users.GroupBy(u => u.City)"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 126,
+      "question": "Kiedy zaleca się używanie podejścia 'database first' w Entity Framework?",
+      "options": {
+        "A": "Zawsze",
+        "B": "Gdy masz istniejącą bazę danych",
+        "C": "Tylko w nowych projektach",
+        "D": "Nigdy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 127,
+      "question": "Jaka jest wada podejścia 'code first'?",
+      "options": {
+        "A": "Nie można tworzyć baz danych",
+        "B": "Mniej kontroli nad szczegółami bazy, wymaga znajomości migracji",
+        "C": "Działa tylko z SQL Server",
+        "D": "Jest zawsze wolniejsze"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 128,
+      "question": "Co się stanie w przypadku 'lost update' problem?",
+      "options": {
+        "A": "Baza danych się zepsuje",
+        "B": "Jedna transakcja nadpisze zmiany drugiej",
+        "C": "Aplikacja się zatrzyma",
+        "D": "Dane zostaną zduplikowane"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 129,
+      "question": "Które pole najczęściej używa się do implementacji blokowania optymistycznego?",
+      "options": {
+        "A": "ID",
+        "B": "RowVersion lub Timestamp",
+        "C": "CreatedDate",
+        "D": "Name"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 130,
+      "question": "Jaki wyjątek rzuca Entity Framework przy konflikcie współbieżności?",
+      "options": {
+        "A": "SqlException",
+        "B": "DbUpdateConcurrencyException",
+        "C": "InvalidOperationException",
+        "D": "TimeoutException"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 131,
+      "question": "Która z operacji SQL jest używana w blokadzie pesymistycznej?",
+      "options": {
+        "A": "SELECT ... FOR UPDATE",
+        "B": "INSERT",
+        "C": "DELETE",
+        "D": "CREATE"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 132,
+      "question": "Jaka jest wada blokowania pesymistycznego?",
+      "options": {
+        "A": "Zawsze powoduje błędy",
+        "B": "Zmniejsza wydajność i ryzyko deadlocków",
+        "C": "Nie działa z bazami danych",
+        "D": "Jest zbyt skomplikowane"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 133,
+      "question": "Co implementuje DbContext w Entity Framework?",
+      "options": {
+        "A": "Repository Pattern",
+        "B": "Unit of Work Pattern",
+        "C": "Factory Pattern",
+        "D": "Singleton Pattern"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 134,
+      "question": "Która metoda DbContext zapisuje wszystkie zmiany naraz?",
+      "options": {
+        "A": "Save()",
+        "B": "SaveChanges()",
+        "C": "Commit()",
+        "D": "Update()"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 135,
+      "question": "W jakiej metodzie rejestrujesz middleware w ASP.NET Core?",
+      "options": {
+        "A": "ConfigureServices",
+        "B": "Configure",
+        "C": "Startup",
+        "D": "Main"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 136,
+      "question": "Jaki parametr przyjmuje konstruktor middleware?",
+      "options": {
+        "A": "HttpContext",
+        "B": "RequestDelegate",
+        "C": "IServiceProvider",
+        "D": "IConfiguration"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 137,
+      "question": "Która metoda jest wymagana w custom middleware?",
+      "options": {
+        "A": "Execute",
+        "B": "InvokeAsync lub Invoke",
+        "C": "Run",
+        "D": "Handle"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 138,
+      "question": "Co sprawdza uwierzytelnianie oparte na bazie danych?",
+      "options": {
+        "A": "Uprawnienia użytkownika",
+        "B": "Tożsamość użytkownika przez porównanie z rekordami w bazie",
+        "C": "Szybkość połączenia",
+        "D": "Rozmiar bazy danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 139,
+      "question": "Dlaczego hasła przechowuje się jako hash w bazie danych?",
+      "options": {
+        "A": "Aby zaoszczędzić miejsce",
+        "B": "Ze względów bezpieczeństwa",
+        "C": "Aby były szybsze do porównania",
+        "D": "Aby działały z wszystkimi bazami"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 140,
+      "question": "Gdzie najczęściej przechowywany jest session ID po stronie klienta?",
+      "options": {
+        "A": "W URL",
+        "B": "W cookie",
+        "C": "W Local Storage",
+        "D": "W Session Storage"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 141,
+      "question": "Jaka jest główna wada JWT o długim czasie życia?",
+      "options": {
+        "A": "Zajmuje dużo miejsca",
+        "B": "Ryzyko wycieku i trudność unieważnienia",
+        "C": "Jest wolniejszy",
+        "D": "Nie działa z HTTPS"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 142,
+      "question": "W którym nagłówku HTTP najczęściej wysyła się JWT?",
+      "options": {
+        "A": "Content-Type",
+        "B": "Authorization",
+        "C": "Accept",
+        "D": "User-Agent"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 143,
+      "question": "Jaki jest główny cel używania DTO?",
+      "options": {
+        "A": "Przyspieszenie aplikacji",
+        "B": "Oddzielenie warstwy prezentacji od warstwy danych",
+        "C": "Zmniejszenie rozmiaru bazy",
+        "D": "Łatwiejsze testowanie"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 144,
+      "question": "Czym charakteryzują się obiekty DTO?",
+      "options": {
+        "A": "Zawierają dużo logiki biznesowej",
+        "B": "Zawierają wyłącznie dane bez logiki",
+        "C": "Są zawsze abstrakcyjne",
+        "D": "Mogą być tylko prywatne"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 145,
+      "question": "Jaka jest główna zaleta aplikacji SPA?",
+      "options": {
+        "A": "Lepsze SEO",
+        "B": "Płynne UX i szybkie przejścia",
+        "C": "Mniej JavaScript",
+        "D": "Prostota implementacji"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 146,
+      "question": "Jaka jest główna wada aplikacji SPA?",
+      "options": {
+        "A": "Wolne działanie",
+        "B": "Trudniejsze SEO i większa złożoność",
+        "C": "Nie działają w przeglądarce",
+        "D": "Wymagają bazy danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 147,
+      "question": "Który z frameworków jest przykładem do budowy SPA?",
+      "options": {
+        "A": "ASP.NET MVC",
+        "B": "React",
+        "C": "Entity Framework",
+        "D": "SQL Server"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 148,
+      "question": "Co odróżnia Blazor Server Side od tradycyjnego SPA?",
+      "options": {
+        "A": "Używa tylko HTML",
+        "B": "Kod wykonuje się na serwerze, a aktualizacje przesyłane przez SignalR",
+        "C": "Nie używa JavaScript",
+        "D": "Działa tylko offline"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 149,
+      "question": "Jaka jest zaleta Blazor WebAssembly?",
+      "options": {
+        "A": "Mniejszy initial load",
+        "B": "Działa offline i nie wymaga stałego połączenia z serwerem",
+        "C": "Prostsze w konfiguracji",
+        "D": "Szybsze na słabych komputerach"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 150,
+      "question": "Co jest wymagane do uruchomienia Blazor WebAssembly?",
+      "options": {
+        "A": "Stałe połączenie z serwerem",
+        "B": "Nowoczesna przeglądarka obsługująca WebAssembly",
+        "C": "Specjalny serwer",
+        "D": "Instalacja .NET na kliencie"
+      },
+      "correctAnswer": "B"
     }
   ]
 }
