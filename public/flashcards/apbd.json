@@ -13,113 +13,1103 @@
   "questions": [
     {
       "id": 1,
-      "question": "Co to jest normalizacja bazy danych?",
+      "question": "Które z poniższych są cechami systemu Git?",
       "options": {
-        "A": "Proces tworzenia kopii zapasowych bazy danych",
-        "B": "Proces organizowania danych w celu zmniejszenia redundancji i poprawy integralności",
-        "C": "Proces szyfrowania danych w bazie",
-        "D": "Proces indeksowania tabel"
+        "A": "Scentralizowany, wolny, prosty",
+        "B": "Wydajny, wspiera złożone modele rozgałęzień",
+        "C": "Wymaga stałego połączenia z internetem",
+        "D": "Przechowuje tylko najnowszą wersję plików"
       },
       "correctAnswer": "B"
     },
     {
       "id": 2,
-      "question": "Która forma normalna eliminuje zależności funkcyjne częściowe?",
+      "question": "Która z poniższych cech charakteryzuje rozproszone systemy kontroli wersji (DVCS)?",
       "options": {
-        "A": "1NF (Pierwsza Forma Normalna)",
-        "B": "2NF (Druga Forma Normalna)", 
-        "C": "3NF (Trzecia Forma Normalna)",
-        "D": "BCNF (Boyce-Codd Normal Form)"
+        "A": "Jeden punkt awarii",
+        "B": "Każdy ma pełną kopię repozytorium",
+        "C": "Wymagają stałego połączenia z serwerem",
+        "D": "Brak możliwości pracy offline"
       },
       "correctAnswer": "B"
     },
     {
       "id": 3,
-      "question": "Co to jest klucz obcy (Foreign Key)?",
+      "question": "Jaka jest główna różnica między CVCS a DVCS?",
       "options": {
-        "A": "Pole używane do szyfrowania danych",
-        "B": "Pole które jednoznacznie identyfikuje rekord w tabeli",
-        "C": "Pole które odwołuje się do klucza głównego w innej tabeli",
-        "D": "Pole które nie może być null"
+        "A": "CVCS jest szybszy od DVCS",
+        "B": "DVCS wymaga mniej miejsca na dysku",
+        "C": "W CVCS jest jedno repozytorium centralne, w DVCS każdy ma pełną kopię",
+        "D": "CVCS obsługuje więcej języków programowania"
       },
       "correctAnswer": "C"
     },
     {
       "id": 4,
-      "question": "Które polecenie SQL służy do tworzenia nowej tabeli?",
+      "question": "Co to jest 'staging area' w Git?",
       "options": {
-        "A": "INSERT TABLE",
-        "B": "CREATE TABLE",
-        "C": "NEW TABLE", 
-        "D": "ADD TABLE"
+        "A": "Aktualny stan plików na dysku",
+        "B": "Miejsce gdzie przygotowujesz konkretne zmiany do commita",
+        "C": "Historia wszystkich commitów",
+        "D": "Zdalne repozytorium"
       },
       "correctAnswer": "B"
     },
     {
       "id": 5,
-      "question": "Co oznacza ACID w kontekście baz danych?",
+      "question": "Która komenda Git zapisuje zmiany ze staging area w lokalnej historii?",
       "options": {
-        "A": "Atomicity, Consistency, Isolation, Durability",
-        "B": "Access, Control, Integration, Design",
-        "C": "Advanced, Computing, Information, Database",
-        "D": "Automated, Controlled, Indexed, Data"
+        "A": "git add",
+        "B": "git push",
+        "C": "git commit",
+        "D": "git status"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "C"
     },
     {
       "id": 6,
-      "question": "Który typ JOIN zwraca wszystkie rekordy z obu tabel?",
+      "question": "Czym jest gałąź (branch) w Git?",
       "options": {
-        "A": "INNER JOIN",
-        "B": "LEFT JOIN",
-        "C": "RIGHT JOIN",
-        "D": "FULL OUTER JOIN"
-      },
-      "correctAnswer": "D"
-    },
-    {
-      "id": 7,
-      "question": "Co to jest indeks w bazie danych?",
-      "options": {
-        "A": "Lista wszystkich tabel w bazie",
-        "B": "Struktura danych poprawiająca szybkość operacji wyszukiwania",
-        "C": "Kopie zapasowe danych",
-        "D": "Ograniczenia nakładane na dane"
+        "A": "Folder z plikami projektu",
+        "B": "Referencja do konkretnego commita",
+        "C": "Kopia całego repozytorium",
+        "D": "Lista wszystkich użytkowników"
       },
       "correctAnswer": "B"
     },
     {
-      "id": 8,
-      "question": "Które polecenie służy do modyfikacji struktury istniejącej tabeli?",
+      "id": 7,
+      "question": "Który element ekosystemu .NET odpowiada za zarządzanie pamięcią i garbage collection?",
       "options": {
-        "A": "MODIFY TABLE",
-        "B": "UPDATE TABLE",
-        "C": "ALTER TABLE",
-        "D": "CHANGE TABLE"
+        "A": "Common Type System (CTS)",
+        "B": "Framework Class Library (FCL)",
+        "C": "Common Language Runtime (CLR)",
+        "D": "Biblioteka Klas Bazowych (BCL)"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 8,
+      "question": "Jaka jest główna różnica między właściwościami w C# a getterami/setterami w Java?",
+      "options": {
+        "A": "C# nie obsługuje właściwości",
+        "B": "Java ma wbudowane właściwości jak C#",
+        "C": "C# ma składnię 'public string Name { get; set; }', Java wymaga oddzielnych metod",
+        "D": "Nie ma różnicy między nimi"
       },
       "correctAnswer": "C"
     },
     {
       "id": 9,
-      "question": "Co to jest transakcja w bazie danych?",
+      "question": "Do czego kompilowany jest kod .NET przed uruchomieniem?",
       "options": {
-        "A": "Pojedyncze zapytanie SQL",
-        "B": "Logiczna jednostka pracy składająca się z jednej lub więcej operacji",
-        "C": "Proces tworzenia kopii zapasowej",
-        "D": "Procedura składowana"
+        "A": "Bezpośrednio do kodu maszynowego",
+        "B": "Do IL (Intermediate Language)",
+        "C": "Do JavaScript",
+        "D": "Do Python bytecode"
       },
       "correctAnswer": "B"
     },
     {
       "id": 10,
-      "question": "Który poziom izolacji transakcji zapobiega wszystkim anomaliom odczytu?",
+      "question": "Które z poniższych jest miarą oceny algorytmów?",
       "options": {
-        "A": "READ UNCOMMITTED",
-        "B": "READ COMMITTED",
-        "C": "REPEATABLE READ",
-        "D": "SERIALIZABLE"
+        "A": "Tylko szybkość wykonania",
+        "B": "Complexity, Memory, Maintenance",
+        "C": "Tylko zużycie pamięci",
+        "D": "Tylko liczba linii kodu"
       },
-      "correctAnswer": "D"
+      "correctAnswer": "B"
+    },
+    {
+      "id": 11,
+      "question": "Co oznacza wysoka kohezja w kontekście jakości kodu?",
+      "options": {
+        "A": "Moduły są silnie powiązane między sobą",
+        "B": "Elementy w jednym module są ze sobą logicznie powiązane",
+        "C": "Kod ma dużo komentarzy",
+        "D": "Aplikacja działa szybko"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 12,
+      "question": "Co to jest coupling (sprzężenie) w kontekście architektury oprogramowania?",
+      "options": {
+        "A": "Miara powiązania między różnymi modułami",
+        "B": "Liczba linii kodu w module",
+        "C": "Szybkość działania aplikacji",
+        "D": "Liczba testów jednostkowych"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 13,
+      "question": "Co oznacza skrót DRY?",
+      "options": {
+        "A": "Do Repeat Yourself",
+        "B": "Don't Repeat Yourself",
+        "C": "Don't Run Yesterday",
+        "D": "Do Really Yield"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 14,
+      "question": "Co oznacza zasada YAGNI?",
+      "options": {
+        "A": "You Always Get New Ideas",
+        "B": "You Aren't Gonna Need It",
+        "C": "You Are Great Now Indeed",
+        "D": "Yet Another Good New Implementation"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 15,
+      "question": "Która z zasad SOLID oznacza 'Single Responsibility Principle'?",
+      "options": {
+        "A": "Klasa powinna mieć wiele odpowiedzialności",
+        "B": "Klasa powinna mieć tylko jeden powód do zmiany",
+        "C": "Klasa powinna być zawsze publiczna",
+        "D": "Klasa powinna dziedziczyć z klasy bazowej"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 16,
+      "question": "Jak wygląda piramida testów od podstawy do szczytu?",
+      "options": {
+        "A": "Testy akceptacyjne → Unit testy → Testy integracyjne",
+        "B": "Unit testy → Testy integracyjne → Testy systemowe → Testy akceptacyjne",
+        "C": "Testy systemowe → Unit testy → Testy akceptacyjne",
+        "D": "Tylko unit testy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 17,
+      "question": "Czym są testy jednostkowe?",
+      "options": {
+        "A": "Testy całego systemu od początku do końca",
+        "B": "Automatyczne testy weryfikujące najmniejsze części systemu w izolacji",
+        "C": "Testy interfejsu użytkownika",
+        "D": "Testy wydajności"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 18,
+      "question": "Czym charakteryzują się testy biało-skrzynkowe?",
+      "options": {
+        "A": "Tester nie zna struktury kodu",
+        "B": "Tester ma dostęp do wewnętrznej struktury i kodu systemu",
+        "C": "Testują tylko interfejs użytkownika",
+        "D": "Są zawsze automatyczne"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 19,
+      "question": "Co oznacza metoda AAA w pisaniu testów?",
+      "options": {
+        "A": "Act-Assert-Arrange",
+        "B": "Arrange-Act-Assert",
+        "C": "Assert-Arrange-Act",
+        "D": "All-And-Any"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 20,
+      "question": "Czym są wyrażenia lambda w C#?",
+      "options": {
+        "A": "Typ danych do przechowywania liczb",
+        "B": "Zwięzły sposób reprezentowania anonimowych metod",
+        "C": "Składnia do definiowania klas",
+        "D": "Sposób na tworzenie interfejsów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 21,
+      "question": "Jaka jest różnica między Action a Func w C#?",
+      "options": {
+        "A": "Action zwraca wartość, Func nie",
+        "B": "Func zwraca wartość, Action nie (void)",
+        "C": "Nie ma różnicy",
+        "D": "Action jest szybszy od Func"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 22,
+      "question": "Która z poniższych cech charakteryzuje architekturę REST?",
+      "options": {
+        "A": "Stanowość (stateful)",
+        "B": "Bezstanowość (stateless)",
+        "C": "Wymaga tylko metody GET",
+        "D": "Działa tylko z bazami danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 23,
+      "question": "Która metoda HTTP służy do pobierania danych?",
+      "options": {
+        "A": "POST",
+        "B": "PUT",
+        "C": "GET",
+        "D": "DELETE"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 24,
+      "question": "Co to jest content negotiation w architekturze REST?",
+      "options": {
+        "A": "Negocjowanie ceny usługi",
+        "B": "Proces ustalania formatu zwracanych danych na podstawie nagłówków HTTP",
+        "C": "Uwierzytelnianie użytkownika",
+        "D": "Szyfrowanie danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 25,
+      "question": "Czym są metody rozszerzeń w C#?",
+      "options": {
+        "A": "Metody które rozszerzają klasę poprzez dziedziczenie",
+        "B": "Statyczne metody które 'rozszerzają' istniejące typy o nowe funkcje",
+        "C": "Metody interfejsu",
+        "D": "Prywatne metody w klasie"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 26,
+      "question": "Jak stworzyć metodę rozszerzeń w C#?",
+      "options": {
+        "A": "Zwykła metoda w klasie",
+        "B": "Statyczna metoda w statycznej klasie z pierwszym parametrem 'this'",
+        "C": "Metoda w interfejsie",
+        "D": "Metoda abstrakcyjna"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 27,
+      "question": "Jaka jest różnica między podejściem deklaratywnym a imperatywnym?",
+      "options": {
+        "A": "Nie ma różnicy",
+        "B": "Deklaratywne definiuje CO ma się stać, imperatywne JAK ma się stać",
+        "C": "Imperatywne jest zawsze szybsze",
+        "D": "Deklaratywne działa tylko w JavaScript"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 28,
+      "question": "Co to jest kontener IoC (Inversion of Control)?",
+      "options": {
+        "A": "Rodzaj bazy danych",
+        "B": "Wzorzec projektowy odwracający tradycyjny przepływ sterowania",
+        "C": "Framework do testowania",
+        "D": "Sposób na szyfrowanie danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 29,
+      "question": "Jaka jest różnica między AddSingleton() a AddTransient() w .NET Core?",
+      "options": {
+        "A": "Singleton - jedna instancja na aplikację, Transient - nowa za każdym razem",
+        "B": "Transient - jedna instancja na aplikację, Singleton - nowa za każdym razem",
+        "C": "Nie ma różnicy",
+        "D": "Singleton jest szybszy"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 30,
+      "question": "Czym jest Repository Pattern?",
+      "options": {
+        "A": "Sposób przechowywania kodu w Git",
+        "B": "Warstwa pośrednicząca między logiką biznesową a bazą danych",
+        "C": "Interfejs użytkownika",
+        "D": "Metoda szyfrowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 31,
+      "question": "Jaka jest główna zaleta używania Entity Framework nad SqlConnection?",
+      "options": {
+        "A": "EF jest zawsze szybszy",
+        "B": "EF automatycznie mapuje klasy do tabel i jest łatwiejszy w utrzymaniu",
+        "C": "SqlConnection nie obsługuje parametrów",
+        "D": "EF nie wymaga bazy danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 32,
+      "question": "Jak zabezpieczyć się przed atakiem SQL Injection?",
+      "options": {
+        "A": "Używać tylko metody GET",
+        "B": "Używać parametrów zapytań zamiast konkatenacji stringów",
+        "C": "Nie używać bazy danych",
+        "D": "Używać tylko NoSQL"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 33,
+      "question": "Jaka jest różnica między programowaniem równoległym a asynchronicznym?",
+      "options": {
+        "A": "Nie ma różnicy",
+        "B": "Równoległe wykorzystuje wiele rdzeni CPU, asynchroniczne pozwala na nieblokujące operacje I/O",
+        "C": "Asynchroniczne jest zawsze szybsze",
+        "D": "Równoległe działa tylko na Windows"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 34,
+      "question": "Do czego służą słowa kluczowe async i await w C#?",
+      "options": {
+        "A": "Do tworzenia wątków",
+        "B": "Do asynchronicznego wykonywania operacji bez blokowania głównego wątku",
+        "C": "Do zarządzania pamięcią",
+        "D": "Do obsługi wyjątków"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 35,
+      "question": "Czym jest Task w .NET?",
+      "options": {
+        "A": "Typ danych liczbowych",
+        "B": "Reprezentuje operację która może być wykonywana asynchronicznie",
+        "C": "Interfejs użytkownika",
+        "D": "Sposób połączenia z bazą danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 36,
+      "question": "Czym jest transakcja w kontekście baz danych?",
+      "options": {
+        "A": "Pojedyncze zapytanie SQL",
+        "B": "Sekwencja operacji wykonywana jako jedna jednostka logiczna",
+        "C": "Połączenie z bazą danych",
+        "D": "Kopia zapasowa bazy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 37,
+      "question": "Czym jest LINQ w C#?",
+      "options": {
+        "A": "Typ danych",
+        "B": "Language Integrated Query - technologie do wykonywania zapytań",
+        "C": "Framework webowy",
+        "D": "Baza danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 38,
+      "question": "Jaka jest różnica między podejściem 'code first' a 'database first' w EF?",
+      "options": {
+        "A": "Code first - najpierw klasy, potem baza; Database first - najpierw baza, potem klasy",
+        "B": "Database first jest zawsze lepszy",
+        "C": "Nie ma różnicy",
+        "D": "Code first działa tylko z SQL Server"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 39,
+      "question": "Czym jest problem 'lost update'?",
+      "options": {
+        "A": "Utrata połączenia z bazą",
+        "B": "Dwie transakcje odczytują tę samą wartość i obie ją aktualizują - jedna nadpisuje drugą",
+        "C": "Błąd w kodzie SQL",
+        "D": "Wolne działanie bazy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 40,
+      "question": "Czym jest blokowanie optymistyczne?",
+      "options": {
+        "A": "Blokada natychmiast po odczycie",
+        "B": "Strategia pozwalająca na jednoczesne przetwarzanie ale sprawdzająca konflikt przed zapisem",
+        "C": "Sposób na przyspieszenie bazy",
+        "D": "Rodzaj indeksu w bazie"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 41,
+      "question": "Czym jest antywzorzec 'Big Ball of Mud'?",
+      "options": {
+        "A": "Dobry wzorzec architektoniczny",
+        "B": "Chaotyczna, nieuporządkowana struktura kodu bez podziału na moduły",
+        "C": "Sposób organizacji plików",
+        "D": "Framework .NET"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 42,
+      "question": "Czym jest wzorzec Unit of Work?",
+      "options": {
+        "A": "Sposób na testowanie kodu",
+        "B": "Wzorzec zarządzający transakcjami - śledzi zmiany i zapewnia spójność",
+        "C": "Interfejs użytkownika",
+        "D": "Protokół sieciowy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 43,
+      "question": "Do czego służy CancellationToken?",
+      "options": {
+        "A": "Do anulowania długotrwałych zadań i poprawy responsywności",
+        "B": "Do autoryzacji użytkowników",
+        "C": "Do łączenia z bazą danych",
+        "D": "Do szyfrowania danych"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 44,
+      "question": "Czym jest middleware w ASP.NET Core?",
+      "options": {
+        "A": "Baza danych",
+        "B": "Komponent pośredniczący w potoku żądań/odpowiedzi HTTP",
+        "C": "Framework testowy",
+        "D": "Język programowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 45,
+      "question": "Jaka jest różnica między uwierzytelnianiem a autoryzacją?",
+      "options": {
+        "A": "Nie ma różnicy",
+        "B": "Uwierzytelnianie sprawdza kim jesteś, autoryzacja do czego masz dostęp",
+        "C": "Autoryzacja jest ważniejsza",
+        "D": "Uwierzytelnianie działa tylko z bazami danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 46,
+      "question": "Z czego składa się token JWT?",
+      "options": {
+        "A": "Header, Payload, Signature",
+        "B": "Tylko dane użytkownika",
+        "C": "Username i password",
+        "D": "Tylko podpis cyfrowy"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 47,
+      "question": "Czym są obiekty DTO (Data Transfer Object)?",
+      "options": {
+        "A": "Obiekty z logiką biznesową",
+        "B": "Obiekty służące do przenoszenia danych między warstwami bez logiki",
+        "C": "Interfejsy użytkownika",
+        "D": "Połączenia z bazą danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 48,
+      "question": "Jaka jest główna różnica między aplikacjami MPA a SPA?",
+      "options": {
+        "A": "MPA używa JavaScript, SPA nie",
+        "B": "MPA ładuje nową stronę przy każdej akcji, SPA aktualizuje zawartość dynamicznie",
+        "C": "SPA jest zawsze wolniejsze",
+        "D": "Nie ma różnicy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 49,
+      "question": "Czym jest Blazor?",
+      "options": {
+        "A": "Baza danych",
+        "B": "Framework do tworzenia aplikacji webowych w C#",
+        "C": "Język programowania",
+        "D": "System operacyjny"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 50,
+      "question": "Czym jest mock w kontekście testowania?",
+      "options": {
+        "A": "Prawdziwy obiekt z bazy danych",
+        "B": "Obiekt testowy symulujący zachowanie prawdziwego obiektu",
+        "C": "Framework testowy",
+        "D": "Interfejs użytkownika do testów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 51,
+      "question": "Czym jest fake w kontekście obiektów testowych?",
+      "options": {
+        "A": "Obiekt z prawdziwą implementacją produkcyjną",
+        "B": "Obiekt testowy z prostą, ale działającą implementacją nieprzeznaczony do produkcji",
+        "C": "Obiekt zwracający tylko null",
+        "D": "Obiekt do testowania interfejsu użytkownika"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 52,
+      "question": "Czym różni się stub od mock w testowaniu?",
+      "options": {
+        "A": "Stub zwraca wcześniej ustalone wartości, mock dodatkowo sprawdza wywołania",
+        "B": "Mock jest szybszy od stub",
+        "C": "Nie ma różnicy",
+        "D": "Stub działa tylko z bazami danych"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 53,
+      "question": "Do czego służy dummy object w testach?",
+      "options": {
+        "A": "Do sprawdzania wydajności",
+        "B": "Jest przekazywany jako argument ale nie jest używany podczas testu",
+        "C": "Do naśladowania bazy danych",
+        "D": "Do testowania interfejsu użytkownika"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 54,
+      "question": "Co oznacza 'spy' w kontekście testowania?",
+      "options": {
+        "A": "Obiekt do monitorowania bezpieczeństwa",
+        "B": "Obiekt testowy rejestrujący wywołania swoich metod i argumenty",
+        "C": "Szybki test jednostkowy",
+        "D": "Framework do testowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 55,
+      "question": "Czym są testy integracyjne?",
+      "options": {
+        "A": "Testy tylko interfejsu użytkownika",
+        "B": "Testy sprawdzające współdziałanie różnych komponentów systemu",
+        "C": "Testy wydajności aplikacji",
+        "D": "Automatyczne testy bezpieczeństwa"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 56,
+      "question": "Jaka jest różnica między Blazor Server Side a Blazor Client Side?",
+      "options": {
+        "A": "Server Side wykonuje kod na serwerze, Client Side w przeglądarce",
+        "B": "Client Side jest zawsze szybszy",
+        "C": "Nie ma różnicy w działaniu",
+        "D": "Server Side nie wymaga internetu"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 57,
+      "question": "Czym jest WebAssembly?",
+      "options": {
+        "A": "Język programowania",
+        "B": "Binarny format uruchamialny w przeglądarce, bardzo szybki",
+        "C": "Framework .NET",
+        "D": "Baza danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 58,
+      "question": "Czym różni się walidacja serwerowa od klienta?",
+      "options": {
+        "A": "Klientowa jest bezpieczniejsza",
+        "B": "Serwerowa jest na backendzie i bezpieczna, klientowa w przeglądarce i można ją obejść",
+        "C": "Nie ma różnicy",
+        "D": "Serwerowa działa tylko z JavaScript"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 59,
+      "question": "Czym jest Razor w ASP.NET?",
+      "options": {
+        "A": "Baza danych",
+        "B": "Silnik widoków pozwalający generować dynamiczny HTML z użyciem C#",
+        "C": "Framework testowy",
+        "D": "Protokół komunikacyjny"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 60,
+      "question": "Do czego służy ViewBag w ASP.NET MVC?",
+      "options": {
+        "A": "Do przechowywania plików",
+        "B": "Dynamiczny obiekt do przekazywania danych z kontrolera do widoku",
+        "C": "Do łączenia z bazą danych",
+        "D": "Do zarządzania sesjami"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 61,
+      "question": "Czym są widoki silnie typowane w ASP.NET MVC?",
+      "options": {
+        "A": "Widoki bez żadnego modelu",
+        "B": "Widoki korzystające z określonego modelu danych dając bezpieczeństwo typów",
+        "C": "Widoki działające tylko na serwerze",
+        "D": "Widoki tylko do odczytu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 62,
+      "question": "Jaka jest różnica między klientem cienkim a grubym?",
+      "options": {
+        "A": "Cienki ma więcej funkcji",
+        "B": "Cienki - logika na serwerze, gruby - logika na kliencie",
+        "C": "Gruby jest zawsze szybszy",
+        "D": "Nie ma różnicy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 63,
+      "question": "Czym jest ASP.NET MVC?",
+      "options": {
+        "A": "Baza danych",
+        "B": "Framework do budowy aplikacji webowych w architekturze Model-View-Controller",
+        "C": "Język programowania",
+        "D": "System operacyjny"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 64,
+      "question": "Czym różni się szyfrowanie od kodowania?",
+      "options": {
+        "A": "Kodowanie chroni przed odczytem, szyfrowanie nie",
+        "B": "Szyfrowanie przekształca dane na nieczytelne bez klucza, kodowanie według publicznego schematu",
+        "C": "Nie ma różnicy",
+        "D": "Szyfrowanie jest zawsze szybsze"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 65,
+      "question": "Do czego służą access token i refresh token?",
+      "options": {
+        "A": "Access token do autoryzacji, refresh token do uzyskiwania nowych access tokenów",
+        "B": "Oba służą do tego samego",
+        "C": "Refresh token do autoryzacji, access token do odświeżania",
+        "D": "Tylko do przechowywania haseł"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 66,
+      "question": "Jak działa uwierzytelnianie wykorzystujące session ID?",
+      "options": {
+        "A": "Hasło jest wysyłane przy każdym żądaniu",
+        "B": "Po zalogowaniu serwer tworzy sesję i zwraca unikalny identyfikator",
+        "C": "Dane są przechowywane tylko w przeglądarce",
+        "D": "Nie wymaga logowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 67,
+      "question": "Jakie są główne zalety tokenów JWT?",
+      "options": {
+        "A": "Tylko bezpieczeństwo",
+        "B": "Bezstanowość, interoperacyjność, skalowalność",
+        "C": "Tylko szybkość",
+        "D": "Działają tylko z .NET"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 68,
+      "question": "Czym jest architektura 'horizontal slice' vs 'vertical slice'?",
+      "options": {
+        "A": "Horizontal - podział na warstwy, Vertical - podział na funkcjonalne segmenty",
+        "B": "Vertical jest zawsze lepszy",
+        "C": "Nie ma różnicy",
+        "D": "Horizontal działa tylko z bazami danych"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 69,
+      "question": "Czym jest warstwa DAL (Data Access Layer)?",
+      "options": {
+        "A": "Warstwa z logiką biznesową",
+        "B": "Warstwa odpowiedzialna za komunikację z bazą danych",
+        "C": "Interfejs użytkownika",
+        "D": "System logowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 70,
+      "question": "Jaka jest różnica między operacjami 'CPU bound' a 'IO bound'?",
+      "options": {
+        "A": "CPU bound wykorzystuje procesor, IO bound zależy od wejścia/wyjścia",
+        "B": "IO bound jest zawsze szybszy",
+        "C": "Nie ma różnicy",
+        "D": "CPU bound działa tylko na Windows"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 71,
+      "question": "Czym jest pula wątków (thread pool)?",
+      "options": {
+        "A": "Sposób przechowywania danych",
+        "B": "Kolekcja pre-inicjowanych wątków zarządzanych przez środowisko uruchomieniowe",
+        "C": "Framework do testowania",
+        "D": "Interfejs użytkownika"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 72,
+      "question": "Jaka jest różnica między procesem a wątkiem?",
+      "options": {
+        "A": "Proces działa w odizolowanej pamięci, wątek współdzieli zasoby procesu",
+        "B": "Wątek jest zawsze szybszy",
+        "C": "Nie ma różnicy",
+        "D": "Proces może mieć tylko jeden wątek"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 73,
+      "question": "Dlaczego programowanie asynchroniczne jest ważne w aplikacjach webowych?",
+      "options": {
+        "A": "Tylko dla bezpieczeństwa",
+        "B": "Poprawia skalowalność i responsywność umożliwiając obsługę wielu żądań jednocześnie",
+        "C": "Działa tylko z bazami danych",
+        "D": "Jest wymagane przez prawo"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 74,
+      "question": "Jakie są wady ręcznego zarządzania wątkami?",
+      "options": {
+        "A": "Tylko zalety",
+        "B": "Większa złożoność, łatwo o błędy synchronizacji, trudniej zarządzać zasobami",
+        "C": "Tylko szybkość",
+        "D": "Brak kontroli"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 75,
+      "question": "Jak używać klas SqlConnection i SqlCommand bezpiecznie?",
+      "options": {
+        "A": "Zawsze trzymać połączenia otwarte",
+        "B": "Używać bloku 'using' i parametrów zamiast konkatenacji stringów",
+        "C": "Nigdy nie zamykać połączeń",
+        "D": "Używać tylko stringów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 76,
+      "question": "Czym są typy anonimowe w C#?",
+      "options": {
+        "A": "Typy bez nazwy dla prywatnych danych",
+        "B": "Pozwalają kapsułkować zestaw właściwości bez definiowania typu wprost",
+        "C": "Typy tylko do baz danych",
+        "D": "Typy dziedziczące po Object"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 77,
+      "question": "Jaka jest różnica między query syntax a lambda syntax w LINQ?",
+      "options": {
+        "A": "Query syntax podobna do SQL, lambda bardziej elastyczna",
+        "B": "Lambda syntax jest zawsze wolniejsza",
+        "C": "Nie ma różnicy w działaniu",
+        "D": "Query syntax działa tylko z bazami"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 78,
+      "question": "Kiedy stosować podejście 'code first' vs 'database first' w EF?",
+      "options": {
+        "A": "Code first dla nowych projektów, Database first dla istniejących baz",
+        "B": "Database first jest zawsze lepszy",
+        "C": "Code first tylko dla małych projektów",
+        "D": "Nie ma różnicy"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 79,
+      "question": "Czym jest problem 'inconsistent reads'?",
+      "options": {
+        "A": "Błąd w kodzie SQL",
+        "B": "Jedna transakcja czyta dane modyfikowane jednocześnie przez inną",
+        "C": "Wolne działanie bazy",
+        "D": "Brak indeksów w bazie"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 80,
+      "question": "Jak implementować blokowanie optymistyczne?",
+      "options": {
+        "A": "Blokować tabele na stałe",
+        "B": "Dodać pole wersji, sprawdzać przed zapisem, rzucić wyjątek przy konflikcie",
+        "C": "Nie używać transakcji",
+        "D": "Używać tylko SELECT"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 81,
+      "question": "Jak działa atrybut [ConcurrencyCheck] w Entity Framework?",
+      "options": {
+        "A": "Sprawdza tylko szybkość zapytań",
+        "B": "Oznacza właściwość jako token współbieżności uwzględniany w WHERE przy UPDATE/DELETE",
+        "C": "Tylko do walidacji danych",
+        "D": "Działa tylko z SQL Server"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 82,
+      "question": "Czym różni się blokowanie pesymistyczne od optymistycznego?",
+      "options": {
+        "A": "Pesymistyczne blokuje natychmiast, optymistyczne sprawdza konflikt przed zapisem",
+        "B": "Optymistyczne jest zawsze wolniejsze",
+        "C": "Nie ma różnicy",
+        "D": "Pesymistyczne działa tylko z NoSQL"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 83,
+      "question": "Jakie są trzy ogólne zestawy odpowiedzialności w każdej aplikacji?",
+      "options": {
+        "A": "Tylko logika biznesowa",
+        "B": "Domain Concerns, Infrastructure Concerns, UI Concerns",
+        "C": "Tylko baza danych i interfejs",
+        "D": "Frontend, Backend, Database"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 84,
+      "question": "Czym jest podejście 'transactional script'?",
+      "options": {
+        "A": "Używanie tylko transakcji w bazie",
+        "B": "Organizowanie logiki biznesowej w proste, liniowe skrypty bez złożonych modeli",
+        "C": "Framework do zarządzania bazą",
+        "D": "Sposób testowania aplikacji"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 85,
+      "question": "Czym jest model domenowy?",
+      "options": {
+        "A": "Model bazy danych",
+        "B": "Koncepcyjna reprezentacja struktur biznesowych z logiką skupioną w modelach",
+        "C": "Interfejs użytkownika",
+        "D": "Protokół komunikacyjny"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 86,
+      "question": "Jaka jest główna zaleta modelu domenowego nad transactional script?",
+      "options": {
+        "A": "Prostota implementacji",
+        "B": "Skalowalność i spójność logiki biznesowej",
+        "C": "Szybkość działania",
+        "D": "Mniej kodu do napisania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 87,
+      "question": "Czym jest connascence w kontekście jakości kodu?",
+      "options": {
+        "A": "Sposób testowania",
+        "B": "Powiązanie - gdy zmiana w jednym komponencie wymaga zmiany w drugim",
+        "C": "Framework do budowy aplikacji",
+        "D": "Miara wydajności"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 88,
+      "question": "Czym jest miara abstrakcji w architekturze oprogramowania?",
+      "options": {
+        "A": "Liczba klas w projekcie",
+        "B": "Stosunek artefaktów abstrakcyjnych do konkretnych",
+        "C": "Szybkość działania aplikacji",
+        "D": "Liczba interfejsów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 89,
+      "question": "Co oznacza zasada Open/Closed Principle z SOLID?",
+      "options": {
+        "A": "Klasy powinny być zawsze publiczne",
+        "B": "Kod powinien być otwarty na rozbudowę, zamknięty na modyfikację",
+        "C": "Wszystkie metody powinny być otwarte",
+        "D": "Bazy danych powinny być otwarte"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 90,
+      "question": "Co oznacza Liskov Substitution Principle?",
+      "options": {
+        "A": "Klasy powinny być małe",
+        "B": "Klasy potomne powinny dać się użyć zamiast klasy bazowej bez zmiany zachowania",
+        "C": "Wszystkie klasy powinny implementować interfejsy",
+        "D": "Klasy powinny mieć tylko jedną metodę"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 91,
+      "question": "Co oznacza Interface Segregation Principle?",
+      "options": {
+        "A": "Jeden interfejs dla wszystkich klas",
+        "B": "Lepiej mieć wiele wyspecjalizowanych interfejsów niż jeden ogólny",
+        "C": "Interfejsy powinny być prywatne",
+        "D": "Nie używać interfejsów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 92,
+      "question": "Co oznacza Dependency Inversion Principle?",
+      "options": {
+        "A": "Używać tylko klas konkretnych",
+        "B": "Zależności powinny być wyrażone przez abstrakcje, nie konkretne klasy",
+        "C": "Odwrócić kolejność dziedziczenia",
+        "D": "Nie używać zależności"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 93,
+      "question": "Co to jest AddScoped() w kontekście DI w .NET Core?",
+      "options": {
+        "A": "Jedna instancja na całą aplikację",
+        "B": "Nowa instancja na każde żądanie HTTP",
+        "C": "Nowa instancja za każdym użyciem",
+        "D": "Tylko dla testów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 94,
+      "question": "Jakie są główne inne podejścia do budowy aplikacji webowych niż REST?",
+      "options": {
+        "A": "Tylko SOAP",
+        "B": "RPC, CORBA, SOAP, GraphQL",
+        "C": "Tylko GraphQL",
+        "D": "Tylko protokoły binarne"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 95,
+      "question": "W jaki sposób można przekazywać dane do serwera w REST?",
+      "options": {
+        "A": "Tylko przez URL",
+        "B": "Segment URL, Request body, Query string",
+        "C": "Tylko przez cookies",
+        "D": "Tylko przez headers"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 96,
+      "question": "Czym jest minimal API w ASP.NET Core?",
+      "options": {
+        "A": "API tylko do odczytu",
+        "B": "Uproszczone API bez kontrolerów - tylko funkcje obsługujące endpointy",
+        "C": "API tylko dla małych aplikacji",
+        "D": "API bez autoryzacji"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 97,
+      "question": "Co oznacza rutowanie (routing) w ASP.NET Core?",
+      "options": {
+        "A": "Kierowanie ruchu sieciowego",
+        "B": "Określanie ścieżek żądań do odpowiednich akcji w kontrolerach",
+        "C": "Bezpieczeństwo aplikacji",
+        "D": "Optymalizacja bazy danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 98,
+      "question": "Która metoda HTTP służy do pełnej aktualizacji zasobu?",
+      "options": {
+        "A": "GET",
+        "B": "POST",
+        "C": "PUT",
+        "D": "PATCH"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 99,
+      "question": "Jak projektować końcówki zgodne z REST?",
+      "options": {
+        "A": "Używać czasowników w URL",
+        "B": "Używać rzeczowników w liczbie mnogiej, standardowe kody błędów",
+        "C": "Tylko metoda GET",
+        "D": "Przypadkowe nazwy URL"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 100,
+      "question": "Czym jest cykl życia zależności w kontenerze IoC?",
+      "options": {
+        "A": "Czas kompilacji aplikacji",
+        "B": "Okres przez jaki instancja usługi jest przechowywana przez kontener",
+        "C": "Szybkość działania aplikacji",
+        "D": "Rozmiar aplikacji w pamięci"
+      },
+      "correctAnswer": "B"
     }
   ]
 }

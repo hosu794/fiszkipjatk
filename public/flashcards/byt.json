@@ -395,6 +395,138 @@
         "D": "Tylko sytuacje początkowe"
       },
       "correctAnswer": "C"
+    },
+    {
+      "id": 36,
+      "question": "Który z poniższych modeli rozwoju oprogramowania charakteryzuje się liniowym, sekwencyjnym procesem?",
+      "options": {
+        "A": "Model spiralny",
+        "B": "Model kaskadowy",
+        "C": "Model iteracyjny",
+        "D": "Model zwinny"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 37,
+      "question": "Jaką główną zaletę ma model spiralny w porównaniu do modelu kaskadowego?",
+      "options": {
+        "A": "Jest prostszy w implementacji",
+        "B": "Wymaga mniej dokumentacji",
+        "C": "Lepiej zarządza ryzykiem projektu",
+        "D": "Jest tańszy w realizacji"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 38,
+      "question": "Co oznacza skrót COCOMO w kontekście szacowania kosztów oprogramowania?",
+      "options": {
+        "A": "Computer Cost Model",
+        "B": "Constructive Cost Model",
+        "C": "Code Complexity Model",
+        "D": "Component Cost Management"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 39,
+      "question": "Które z poniższych jest przykładem wymagania funkcjonalnego?",
+      "options": {
+        "A": "System musi być dostępny 99,9% czasu",
+        "B": "System musi obsłużyć 1000 równoczesnych użytkowników",
+        "C": "System musi umożliwić logowanie użytkowników",
+        "D": "System musi działać na systemie Windows"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 40,
+      "question": "Które z poniższych jest przykładem wymagania niefunkcjonalnego?",
+      "options": {
+        "A": "Możliwość dodawania nowych produktów",
+        "B": "Generowanie raportów sprzedaży",
+        "C": "Czas odpowiedzi systemu poniżej 2 sekund",
+        "D": "Funkcja wyszukiwania produktów"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 41,
+      "question": "Co oznacza zasada wysokiej kohezji w projektowaniu modułów?",
+      "options": {
+        "A": "Moduły powinny być ze sobą silnie powiązane",
+        "B": "Elementy w module powinny być ze sobą logicznie powiązane",
+        "C": "Moduły powinny mieć wiele interfejsów",
+        "D": "Moduły powinny być jak największe"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 42,
+      "question": "Co oznacza niskie sprzężenie między modułami?",
+      "options": {
+        "A": "Moduły są silnie zależne od siebie",
+        "B": "Moduły mają minimalne zależności między sobą",
+        "C": "Moduły używają tych samych danych",
+        "D": "Moduły są identyczne"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 43,
+      "question": "Które z poniższych właściwości ACID odnosi się do trwałości zmian?",
+      "options": {
+        "A": "Atomicity",
+        "B": "Consistency",
+        "C": "Isolation",
+        "D": "Durability"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 44,
+      "question": "Co oznacza właściwość Atomicity w transakcjach bazodanowych?",
+      "options": {
+        "A": "Transakcja jest izolowana od innych",
+        "B": "Transakcja zachowuje spójność danych",
+        "C": "Transakcja jest wykonana w całości lub wcale",
+        "D": "Zmiany są trwałe po zatwierdzeniu"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 45,
+      "question": "Jaki rodzaj konserwacji oprogramowania dotyczy usuwania błędów?",
+      "options": {
+        "A": "Konserwacja adaptacyjna",
+        "B": "Konserwacja korygująca",
+        "C": "Konserwacja doskonalące",
+        "D": "Konserwacja prewencyjna"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 46,
+      "question": "Konserwacja adaptacyjna oprogramowania to:",
+      "options": {
+        "A": "Usuwanie błędów z systemu",
+        "B": "Poprawa wydajności systemu",
+        "C": "Dostosowanie do nowych wymagań środowiska",
+        "D": "Zapobieganie przyszłym problemom"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 47,
+      "question": "Jaki procent całkowitego kosztu cyklu życia oprogramowania może stanowić konserwacja?",
+      "options": {
+        "A": "20-30%",
+        "B": "40-50%",
+        "C": "60-80%",
+        "D": "90-95%"
+      },
+      "correctAnswer": "C"
     }
   ]
 }

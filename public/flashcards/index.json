@@ -8,6 +8,15 @@
       "difficulty": "średni",
       "totalQuestions": 15,
       "tags": ["inżynieria oprogramowania", "metodyki", "SDLC", "zarządzanie projektami"]
+    },
+    {
+      "id": "apbd",
+      "filename": "apbd.json",
+      "name": "APBD",
+      "subject": "APBD",
+      "difficulty": "średni",
+      "totalQuestions": 100,
+      "tags": ["bazy danych", "SQL", "projektowanie", "administracja"]
     }
   ]
 }
