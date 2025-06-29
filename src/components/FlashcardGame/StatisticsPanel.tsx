@@ -121,7 +121,7 @@ export const StatisticsPanel: React.FC<StatisticsPanelProps> = ({
           }}>
             {userAnswers
               .filter(answer => !answer.isCorrect)
-              .map((answer, index) => (
+              .map((answer: UserAnswer) => (
                 <div
                   key={answer.questionId}
                   style={{
@@ -141,36 +141,41 @@ export const StatisticsPanel: React.FC<StatisticsPanelProps> = ({
                     gap: '4px',
                     marginBottom: '8px'
                   }}>
-                    {(['A', 'B', 'C', 'D'] as const).map((option) => (
-                      <div
-                        key={option}
-                        style={{
-                          padding: '4px 8px',
-                          borderRadius: '4px',
-                          fontSize: '12px',
-                          background: 
-                            option === answer.correctAnswer 
-                              ? 'rgba(16, 185, 129, 0.3)' 
-                              : option === answer.selectedAnswer 
-                                ? 'rgba(239, 68, 68, 0.3)'
-                                : 'rgba(255, 255, 255, 0.2)',
-                          border: 
-                            option === answer.correctAnswer 
-                              ? '1px solid rgba(16, 185, 129, 0.5)' 
-                              : option === answer.selectedAnswer 
-                                ? '1px solid rgba(239, 68, 68, 0.5)'
-                                : '1px solid rgba(255, 255, 255, 0.3)',
-                          fontWeight: 
-                            option === answer.correctAnswer || option === answer.selectedAnswer 
-                              ? 'bold' 
-                              : 'normal'
-                        }}
-                      >
-                        {option}) {answer.options[option]}
-                        {option === answer.correctAnswer && ' ✓'}
-                        {option === answer.selectedAnswer && option !== answer.correctAnswer && ' ✗'}
-                      </div>
-                    ))}
+                      {(['A', 'B', 'C', 'D'] as const).map((option) => {
+                          // Bezpieczne odczytanie opcji z type assertion
+                          const optionText = answer.options[option as keyof typeof answer.options];
+
+                          return (
+                              <div
+                                  key={option}
+                                  style={{
+                                      padding: '4px 8px',
+                                      borderRadius: '4px',
+                                      fontSize: '12px',
+                                      background:
+                                          option === answer.correctAnswer
+                                              ? 'rgba(16, 185, 129, 0.3)'
+                                              : option === answer.selectedAnswer
+                                                  ? 'rgba(239, 68, 68, 0.3)'
+                                                  : 'rgba(255, 255, 255, 0.2)',
+                                      border:
+                                          option === answer.correctAnswer
+                                              ? '1px solid rgba(16, 185, 129, 0.5)'
+                                              : option === answer.selectedAnswer
+                                                  ? '1px solid rgba(239, 68, 68, 0.5)'
+                                                  : '1px solid rgba(255, 255, 255, 0.3)',
+                                      fontWeight:
+                                          option === answer.correctAnswer || option === answer.selectedAnswer
+                                              ? 'bold'
+                                              : 'normal'
+                                  }}
+                              >
+                                  {option}) {optionText}
+                                  {option === answer.correctAnswer && ' ✓'}
+                                  {option === answer.selectedAnswer && option !== answer.correctAnswer && ' ✗'}
+                              </div>
+                          );
+                      })}
                   </div>
                 </div>
               ))}
