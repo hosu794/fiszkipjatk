@@ -104,14 +104,14 @@ export const StatisticsPanel: React.FC<StatisticsPanelProps> = ({
         </div>
       </div>
       
-      {userAnswers.length > 0 && (
+      {userAnswers.length >= 20 && userAnswers.filter(answer => !answer.isCorrect).length > 0 && (
         <div style={{
           marginBottom: '15px',
           padding: '15px',
           background: 'rgba(255, 255, 255, 0.1)',
           borderRadius: '8px'
         }}>
-          <h4 style={{ margin: '0 0 10px 0', fontSize: '16px' }}>Prawidłowe odpowiedzi:</h4>
+          <h4 style={{ margin: '0 0 10px 0', fontSize: '16px' }}>Błędne odpowiedzi - poprawne to:</h4>
           <div style={{
             maxHeight: '200px',
             overflowY: 'auto',
@@ -120,23 +120,23 @@ export const StatisticsPanel: React.FC<StatisticsPanelProps> = ({
             gap: '8px'
           }}>
             {userAnswers
-              .filter(answer => answer.isCorrect)
+              .filter(answer => !answer.isCorrect)
               .map((answer, index) => (
                 <div
                   key={answer.questionId}
                   style={{
-                    background: 'rgba(16, 185, 129, 0.2)',
+                    background: 'rgba(239, 68, 68, 0.2)',
                     padding: '8px 12px',
                     borderRadius: '6px',
                     fontSize: '14px',
-                    border: '1px solid rgba(16, 185, 129, 0.3)'
+                    border: '1px solid rgba(239, 68, 68, 0.3)'
                   }}
                 >
                   <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
-                    {index + 1}. {answer.question}
+                    {answer.question}
                   </div>
                   <div style={{ opacity: 0.9 }}>
-                    Odpowiedź: {answer.correctAnswer}) {answer.correctAnswerText}
+                    Poprawna odpowiedź: {answer.correctAnswer}) {answer.correctAnswerText}
                   </div>
                 </div>
               ))}

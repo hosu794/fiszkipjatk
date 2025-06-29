@@ -22,7 +22,6 @@ export const AnswerButton: React.FC<AnswerButtonProps> = ({
     if (!showResult) return 'answer-button';
     if (selected && isCorrect) return 'answer-button answer-correct';
     if (selected && !isCorrect) return 'answer-button answer-incorrect';
-    if (isCorrect) return 'answer-button answer-correct';
     return 'answer-button answer-disabled';
   };
 
