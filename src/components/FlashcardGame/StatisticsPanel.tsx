@@ -126,17 +126,51 @@ export const StatisticsPanel: React.FC<StatisticsPanelProps> = ({
                   key={answer.questionId}
                   style={{
                     background: 'rgba(239, 68, 68, 0.2)',
-                    padding: '8px 12px',
+                    padding: '12px',
                     borderRadius: '6px',
                     fontSize: '14px',
                     border: '1px solid rgba(239, 68, 68, 0.3)'
                   }}
                 >
-                  <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
+                  <div style={{ fontWeight: 'bold', marginBottom: '8px' }}>
                     {answer.question}
                   </div>
-                  <div style={{ opacity: 0.9 }}>
-                    Poprawna odpowiedź: {answer.correctAnswer}) {answer.correctAnswerText}
+                  
+                  <div style={{ 
+                    display: 'grid', 
+                    gap: '4px',
+                    marginBottom: '8px'
+                  }}>
+                    {(['A', 'B', 'C', 'D'] as const).map((option) => (
+                      <div
+                        key={option}
+                        style={{
+                          padding: '4px 8px',
+                          borderRadius: '4px',
+                          fontSize: '12px',
+                          background: 
+                            option === answer.correctAnswer 
+                              ? 'rgba(16, 185, 129, 0.3)' 
+                              : option === answer.selectedAnswer 
+                                ? 'rgba(239, 68, 68, 0.3)'
+                                : 'rgba(255, 255, 255, 0.2)',
+                          border: 
+                            option === answer.correctAnswer 
+                              ? '1px solid rgba(16, 185, 129, 0.5)' 
+                              : option === answer.selectedAnswer 
+                                ? '1px solid rgba(239, 68, 68, 0.5)'
+                                : '1px solid rgba(255, 255, 255, 0.3)',
+                          fontWeight: 
+                            option === answer.correctAnswer || option === answer.selectedAnswer 
+                              ? 'bold' 
+                              : 'normal'
+                        }}
+                      >
+                        {option}) {answer.options[option]}
+                        {option === answer.correctAnswer && ' ✓'}
+                        {option === answer.selectedAnswer && option !== answer.correctAnswer && ' ✗'}
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}

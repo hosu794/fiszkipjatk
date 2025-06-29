@@ -54,6 +54,7 @@ export type AnswerOption = 'A' | 'B' | 'C' | 'D';
 export interface UserAnswer {
   questionId: number;
   question: string;
+  options: QuestionOptions;
   selectedAnswer: AnswerOption;
   correctAnswer: AnswerOption;
   correctAnswerText: string;

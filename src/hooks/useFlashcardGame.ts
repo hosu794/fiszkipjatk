@@ -55,6 +55,7 @@ export const useFlashcardGame = (flashcardService: FlashcardService) => {
       const userAnswer: UserAnswer = {
         questionId: currentQuestion.id,
         question: currentQuestion.question,
+        options: currentQuestion.options,
         selectedAnswer: answer,
         correctAnswer: currentQuestion.correctAnswer,
         isCorrect: answer === currentQuestion.correctAnswer,

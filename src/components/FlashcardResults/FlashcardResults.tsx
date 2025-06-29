@@ -220,39 +220,69 @@ export const FlashcardResults: React.FC<FlashcardResultsProps> = ({
 
                 <div style={{
                   display: 'grid',
-                  gridTemplateColumns: '1fr 1fr',
-                  gap: '10px',
-                  fontSize: '0.9rem'
+                  gap: '8px',
+                  fontSize: '0.9rem',
+                  marginTop: '12px'
                 }}>
-                  <div>
-                    <span style={{
-                      fontWeight: 'bold',
-                      color: '#4a5568'
-                    }}>
-                      Twoja odpowiedź: 
-                    </span>
-                    <span style={{
-                      color: '#e53e3e',
-                      fontWeight: 'bold'
-                    }}>
-                      {answer.selectedAnswer}
-                    </span>
+                  <div style={{
+                    fontWeight: 'bold',
+                    color: '#4a5568',
+                    marginBottom: '8px'
+                  }}>
+                    Wszystkie opcje odpowiedzi:
                   </div>
-
-                  <div>
-                    <span style={{
-                      fontWeight: 'bold',
-                      color: '#4a5568'
-                    }}>
-                      Poprawna odpowiedź: 
-                    </span>
-                    <span style={{
-                      color: '#38a169',
-                      fontWeight: 'bold'
-                    }}>
-                      {answer.correctAnswer}) {answer.correctAnswerText}
-                    </span>
-                  </div>
+                  
+                  {(['A', 'B', 'C', 'D'] as const).map((option) => (
+                    <div
+                      key={option}
+                      style={{
+                        padding: '8px 12px',
+                        borderRadius: '6px',
+                        fontSize: '0.85rem',
+                        background: 
+                          option === answer.correctAnswer 
+                            ? '#f0fff4' 
+                            : option === answer.selectedAnswer 
+                              ? '#fff5f5'
+                              : '#f7fafc',
+                        border: 
+                          option === answer.correctAnswer 
+                            ? '2px solid #68d391' 
+                            : option === answer.selectedAnswer 
+                              ? '2px solid #fc8181'
+                              : '1px solid #e2e8f0',
+                        color: '#2d3748',
+                        fontWeight: 
+                          option === answer.correctAnswer || option === answer.selectedAnswer 
+                            ? 'bold' 
+                            : 'normal'
+                      }}
+                    >
+                      <span style={{
+                        color: option === answer.correctAnswer ? '#38a169' : option === answer.selectedAnswer ? '#e53e3e' : '#4a5568'
+                      }}>
+                        {option}) {answer.options[option]}
+                      </span>
+                      {option === answer.correctAnswer && (
+                        <span style={{
+                          marginLeft: '8px',
+                          color: '#38a169',
+                          fontWeight: 'bold'
+                        }}>
+                          ✓ POPRAWNA
+                        </span>
+                      )}
+                      {option === answer.selectedAnswer && option !== answer.correctAnswer && (
+                        <span style={{
+                          marginLeft: '8px',
+                          color: '#e53e3e',
+                          fontWeight: 'bold'
+                        }}>
+                          ✗ TWOJA
+                        </span>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
