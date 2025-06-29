@@ -11,93 +11,2436 @@
     "version": "1.0"
   },
   "questions": [
+      {
+        "id": 1,
+        "question": "Jaki jest rozmiar typu boolean w Javie?",
+        "options": {
+          "A": "8-bit",
+          "B": "16-bit",
+          "C": "32-bit",
+          "D": "Rozmiar nie jest określony"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 2,
+        "question": "Która klasa jest klasą opakowującą dla typu podstawowego int?",
+        "options": {
+          "A": "Int",
+          "B": "Integer",
+          "C": "IntegerWrapper",
+          "D": "Number"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 3,
+        "question": "Jaki jest zakres wartości typu byte w Javie?",
+        "options": {
+          "A": "0 do 255",
+          "B": "-127 do +127",
+          "C": "-128 do +127",
+          "D": "-256 do +256"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 4,
+        "question": "Która z poniższych składni definiuje metodę w Javie?",
+        "options": {
+          "A": "method nazwaMetody() { }",
+          "B": "returnType nazwaMetody( /* Parametry */ ) { }",
+          "C": "def nazwaMetody() { }",
+          "D": "function nazwaMetody() { }"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 5,
+        "question": "Jak tworzy się obiekt w Javie?",
+        "options": {
+          "A": "ClassName obj = ClassName();",
+          "B": "ClassName obj = create ClassName();",
+          "C": "ClassName obj = new ClassName();",
+          "D": "ClassName obj = make ClassName();"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 6,
+        "question": "Jaka jest domyślna wartość dla typu boolean?",
+        "options": {
+          "A": "true",
+          "B": "false",
+          "C": "0",
+          "D": "null"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 7,
+        "question": "Które słowo kluczowe służy do definiowania interfejsu w Javie?",
+        "options": {
+          "A": "class",
+          "B": "abstract",
+          "C": "interface",
+          "D": "implements"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 8,
+        "question": "Które słowo kluczowe używa się do implementacji interfejsu?",
+        "options": {
+          "A": "extends",
+          "B": "implements",
+          "C": "inherits",
+          "D": "uses"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 9,
+        "question": "Składnia pętli for w Javie to:",
+        "options": {
+          "A": "for(initialization; condition; increment)",
+          "B": "for(initialization; Boolean-expression; step)",
+          "C": "for(start; end; step)",
+          "D": "for(variable in range)"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 10,
+        "question": "Jaka instrukcja służy do łapania wyjątków w Javie?",
+        "options": {
+          "A": "catch",
+          "B": "handle",
+          "C": "except",
+          "D": "trap"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 11,
+        "question": "Z jakiej klasy dziedziczą wszystkie wyjątki w Javie?",
+        "options": {
+          "A": "Error",
+          "B": "Exception",
+          "C": "RuntimeException",
+          "D": "Throwable"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 12,
+        "question": "Który blok w try-catch-finally wykonuje się zawsze?",
+        "options": {
+          "A": "try",
+          "B": "catch",
+          "C": "finally",
+          "D": "żaden z powyższych"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 13,
+        "question": "Jaka jest domyślna wartość dla typu int?",
+        "options": {
+          "A": "null",
+          "B": "0",
+          "C": "1",
+          "D": "-1"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 14,
+        "question": "Które z poniższych to komentarz wieloliniowy w Javie?",
+        "options": {
+          "A": "// komentarz",
+          "B": "/* komentarz */",
+          "C": "# komentarz",
+          "D": "<!-- komentarz -->"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 15,
+        "question": "Jakie słowo kluczowe używa się do rzucania wyjątku?",
+        "options": {
+          "A": "throw",
+          "B": "throws",
+          "C": "raise",
+          "D": "exception"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 16,
+        "question": "Jaka jest składnia instrukcji switch w Javie?",
+        "options": {
+          "A": "switch(variable) { case value: }",
+          "B": "switch(integral-selector) { case integral-value: }",
+          "C": "switch(condition) { when value: }",
+          "D": "switch expression { case pattern: }"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 17,
+        "question": "Co oznacza słowo kluczowe 'static' w deklaracji zmiennej w interfejsie?",
+        "options": {
+          "A": "Zmienna należy do instancji",
+          "B": "Zmienna jest stała",
+          "C": "Zmienna należy do klasy, nie do instancji",
+          "D": "Zmienna jest prywatna"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 18,
+        "question": "Jaka jest nowoczesna alternatywa dla definiowania stałych zamiast 'public static final int'?",
+        "options": {
+          "A": "const",
+          "B": "final",
+          "C": "enum",
+          "D": "static"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 19,
+        "question": "Który typ może przechowywać znaki Unicode w Javie?",
+        "options": {
+          "A": "byte",
+          "B": "char",
+          "C": "string",
+          "D": "unicode"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 20,
+        "question": "Jaka instrukcja kontroluje wykonanie w pętli while?",
+        "options": {
+          "A": "while(condition)",
+          "B": "while(Boolean-expression)",
+          "C": "while(true/false)",
+          "D": "while(integer-value)"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 21,
+        "question": "Co oznacza rzutowanie (casting) w Javie?",
+        "options": {
+          "A": "Tworzenie nowego obiektu",
+          "B": "Jawną konwersję między typami",
+          "C": "Usuwanie obiektu z pamięci",
+          "D": "Porównywanie obiektów"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 22,
+        "question": "Jak definiuje się komentarz dokumentacyjny javadoc?",
+        "options": {
+          "A": "// komentarz",
+          "B": "/* komentarz */",
+          "C": "/** komentarz */",
+          "D": "# komentarz"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 23,
+        "question": "Jaka jest składnia pętli do-while w Javie?",
+        "options": {
+          "A": "do statement while(condition);",
+          "B": "do { statement } while(Boolean-expression);",
+          "C": "do(condition) statement;",
+          "D": "while(condition) do statement;"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 24,
+        "question": "W jakiej kolejności są wykonywane bloki w konstrukcji try-catch-finally?",
+        "options": {
+          "A": "finally, try, catch",
+          "B": "try, finally, catch",
+          "C": "try, catch, finally",
+          "D": "catch, try, finally"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 25,
+        "question": "Które słowo kluczowe informuje, że metoda może rzucać wyjątki?",
+        "options": {
+          "A": "throw",
+          "B": "throws",
+          "C": "exception",
+          "D": "catch"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 26,
+        "question": "Która z poniższych struktur danych umożliwia przechowywanie elementów bez kolejności i bez powtórzeń?",
+        "options": {
+          "A": "List",
+          "B": "ArrayList",
+          "C": "Set",
+          "D": "LinkedList"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 27,
+        "question": "Która implementacja Set oferuje szybkie wyszukiwanie?",
+        "options": {
+          "A": "TreeSet",
+          "B": "HashSet",
+          "C": "LinkedSet",
+          "D": "ArraySet"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 28,
+        "question": "Która struktura danych w Javie przechowuje pary klucz → wartość?",
+        "options": {
+          "A": "List",
+          "B": "Set",
+          "C": "Map",
+          "D": "Collection"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 29,
+        "question": "Która implementacja Map bazuje na drzewach czerwono-czarnych?",
+        "options": {
+          "A": "HashMap",
+          "B": "TreeMap",
+          "C": "LinkedHashMap",
+          "D": "Hashtable"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 30,
+        "question": "Która implementacja List oferuje bardzo szybkie wstawianie i usuwanie elementów?",
+        "options": {
+          "A": "ArrayList",
+          "B": "Vector",
+          "C": "LinkedList",
+          "D": "ArrayDeque"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 31,
+        "question": "Klasa Collections zawiera metodę min(Collection). Co robi ta metoda?",
+        "options": {
+          "A": "Usuwa najmniejszy element",
+          "B": "Zwraca minimalny element",
+          "C": "Sortuje kolekcję",
+          "D": "Odwraca kolejność elementów"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 32,
+        "question": "Który mechanizm wprowadzony w Javie pozwala na określenie typu elementów przechowywanych w kolekcji?",
+        "options": {
+          "A": "Refleksja",
+          "B": "Adnotacje",
+          "C": "Generics",
+          "D": "Wrapper classes"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 33,
+        "question": "Jaka jest składnia nowej pętli for (forEach) w Javie?",
+        "options": {
+          "A": "for(String str in c)",
+          "B": "for(String str : c)",
+          "C": "for(str : String c)",
+          "D": "forEach(String str : c)"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 34,
+        "question": "Która klasa jest używana do czytania pliku linia po linii?",
+        "options": {
+          "A": "FileReader",
+          "B": "BufferedReader",
+          "C": "StringReader",
+          "D": "LineReader"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 35,
+        "question": "Która metoda System pozwala na przekierowanie standardowego wyjścia?",
+        "options": {
+          "A": "System.setOut()",
+          "B": "System.redirectOut()",
+          "C": "System.changeOut()",
+          "D": "System.outputTo()"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 36,
+        "question": "Która nowość została wprowadzona w Java JDK 7?",
+        "options": {
+          "A": "Wyrażenia lambda",
+          "B": "Typ string w konstrukcji switch",
+          "C": "Interfejsy funkcyjne",
+          "D": "Strumienie"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 37,
+        "question": "Co oznacza notacja diamentowa <> wprowadzona w Java 7?",
+        "options": {
+          "A": "Definicję adnotacji",
+          "B": "Wnioskowanie o typach",
+          "C": "Oznaczenie komentarza",
+          "D": "Definicję interfejsu"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 38,
+        "question": "Które słowo kluczowe umożliwia utworzenie domyślnej implementacji metody w interfejsie (Java 8)?",
+        "options": {
+          "A": "abstract",
+          "B": "default",
+          "C": "static",
+          "D": "final"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 39,
+        "question": "Która nowość została wprowadzona w Java JDK 8 do pracy z kolekcjami?",
+        "options": {
+          "A": "Generics",
+          "B": "Adnotacje",
+          "C": "Strumienie (Streams)",
+          "D": "Enum"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 40,
+        "question": "Które słowo kluczowe wprowadzone w Java 10 pozwala na automatyczne wnioskowanie typu zmiennej lokalnej?",
+        "options": {
+          "A": "auto",
+          "B": "var",
+          "C": "def",
+          "D": "let"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 41,
+        "question": "Która konstrukcja została wprowadzona w Java 13 do definiowania wieloliniowych stringów?",
+        "options": {
+          "A": "Wieloliniowe stringi z \\n",
+          "B": "StringBuilder",
+          "C": "Text Blocks \"\"\"",
+          "D": "String concatenation"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 42,
+        "question": "Które słowo kluczowe wprowadzone w Java 14 pozwala na tworzenie klas o niezmiennej zawartości?",
+        "options": {
+          "A": "final",
+          "B": "record",
+          "C": "immutable",
+          "D": "const"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 43,
+        "question": "Co oznacza 'sealed class' wprowadzone w Java 15?",
+        "options": {
+          "A": "Klasa która nie może być instancjonowana",
+          "B": "Klasa z finalnymi metodami",
+          "C": "Klasa pozwalająca na dziedziczenie tylko wybranym podklasom",
+          "D": "Klasa bez konstruktora"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 44,
+        "question": "Który mechanizm Pattern Matching pozwala na sprawdzenie typu obiektu w konstrukcji switch (Java 17)?",
+        "options": {
+          "A": "instanceof checks",
+          "B": "Type casting",
+          "C": "Reflection",
+          "D": "case Integer i ->"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 45,
+        "question": "Zgodnie z benchmarkami przedstawionymi w materiale, który język programowania jest najszybszy?",
+        "options": {
+          "A": "Java",
+          "B": "C++",
+          "C": "C#",
+          "D": "Wydajność jest podobna między tymi językami"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 45,
+        "question": "Co oznacza ekstensja klasy w obiektowości?",
+        "options": {
+          "A": "Zbiór metod klasy",
+          "B": "Zbiór atrybutów klasy",
+          "C": "Zbiór aktualnie istniejących obiektów danej klasy",
+          "D": "Zbiór podklas danej klasy"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 46,
+        "question": "Które z poniższych języków programowania nie mają wbudowanej ekstensji klasy?",
+        "options": {
+          "A": "Java, C#, C++",
+          "B": "Python, Ruby, JavaScript",
+          "C": "Scala, Kotlin, Swift",
+          "D": "Wszystkie mają wbudowaną ekstensję"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "id": 47,
+        "question": "Jakie są dwa główne podejścia do implementacji ekstensji klasy?",
+        "options": {
+          "A": "Statyczne i dynamiczne",
+          "B": "W ramach tej samej klasy i przy użyciu klasy dodatkowej",
+          "C": "Publiczne i prywatne",
+          "D": "Synchroniczne i asynchroniczne"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 48,
+        "question": "Gdzie jest automatycznie dodawany obiekt do ekstensji w implementacji w ramach tej samej klasy?",
+        "options": {
+          "A": "W metodzie main",
+          "B": "W konstruktorze",
+          "C": "W metodzie finalize",
+          "D": "W bloku static"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 49,
+        "question": "Które słowo kluczowe jest używane do oznaczenia atrybutów i metod klasowych w Javie?",
+        "options": {
+          "A": "class",
+          "B": "final",
+          "C": "static",
+          "D": "abstract"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 50,
+        "question": "Jak są reprezentowane atrybuty złożone w języku Java?",
+        "options": {
+          "A": "Jako wartości prymitywne",
+          "B": "Jako referencje do obiektów innych klas",
+          "C": "Jako tablice",
+          "D": "Jako stringi"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 51,
+        "question": "Jak można zaimplementować atrybuty opcjonalne dla typów prymitywnych?",
+        "options": {
+          "A": "Używając wartości null",
+          "B": "Używając klas opakowujących (wrapper classes)",
+          "C": "Używając tablic",
+          "D": "Nie można ich zaimplementować"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 52,
+        "question": "Co oferuje klasa Optional w Javie 8+?",
+        "options": {
+          "A": "Szybsze operacje na stringach",
+          "B": "Lepsze zarządzanie pamięcią",
+          "C": "Obsługę atrybutów opcjonalnych",
+          "D": "Automatyczną serializację"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 53,
+        "question": "Co oznacza trwałość ekstensji?",
+        "options": {
+          "A": "Obiekty są niezmienne po utworzeniu",
+          "B": "Obiekty 'przeżyją' wyłączenie systemu",
+          "C": "Obiekty nie mogą być usunięte",
+          "D": "Obiekty są współdzielone między wątkami"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 54,
+        "question": "Jakie są główne sposoby implementacji trwałości ekstensji?",
+        "options": {
+          "A": "Tylko serializacja",
+          "B": "Tylko baza danych",
+          "C": "Ręczna, serializacja, baza danych",
+          "D": "Tylko XML"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 55,
+        "question": "Jaką główną wadę ma serializacja w porównaniu z implementacją ręczną?",
+        "options": {
+          "A": "Większy rozmiar pliku",
+          "B": "Mniejsza szybkość",
+          "C": "Słaba odporność na zmiany w kodzie",
+          "D": "Wszystkie powyższe"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 56,
+        "question": "Który interfejs musi implementować klasa, aby mogła być serializowana?",
+        "options": {
+          "A": "Cloneable",
+          "B": "Serializable",
+          "C": "Comparable",
+          "D": "Iterable"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 57,
+        "question": "Co zawiera uniwersalna ekstensja w klasie ObjectPlus?",
+        "options": {
+          "A": "List<ObjectPlus>",
+          "B": "Map<String, List<ObjectPlus>>",
+          "C": "Map<Class<? extends ObjectPlus>, List<ObjectPlus>>",
+          "D": "Set<ObjectPlus>"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 58,
+        "question": "Co umożliwia metoda computeIfAbsent() w kontekście zarządzania ekstensją?",
+        "options": {
+          "A": "Usuwanie obiektów z ekstensji",
+          "B": "Tworzenie nowej listy jeśli klucz nie istnieje i dodanie obiektu",
+          "C": "Sortowanie obiektów w ekstensji",
+          "D": "Filtrowanie obiektów"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 59,
+        "question": "Jakiej metody używa się do pobierania ekstensji konkretnego typu z ObjectPlus?",
+        "options": {
+          "A": "getObjects()",
+          "B": "getExtent(Class<T> type)",
+          "C": "getAllObjects()",
+          "D": "findByClass()"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 60,
+        "question": "Co zwraca metoda getExtent() w klasie ObjectPlus?",
+        "options": {
+          "A": "List<T>",
+          "B": "Set<T>",
+          "C": "Iterable<T>",
+          "D": "Collection<T>"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 61,
+        "question": "Jaką główną zaletę ma implementacja ekstensji przy użyciu klasy dodatkowej?",
+        "options": {
+          "A": "Szybsze wykonanie",
+          "B": "Możliwość stworzenia wielu różnych ekstensji",
+          "C": "Mniejsze zużycie pamięci",
+          "D": "Łatwiejsza implementacja"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 62,
+        "question": "Które z poniższych nie jest rodzajem atrybutu w obiektowości?",
+        "options": {
+          "A": "Prosty i złożony",
+          "B": "Wymagany i opcjonalny",
+          "C": "Pojedynczy i powtarzalny",
+          "D": "Lokalny i globalny"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 63,
+        "question": "Co oznacza słowo kluczowe 'transient' w kontekście serializacji?",
+        "options": {
+          "A": "Pole jest tymczasowe",
+          "B": "Pole nie będzie serializowane",
+          "C": "Pole jest tylko do odczytu",
+          "D": "Pole jest statyczne"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 64,
+        "question": "Jaki problem rozwiązuje klasa ObjectPlus?",
+        "options": {
+          "A": "Automatyczne sortowanie obiektów",
+          "B": "Uniwersalne zarządzanie ekstensją dla wszystkich klas biznesowych",
+          "C": "Optymalizację wydajności",
+          "D": "Sprawdzanie typów w czasie kompilacji"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 65,
+        "question": "Co to jest powiązanie w kontekście UML?",
+        "options": {
+          "A": "Zależność łącząca klasy",
+          "B": "Zależność łącząca obiekty",
+          "C": "Metoda w klasie",
+          "D": "Atrybut obiektu"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 66,
+        "question": "Co to jest asocjacja w UML?",
+        "options": {
+          "A": "Opis pojedynczego powiązania",
+          "B": "Opis grupy powiązań o tej samej semantyce i strukturze",
+          "C": "Metoda łącząca obiekty",
+          "D": "Klasa abstrakcyjna"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 67,
+        "question": "W asocjacji skierowanej informacja biznesowa jest:",
+        "options": {
+          "A": "Przechowywana w obu kierunkach",
+          "B": "Przechowywana tylko w jednym kierunku",
+          "C": "Nie przechowywana wcale",
+          "D": "Przechowywana w klasie bazowej"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 68,
+        "question": "Atrybut asocjacji jest naprawdę potrzebny tylko gdy liczności są:",
+        "options": {
+          "A": "1 do 1",
+          "B": "1 do *",
+          "C": "* do *",
+          "D": "0..1 do 1"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 69,
+        "question": "W asocjacji rekurencyjnej powiązanie:",
+        "options": {
+          "A": "Zachodzi między różnymi klasami",
+          "B": "Zachodzi w ramach tej samej klasy",
+          "C": "Nie może wystąpić",
+          "D": "Wymaga dziedziczenia"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 70,
+        "question": "Jakie są dwa główne podejścia do implementacji asocjacji?",
+        "options": {
+          "A": "Statyczne i dynamiczne",
+          "B": "Publiczne i prywatne",
+          "C": "Identyfikatory i natywne referencje",
+          "D": "Synchroniczne i asynchroniczne"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 71,
+        "question": "Główną wadą podejścia z identyfikatorami jest:",
+        "options": {
+          "A": "Zbyt duże zużycie pamięci",
+          "B": "Konieczność wyszukiwania obiektu na podstawie ID - problemy z wydajnością",
+          "C": "Niemożność serializacji",
+          "D": "Brak bezpieczeństwa typów"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 72,
+        "question": "Główną zaletą podejścia z identyfikatorami jest:",
+        "options": {
+          "A": "Szybszy dostęp do obiektów",
+          "B": "Mniejsze zużycie pamięci",
+          "C": "Uniezależnienie obiektów od siebie",
+          "D": "Automatyczne zarządzanie pamięcią"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 73,
+        "question": "W podejściu z natywnymi referencjami, dla liczności 1 do * używamy:",
+        "options": {
+          "A": "Dwóch kontenerów",
+          "B": "Dwóch pojedynczych referencji",
+          "C": "Pojedynczej referencji oraz kontenera",
+          "D": "Tylko kontenera"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 74,
+        "question": "W podejściu z natywnymi referencjami, dla liczności * do * używamy:",
+        "options": {
+          "A": "Dwóch pojedynczych referencji",
+          "B": "Dwóch kontenerów",
+          "C": "Pojedynczej referencji i kontenera",
+          "D": "Jednego kontenera"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 75,
+        "question": "Kwalifikator w asocjacji to:",
+        "options": {
+          "A": "Nazwa asocjacji",
+          "B": "Atrybut lub zestaw atrybutów jednoznacznie identyfikujący obiekt w ramach asocjacji",
+          "C": "Liczność asocjacji",
+          "D": "Kierunek asocjacji"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 76,
+        "question": "Aby zaimplementować asocjację kwalifikowaną, najlepiej użyć:",
+        "options": {
+          "A": "ArrayList",
+          "B": "Array",
+          "C": "Kontenera mapującego (Map)",
+          "D": "LinkedList"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 77,
+        "question": "W asocjacji n-arnej zakłada się, że liczności powinny być:",
+        "options": {
+          "A": "1",
+          "B": "0..1",
+          "C": "Wiele (*)",
+          "D": "Dokładnie 2"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 78,
+        "question": "Agregacja to asocjacja opisująca zależność typu:",
+        "options": {
+          "A": "Rodzic-dziecko",
+          "B": "Część-całość",
+          "C": "Przed-po",
+          "D": "Prawy-lewy"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 79,
+        "question": "W kompozycji, w przeciwieństwie do agregacji:",
+        "options": {
+          "A": "Część może być współdzielona",
+          "B": "Część nie może być współdzielona",
+          "C": "Całość nie może istnieć bez części",
+          "D": "Nie ma żadnych ograniczeń"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 80,
+        "question": "W kompozycji usunięcie całości oznacza:",
+        "options": {
+          "A": "Część pozostaje nienaruszona",
+          "B": "Usunięcie również wszystkich jej części",
+          "C": "Przeniesienie części do innej całości",
+          "D": "Zamianę kompozycji na agregację"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 81,
+        "question": "Aby zaimplementować asocjację z atrybutem, należy najpierw:",
+        "options": {
+          "A": "Dodać atrybut do jednej z klas",
+          "B": "Zamienić ją na asocjację z klasą pośredniczącą",
+          "C": "Usunąć liczności",
+          "D": "Zmienić kierunek asocjacji"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 82,
+        "question": "W implementacji asocjacji rekurencyjnej w klasie Actor potrzebujemy:",
+        "options": {
+          "A": "Jednego kontenera",
+          "B": "Dwóch kontenerów dla różnych ról",
+          "C": "Trzech kontenerów",
+          "D": "Nie potrzebujemy kontenerów"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 83,
+        "question": "Główną zaletą natywnych referencji jest:",
+        "options": {
+          "A": "Mniejsze zużycie pamięci",
+          "B": "Natychmiastowy dostęp do obiektu bez wyszukiwania",
+          "C": "Łatwiejsza serializacja",
+          "D": "Automatyczne zarządzanie cyklem życia"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 84,
+        "question": "W ulepszonym zarządzaniu powiązaniami, przed dodaniem nowego powiązania należy:",
+        "options": {
+          "A": "Usunąć wszystkie istniejące powiązania",
+          "B": "Sprawdzić czy już nie mamy tej informacji",
+          "C": "Zresetować ekstensję",
+          "D": "Zmienić liczności"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 85,
+        "question": "W językach Java, C#, C++ asocjacje:",
+        "options": {
+          "A": "Występują natywnie",
+          "B": "Nie występują - należy je samodzielnie zaimplementować",
+          "C": "Są dostępne tylko w bibliotekach",
+          "D": "Działają automatycznie"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 86,
+        "question": "Przy implementacji asocjacji n-arnych najpierw należy:",
+        "options": {
+          "A": "Utworzyć dodatkową tabelę w bazie danych",
+          "B": "Zamienić jedną konstrukcję UML (asocjacja n-arna) na inną konstrukcję UML (n asocjacji binarnych oraz klasę pośredniczącą)",
+          "C": "Usunąć wszystkie atrybuty asocjacji",
+          "D": "Stworzyć nowe klasy dla każdego obiektu"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 87,
+        "question": "Implementacja agregacji w porównaniu do klasycznych asocjacji:",
+        "options": {
+          "A": "Wymaga specjalnych mechanizmów",
+          "B": "Jest zupełnie różna",
+          "C": "Jest realizowana dokładnie tak samo",
+          "D": "Potrzebuje dodatkowych atrybutów"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 88,
+        "question": "Które z poniższych NIE jest problemem do rozwiązania przy implementacji kompozycji:",
+        "options": {
+          "A": "Blokowanie samodzielnego tworzenia części",
+          "B": "Zakazanie współdzielenia części",
+          "C": "Usuwanie części przy usuwaniu całości",
+          "D": "Tworzenie dodatkowych asocjacji"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "id": 89,
+        "question": "W implementacji kompozycji, aby zablokować samodzielne tworzenie części stosuje się:",
+        "options": {
+          "A": "Publiczny konstruktor i metodę klasową",
+          "B": "Prywatny konstruktor i dedykowaną metodę klasową",
+          "C": "Tylko prywatny konstruktor",
+          "D": "Tylko metodę klasową"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 90,
+        "question": "Atrybut klasowy 'allParts' w implementacji kompozycji służy do:",
+        "options": {
+          "A": "Przechowywania wszystkich obiektów w systemie",
+          "B": "Zarządzania ekstensją klas",
+          "C": "Przechowywania informacji o wszystkich częściach powiązanych z całościami (przeciwdziałanie współdzieleniu)",
+          "D": "Optymalizacji wydajności"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 91,
+        "question": "W językach Java i C# usuwanie części przy usuwaniu całości:",
+        "options": {
+          "A": "Odbywa się automatycznie",
+          "B": "Nie jest możliwe - obiekty są usuwane przez VM gdy nie są osiągalne",
+          "C": "Wymaga ręcznego wywołania destruktora",
+          "D": "Jest realizowane przez garbage collector"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 92,
+        "question": "Klasy wewnętrzne w implementacji kompozycji charakteryzują się tym, że:",
+        "options": {
+          "A": "Mogą istnieć niezależnie od klasy zewnętrznej",
+          "B": "Nie mają dostępu do atrybutów klasy zewnętrznej",
+          "C": "Obiekt klasy wewnętrznej nie może istnieć bez obiektu klasy zewnętrznej",
+          "D": "Są zawsze publiczne"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 93,
+        "question": "Klasa ObjectPlusPlus została stworzona w celu:",
+        "options": {
+          "A": "Zastąpienia klasy ObjectPlus",
+          "B": "Zunifikowania zarządzania asocjacjami i zachowania funkcjonalności ObjectPlus",
+          "C": "Implementacji tylko kompozycji",
+          "D": "Zarządzania bazą danych"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 94,
+        "question": "W klasie ObjectPlusPlus do przechowywania powiązań używa się:",
+        "options": {
+          "A": "Zwykłego ArrayList",
+          "B": "Map<String, Map<Object, ObjectPlusPlus>> gdzie kluczem jest nazwa roli",
+          "C": "Tylko Vector",
+          "D": "Tablicy dwuwymiarowej"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 95,
+        "question": "Parametr 'counter' w metodzie addLink służy do:",
+        "options": {
+          "A": "Liczenia obiektów w systemie",
+          "B": "Optymalizacji wydajności",
+          "C": "Ochrony przed nieskończoną rekursją przy tworzeniu połączenia zwrotnego",
+          "D": "Numerowania powiązań"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 96,
+        "question": "W asocjacjach kwalifikowanych, gdy nie chcemy użyć kwalifikatora:",
+        "options": {
+          "A": "Używamy wartości null",
+          "B": "Kwalifikator jest tożsamy z obiektem docelowym",
+          "C": "Pomijamy ten parametr",
+          "D": "Używamy pustego stringa"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 97,
+        "question": "Metoda addPart() w ObjectPlusPlus przed dodaniem części:",
+        "options": {
+          "A": "Tworzy kopię obiektu",
+          "B": "Sprawdza czy część nie jest już połączona z inną całością",
+          "C": "Usuwa wszystkie inne powiązania",
+          "D": "Zmienia typ obiektu"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 98,
+        "question": "Aby pobrać powiązany obiekt z asocjacji kwalifikowanej używa się metody:",
+        "options": {
+          "A": "getLinks()",
+          "B": "showLinks()",
+          "C": "getLinkedObject(roleName, qualifier)",
+          "D": "addLink()"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "id": 99,
+        "question": "W przykładzie z filmami i aktorami, aby użyć asocjacji kwalifikowanej z inicjałami 'MB' wywołuje się:",
+        "options": {
+          "A": "f1.addLink(\"actor\", \"movie\", a2)",
+          "B": "f1.addLink(\"actor\", \"movie\", a2, \"MB\")",
+          "C": "f1.addQualifiedLink(\"actor\", a2, \"MB\")",
+          "D": "f1.setQualifier(a2, \"MB\")"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "id": 100,
+        "question": "Główną zaletą univerzalnego zarządzania asocjacjami w ObjectPlusPlus jest:",
+        "options": {
+          "A": "Większa wydajność",
+          "B": "Uniknięcie pisania wielokrotnie podobnego kodu dla każdej asocjacji",
+          "C": "Lepsze bezpieczeństwo",
+          "D": "Automatyczne tworzenie dokumentacji"
+        },
+        "correctAnswer": "B"
+      },
+        {
+          "id": 101,
+          "question": "Jaki jest główny problem przy dziedziczeniu overlapping (łącznym)?",
+          "options": {
+            "A": "Brak możliwości tworzenia podklas",
+            "B": "Konflikt nazw metod",
+            "C": "Która wersja metody powinna być wywołana przy polimorficznym wołaniu",
+            "D": "Niemożność używania konstruktorów"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": 102,
+          "question": "Które słowo kluczowe w Java oznacza klasę abstrakcyjną?",
+          "options": {
+            "A": "interface",
+            "B": "abstract",
+            "C": "virtual",
+            "D": "final"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 103,
+          "question": "W którym języku programowania występuje wielodziedziczenie bezpośrednio?",
+          "options": {
+            "A": "Java",
+            "B": "C#",
+            "C": "C++",
+            "D": "Python"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": 104,
+          "question": "Co charakteryzuje klasę abstrakcyjną?",
+          "options": {
+            "A": "Może mieć bezpośrednie wystąpienia",
+            "B": "Nie może mieć bezpośrednich wystąpień",
+            "C": "Zawiera tylko metody statyczne",
+            "D": "Nie może mieć konstruktorów"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 105,
+          "question": "Jaką kolekcję użyto w przykładzie do przechowywania informacji o kilku rodzajach osoby na raz?",
+          "options": {
+            "A": "ArrayList",
+            "B": "HashSet",
+            "C": "EnumSet",
+            "D": "TreeSet"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": 106,
+          "question": "Co oznacza ograniczenie {complete} w dziedziczeniu?",
+          "options": {
+            "A": "Wszystkie podklasy muszą być zaimplementowane",
+            "B": "Brak możliwości dodania kolejnych podklas",
+            "C": "Klasa musi być finalna",
+            "D": "Wszystkie metody muszą być zdefiniowane"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 107,
+          "question": "Które słowo kluczowe w Java blokuje możliwość tworzenia podklas?",
+          "options": {
+            "A": "abstract",
+            "B": "static",
+            "C": "final",
+            "D": "private"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": 108,
+          "question": "W dziedziczeniu dynamicznym wykorzystuje się ograniczenie:",
+          "options": {
+            "A": "{complete}",
+            "B": "{incomplete}",
+            "C": "{xor}",
+            "D": "{overlapping}"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": 109,
+          "question": "Która metoda abstrakcyjna NIE ma ciała i musi zostać zaimplementowana w podklasach?",
+          "options": {
+            "A": "Metoda wirtualna",
+            "B": "Metoda abstrakcyjna",
+            "C": "Metoda statyczna",
+            "D": "Metoda finalna"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 110,
+          "question": "W języku C++ polimorficzne wołanie metod wymaga użycia słowa kluczowego:",
+          "options": {
+            "A": "abstract",
+            "B": "override",
+            "C": "virtual",
+            "D": "polymorphic"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": 111,
+          "question": "Który sposób implementacji dziedziczenia overlapping wykorzystuje ObjectPlusPlus?",
+          "options": {
+            "A": "Spłaszczenie hierarchii",
+            "B": "Wykorzystanie agregacji/kompozycji",
+            "C": "Tylko interfejsy",
+            "D": "Dziedziczenie wielokrotne"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 112,
+          "question": "Co to jest dyskryminator w kontekście dziedziczenia?",
+          "options": {
+            "A": "Metoda abstrakcyjna",
+            "B": "Informacja o rodzaju obiektu",
+            "C": "Konstruktor klasy",
+            "D": "Interfejs implementowany przez klasę"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 113,
+          "question": "Jaką główną zaletę ma wykorzystanie agregacji/kompozycji przy implementacji dziedziczenia overlapping?",
+          "options": {
+            "A": "Prostota implementacji",
+            "B": "Optymalne wykorzystanie zasobów",
+            "C": "Automatyczne polimorficzne wołanie metod",
+            "D": "Brak potrzeby dodatkowych metod"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 114,
+          "question": "W dziedziczeniu wieloaspektowym (multi-aspect) jeden aspekt dziedziczymy używając:",
+          "options": {
+            "A": "Interfejsów",
+            "B": "Kompozycji",
+            "C": "Wbudowanych mechanizmów dziedziczenia",
+            "D": "Agregacji"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": 115,
+          "question": "Co charakteryzuje dziedziczenie disjoint (rozłączne)?",
+          "options": {
+            "A": "Obiekt może należeć do kilku podklas jednocześnie",
+            "B": "Obiekt może należeć do co najwyżej jednej podklasy",
+            "C": "Wszystkie podklasy muszą być zdefiniowane",
+            "D": "Nie można dodawać nowych podklas"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 116,
+          "question": "Która technika \"sprytnego\" kopiowania obiektów jest używana w dziedziczeniu dynamicznym?",
+          "options": {
+            "A": "Klonowanie obiektów",
+            "B": "Serializacja",
+            "C": "Konstruktory przyjmujące referencję do obiektu nadklasy",
+            "D": "Refleksja"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": 117,
+          "question": "W implementacji wielodziedziczenia z interfejsami głównym problemem jest:",
+          "options": {
+            "A": "Brak dziedziczenia atrybutów",
+            "B": "Niemożność implementacji metod",
+            "C": "Wielokrotne implementowanie tych samych metod",
+            "D": "Brak polimorfizmu"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "id": 118,
+          "question": "Co wprowadza Java 8+ aby rozwiązać problem wielokrotnej implementacji metod w interfejsach?",
+          "options": {
+            "A": "Metody abstract",
+            "B": "Metody default i static",
+            "C": "Metody virtual",
+            "D": "Metody final"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 119,
+          "question": "Którą hierarchię powinniśmy wybrać do dziedziczenia w przypadku dziedziczenia wieloaspektowego?",
+          "options": {
+            "A": "Najmniejszą",
+            "B": "Najbardziej skomplikowaną/rozbudowaną",
+            "C": "Z największą liczbą klas",
+            "D": "Z najmniejszą liczbą atrybutów"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "id": 120,
+          "question": "Główną wadą zastąpienia hierarchii dziedziczenia jedną klasą jest:",
+          "options": {
+            "A": "Trudność implementacji",
+            "B": "Brak możliwości używania konstruktorów",
+            "C": "Nieoptymalne wykorzystanie zasobów",
+            "D": "Problemy z kompilacją"
+          },
+          "correctAnswer": "C"
+        },
+          {
+            "id": 121,
+            "question": "Które z wymienionych to predefiniowane ograniczenia w UML?",
+            "options": {
+              "A": "unique, subset, ordered",
+              "B": "private, public, protected",
+              "C": "static, final, abstract",
+              "D": "mandatory, optional, required"
+            },
+            "correctAnswer": "A"
+          },
+          {
+            "id": 122,
+            "question": "Jaką notację używa się do zapisywania ograniczeń w UML?",
+            "options": {
+              "A": "[treść ograniczenia]",
+              "B": "{treść ograniczenia}",
+              "C": "(treść ograniczenia)",
+              "D": "<treść ograniczenia>"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 123,
+            "question": "Czym różnią się ograniczenia dynamiczne od statycznych?",
+            "options": {
+              "A": "dynamiczne dotyczą tylko asocjacji, statyczne tylko atrybutów",
+              "B": "dynamiczne uwzględniają poprzedni stan elementu, statyczne nie",
+              "C": "dynamiczne są szybsze w wykonaniu",
+              "D": "nie ma różnicy między nimi"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 124,
+            "question": "Ograniczenie {unique} nakładane na atrybut oznacza, że:",
+            "options": {
+              "A": "atrybut może mieć tylko jedną wartość",
+              "B": "atrybut jest opcjonalny",
+              "C": "wartość atrybutu musi być unikalna w obrębie ekstensji",
+              "D": "atrybut nie może być zmieniany"
+            },
+            "correctAnswer": "C"
+          },
+          {
+            "id": 125,
+            "question": "Ograniczenie {subset} dotyczy:",
+            "options": {
+              "A": "jednej asocjacji",
+              "B": "dwóch asocjacji pomiędzy tymi samymi klasami",
+              "C": "atrybutów w klasie",
+              "D": "metod w klasie"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 126,
+            "question": "Które z poniższych stwierdzeń jest prawdziwe dla ograniczenia {subset}?",
+            "options": {
+              "A": "pozwala na duplikaty w asocjacji",
+              "B": "aby utworzyć powiązanie w asocjacji B, musi już istnieć powiązanie w asocjacji A",
+              "C": "dotyczy tylko asocjacji jednokierunkowych",
+              "D": "może być stosowane tylko z ograniczeniem {ordered}"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 127,
+            "question": "Ograniczenie {ordered} oznacza, że:",
+            "options": {
+              "A": "elementy są przechowywane w określonej kolejności",
+              "B": "elementy muszą być posortowane alfabetycznie",
+              "C": "można dodawać tylko po jednym elemencie",
+              "D": "elementy są automatycznie numerowane"
+            },
+            "correctAnswer": "A"
+          },
+          {
+            "id": 128,
+            "question": "Ograniczenie {bag} umożliwia:",
+            "options": {
+              "A": "przechowywanie tylko unikalnych elementów",
+              "B": "przechowywanie duplikatów elementów",
+              "C": "sortowanie elementów",
+              "D": "grupowanie elementów"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 129,
+            "question": "Różnica między ograniczeniami {bag} a {history} polega na:",
+            "options": {
+              "A": "{history} jest szybsze w wykonaniu",
+              "B": "{bag} pozwala na więcej duplikatów",
+              "C": "{history} podkreśla aspekt czasowy asocjacji",
+              "D": "nie ma różnicy w implementacji"
+            },
+            "correctAnswer": "C"
+          },
+          {
+            "id": 130,
+            "question": "Ograniczenie {xor} dotyczy:",
+            "options": {
+              "A": "co najmniej dwóch asocjacji",
+              "B": "tylko jednej asocjacji",
+              "C": "atrybutów w klasie",
+              "D": "metod konstruktora"
+            },
+            "correctAnswer": "A"
+          },
+          {
+            "id": 131,
+            "question": "Ograniczenie {xor} zapewnia, że:",
+            "options": {
+              "A": "wszystkie asocjacje mają powiązania",
+              "B": "żadna asocjacja nie ma powiązań",
+              "C": "istnieje tylko jedno powiązanie w ramach ograniczanych asocjacji",
+              "D": "każda asocjacja ma dokładnie jedno powiązanie"
+            },
+            "correctAnswer": "C"
+          },
+          {
+            "id": 132,
+            "question": "W popularnych językach programowania (Java, C#, C++) ograniczenia UML:",
+            "options": {
+              "A": "występują bezpośrednio",
+              "B": "nie występują bezpośrednio",
+              "C": "są dostępne tylko w niektórych wersjach",
+              "D": "wymagają specjalnych bibliotek zawsze"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 133,
+            "question": "Podstawowym założeniem implementacji ograniczeń dotyczących atrybutów jest:",
+            "options": {
+              "A": "atrybuty powinny być publiczne",
+              "B": "atrybuty powinny być ukryte (private) i dostępne przez metody get/set",
+              "C": "atrybuty powinny być statyczne",
+              "D": "atrybuty nie mogą mieć wartości domyślnych"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 134,
+            "question": "Które słowo kluczowe w Javie używa się do zgłaszania wyjątków w metodzie?",
+            "options": {
+              "A": "throw",
+              "B": "throws",
+              "C": "exception",
+              "D": "error"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 135,
+            "question": "W implementacji ograniczenia {unique} można wykorzystać:",
+            "options": {
+              "A": "tylko przeszukiwanie całej ekstensji",
+              "B": "Set lub Map dla przechowywania unikalnych wartości",
+              "C": "tylko ArrayList",
+              "D": "tylko HashMap"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 136,
+            "question": "Metoda isLink w klasie ObjectPlusPlus służy do:",
+            "options": {
+              "A": "tworzenia nowych powiązań",
+              "B": "usuwania powiązań",
+              "C": "sprawdzania czy istnieje powiązanie do podanego obiektu w ramach danej roli",
+              "D": "zliczania wszystkich powiązań"
+            },
+            "correctAnswer": "C"
+          },
+          {
+            "id": 137,
+            "question": "Klasa ObjectPlus4 dziedziczy z:",
+            "options": {
+              "A": "ObjectPlus",
+              "B": "ObjectPlusPlus",
+              "C": "Object",
+              "D": "Collection"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 138,
+            "question": "Dla implementacji ograniczenia {ordered} w asocjacjach należy użyć:",
+            "options": {
+              "A": "HashMap",
+              "B": "HashSet",
+              "C": "kontenera gwarantującego kolejność, np. List lub TreeSet",
+              "D": "ArrayList zawsze"
+            },
+            "correctAnswer": "C"
+          },
+          {
+            "id": 139,
+            "question": "Implementacja ograniczenia {bag} różni się od domyślnej implementacji tym, że:",
+            "options": {
+              "A": "używa szybszych algorytmów",
+              "B": "pozwala na przechowywanie duplikatów elementów",
+              "C": "automatycznie sortuje elementy",
+              "D": "używa mniej pamięci"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 140,
+            "question": "Klasa ObjectPlusPlus domyślnie używa _______ dla ekstensji i _______ dla powiązań:",
+            "options": {
+              "A": "HashMap, ArrayList",
+              "B": "ArrayList, HashMap",
+              "C": "LinkedList, TreeMap",
+              "D": "Vector, Hashtable"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 141,
+            "question": "W implementacji ograniczenia {xor} metoda isXorLink() zwraca true, gdy:",
+            "options": {
+              "A": "nie ma żadnych powiązań",
+              "B": "istnieje powiązanie dla którejś z ról XOR",
+              "C": "wszystkie role XOR mają powiązania",
+              "D": "obiekt ma maksymalną liczbę powiązań"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 142,
+            "question": "Metoda addLink_subset sprawdza:",
+            "options": {
+              "A": "czy istnieje powiązanie w roli nadrzędnej przed dodaniem powiązania podrzędnego",
+              "B": "czy obiekt docelowy jest unikalny",
+              "C": "czy nie przekroczono maksymalnej liczby powiązań",
+              "D": "czy role są poprawnie zdefiniowane"
+            },
+            "correctAnswer": "A"
+          },
+          {
+            "id": 143,
+            "question": "Przykład ograniczenia dynamicznego to:",
+            "options": {
+              "A": "Pensja > 2000",
+              "B": "Pensja nie może zmaleć",
+              "C": "Pensja < 5000",
+              "D": "Pensja musi być liczbą"
+            },
+            "correctAnswer": "B"
+          },
+          {
+            "id": 144,
+            "question": "Przykład ograniczenia statycznego to:",
+            "options": {
+              "A": "Wzrost pensji nie może być większy niż 10%",
+              "B": "Pensja nie może zmaleć",
+              "C": "Pensja > 2000",
+              "D": "Historia zmian pensji"
+            },
+            "correctAnswer": "C"
+          },
+          {
+            "id": 145,
+            "question": "W przypadku dowolnych ograniczeń pisanych zwykłym tekstem:",
+            "options": {
+              "A": "istnieją gotowe rozwiązania w każdym języku",
+              "B": "można je zignorować",
+              "C": "konieczna jest ich ręczna implementacja",
+              "D": "są automatycznie implementowane przez IDE"
+            },
+            "correctAnswer": "C"
+          },
+            {
+              "id": 146,
+              "question": "Twórca modelu relacyjnego to:",
+              "options": {
+                "A": "Edgar Codd (1970)",
+                "B": "James Gosling",
+                "C": "Larry Ellison",
+                "D": "Michael Stonebraker"
+              },
+              "correctAnswer": "A"
+            },
+            {
+              "id": 147,
+              "question": "Niezgodność impedancji w kontekście baz danych oznacza:",
+              "options": {
+                "A": "Problemy z wydajnością",
+                "B": "Konieczność dopasowania dwóch różnych światów: relacyjnego i obiektowego",
+                "C": "Błędy w składni SQL",
+                "D": "Problemy z bezpieczeństwem"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 148,
+              "question": "W modelu relacyjnym NULL oznacza:",
+              "options": {
+                "A": "Wartość zero",
+                "B": "Pusty ciąg znaków",
+                "C": "Brak wartości",
+                "D": "Błąd w danych"
+              },
+              "correctAnswer": "C"
+            },
+            {
+              "id": 149,
+              "question": "Klucz obcy to:",
+              "options": {
+                "A": "Kolumny identyfikujące wiersz w tej samej tabeli",
+                "B": "Jedna lub więcej kolumn, których wartości występują jako wartości klucza głównego w innej tabeli",
+                "C": "Indeks przyspieszający zapytania",
+                "D": "Ograniczenie integralności"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 150,
+              "question": "Przy mapowaniu klas na tabele, dla każdej tabeli dodajemy:",
+              "options": {
+                "A": "Indeks na wszystkich kolumnach",
+                "B": "Specjalny atrybut - klucz jednoznacznie identyfikujący obiekt",
+                "C": "Kolumnę z typem obiektu",
+                "D": "Trigger'y"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 151,
+              "question": "Atrybut złożony można zmapować jako:",
+              "options": {
+                "A": "Tylko jako oddzielną tabelę",
+                "B": "Tylko jako spłaszczony atrybut",
+                "C": "Wiele kolumn lub jeden spłaszczony atrybut lub z użyciem XML",
+                "D": "Nie można go zmapować"
+              },
+              "correctAnswer": "C"
+            },
+            {
+              "id": 152,
+              "question": "Atrybut opcjonalny w bazie danych:",
+              "options": {
+                "A": "Nie może przyjmować wartości null",
+                "B": "Musi dopuszczać wartości null",
+                "C": "Jest zawsze wymagany",
+                "D": "Musi mieć wartość domyślną"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 153,
+              "question": "Asocjację binarną 1-* mapujemy przez:",
+              "options": {
+                "A": "Utworzenie nowej tabeli pośredniczącej",
+                "B": "Dodanie klucza obcego do odpowiedniej klasy",
+                "C": "Duplikowanie danych",
+                "D": "Używanie perspektyw"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 154,
+              "question": "Asocjację binarną *-* mapujemy przez:",
+              "options": {
+                "A": "Dodanie klucza obcego",
+                "B": "Wprowadzenie klasy pośredniczącej",
+                "C": "Duplikowanie tabel",
+                "D": "Używanie indeksów"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 155,
+              "question": "TPH (Table Per Hierarchy) oznacza:",
+              "options": {
+                "A": "Każda klasa ma swoją tabelę",
+                "B": "Całą hierarchię umieszczamy w jednej tabeli z kolumną typu",
+                "C": "Tylko podklasy mają tabele",
+                "D": "Dziedziczenie przez relacje"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 156,
+              "question": "TPC (Table Per Concrete Class) oznacza:",
+              "options": {
+                "A": "Jedna tabela dla całej hierarchii",
+                "B": "Każda klasa ma swoją tabelę",
+                "C": "Jedna tabela dla każdej podklasy z atrybutami nadklasy",
+                "D": "Brak mapowania dziedziczenia"
+              },
+              "correctAnswer": "C"
+            },
+            {
+              "id": 157,
+              "question": "TPT (Table Per Type) oznacza:",
+              "options": {
+                "A": "Jedna tabela dla hierarchii",
+                "B": "Tabele tylko dla podklas",
+                "C": "Każda klasa ma swoją tabelę, dziedziczenie przez relacje",
+                "D": "Brak dziedziczenia"
+              },
+              "correctAnswer": "C"
+            },
+            {
+              "id": 158,
+              "question": "Agregacje w modelu relacyjnym realizujemy:",
+              "options": {
+                "A": "Jako specjalne tabele",
+                "B": "Tak samo jak asocjacje",
+                "C": "Przez perspektywy",
+                "D": "Nie można ich zrealizować"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 159,
+              "question": "Kompozycje można zrealizować przez:",
+              "options": {
+                "A": "Tylko przez perspektywy",
+                "B": "Perspektywy i więzy integralności z kaskadowym usuwaniem",
+                "C": "Tylko przez trigger'y",
+                "D": "Standardowe relacje"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 160,
+              "question": "JDBC w języku Java służy do:",
+              "options": {
+                "A": "Tworzenia interfejsów graficznych",
+                "B": "Łączenia się z relacyjnymi bazami danych",
+                "C": "Obsługi sieci",
+                "D": "Zarządzania pamięcią"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 161,
+              "question": "W tradycyjnych relacyjnych bazach danych dziedziczenie:",
+              "options": {
+                "A": "Występuje natywnie",
+                "B": "Nie występuje",
+                "C": "Jest dostępne tylko w niektórych",
+                "D": "Wymaga specjalnych bibliotek"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 162,
+              "question": "Asocjacje kwalifikowane w modelu relacyjnym:",
+              "options": {
+                "A": "Mają pełne wsparcie",
+                "B": "Można je symulować używając kwalifikatora jako klucza obcego",
+                "C": "Nie są możliwe do zrealizowania",
+                "D": "Wymagają specjalnych tabel"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 163,
+              "question": "Główne powody korzystania z baz danych to:",
+              "options": {
+                "A": "Tylko język zapytań",
+                "B": "Język zapytań, szybkość, bezpieczeństwo i zdolność przechowywania dużej ilości danych",
+                "C": "Tylko bezpieczeństwo",
+                "D": "Tylko wydajność"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 164,
+              "question": "Indeks w bazie danych służy do:",
+              "options": {
+                "A": "Zwiększenia rozmiaru bazy",
+                "B": "Błyskawicznego wyszukiwania wartości w kolumnach",
+                "C": "Zabezpieczenia danych",
+                "D": "Tworzenia kopii zapasowych"
+              },
+              "correctAnswer": "B"
+            },
+            {
+              "id": 165,
+              "question": "W języku SQL polecenie create table służy do:",
+              "options": {
+                "A": "Modyfikacji struktury tabeli",
+                "B": "Usuwania tabeli",
+                "C": "Tworzenia nowej tabeli",
+                "D": "Wyszukiwania danych"
+              },
+              "correctAnswer": "C"
+            },
+              {
+                "id": 166,
+                "question": "Niezgodność impedancji w kontekście baz danych oznacza:",
+                "options": {
+                  "A": "Problem z łączeniem modelu obiektowego z modelem relacyjnym",
+                  "B": "Błąd w konfiguracji bazy danych",
+                  "C": "Nieprawidłowe hasło do bazy danych",
+                  "D": "Zbyt wolne połączenie z serwerem"
+                },
+                "correctAnswer": "A"
+              },
+              {
+                "id": 167,
+                "question": "Microsoft LINQ to:",
+                "options": {
+                  "A": "Baza danych",
+                  "B": "Language Integrated Query - język zapytań zintegrowany z językiem programowania",
+                  "C": "System operacyjny",
+                  "D": "Biblioteka graficzna"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 168,
+                "question": "Autorem Microsoft LINQ jest:",
+                "options": {
+                  "A": "Bill Gates",
+                  "B": "Anders Hejlsberg",
+                  "C": "Steve Jobs",
+                  "D": "Linus Torvalds"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 169,
+                "question": "Hibernate jest:",
+                "options": {
+                  "A": "Systemem operacyjnym",
+                  "B": "Bazą danych",
+                  "C": "Biblioteką ORM (Object-Relational Mapping)",
+                  "D": "Edytorem tekstu"
+                },
+                "correctAnswer": "C"
+              },
+              {
+                "id": 170,
+                "question": "W Hibernate każda klasa musi posiadać:",
+                "options": {
+                  "A": "Specyficzny atrybut służący do identyfikacji wystąpień (id)",
+                  "B": "Konstruktor z parametrami",
+                  "C": "Metodę main",
+                  "D": "Interfejs Serializable"
+                },
+                "correctAnswer": "A"
+              },
+              {
+                "id": 171,
+                "question": "Adnotacja @Entity w Hibernate oznacza:",
+                "options": {
+                  "A": "Klasę abstrakcyjną",
+                  "B": "Klasę, która będzie mapowana na tabelę w bazie danych",
+                  "C": "Klasę statyczną",
+                  "D": "Klasę finalną"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 172,
+                "question": "Adnotacja @Id w Hibernate służy do:",
+                "options": {
+                  "A": "Oznaczenia metody prywatnej",
+                  "B": "Oznaczenia klucza głównego",
+                  "C": "Oznaczenia klucza obcego",
+                  "D": "Oznaczenia metody statycznej"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 173,
+                "question": "Adnotacja @Transient w Hibernate oznacza:",
+                "options": {
+                  "A": "Atrybut będzie przechowywany w bazie danych",
+                  "B": "Atrybut będzie ignorowany przez Hibernate",
+                  "C": "Atrybut będzie kluczem głównym",
+                  "D": "Atrybut będzie kluczem obcym"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 174,
+                "question": "W Hibernate adnotacja @OneToMany oznacza:",
+                "options": {
+                  "A": "Relację jeden do jednego",
+                  "B": "Relację jeden do wielu",
+                  "C": "Relację wiele do wielu",
+                  "D": "Brak relacji"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 175,
+                "question": "Adnotacja @ElementCollection w Hibernate służy do:",
+                "options": {
+                  "A": "Mapowania asocjacji między obiektami",
+                  "B": "Mapowania kolekcji wartości (nie obiektów)",
+                  "C": "Oznaczenia klucza głównego",
+                  "D": "Oznaczenia dziedziczenia"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 176,
+                "question": "W strategii dziedziczenia SINGLE_TABLE w Hibernate:",
+                "options": {
+                  "A": "Każda klasa ma swoją tabelę",
+                  "B": "Jedna tabela zawiera elementy z nadklasy i wszystkich podklas",
+                  "C": "Nie ma mapowania dziedziczenia",
+                  "D": "Tylko podklasy mają tabele"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 177,
+                "question": "W strategii dziedziczenia JOINED w Hibernate:",
+                "options": {
+                  "A": "Wszystkie klasy w jednej tabeli",
+                  "B": "Każda klasa ma swoją tabelę połączoną relacjami",
+                  "C": "Brak tabel w bazie danych",
+                  "D": "Tylko nadklasa ma tabelę"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 178,
+                "question": "Adnotacja @MappedSuperclass w Hibernate oznacza:",
+                "options": {
+                  "A": "Klasę będącą encją",
+                  "B": "Klasę abstrakcyjną mapowaną tylko w modelu, ale nie w BD",
+                  "C": "Klasę z kluczem głównym",
+                  "D": "Klasę z relacjami"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 179,
+                "question": "HQL (Hibernate Query Language) to:",
+                "options": {
+                  "A": "Język programowania",
+                  "B": "Język zapytań podobny do SQL",
+                  "C": "Baza danych",
+                  "D": "System operacyjny"
+                },
+                "correctAnswer": "B"
+              },
+              {
+                "id": 180,
+                "question": "Główną zaletą Microsoft LINQ w porównaniu z Hibernate jest:",
+                "options": {
+                  "A": "Większa wydajność",
+                  "B": "Znaczące zredukowanie niezgodności impedancji przez integrację z językiem",
+                  "C": "Mniejsze zużycie pamięci",
+                  "D": "Prostszy kod"
+                },
+                "correctAnswer": "B"
+              },
+                {
+                  "id": 181,
+                  "question": "AWT (Abstract Window Toolkit) został wydany po raz pierwszy w:",
+                  "options": {
+                    "A": "1992",
+                    "B": "1995",
+                    "C": "1997",
+                    "D": "2000"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 182,
+                  "question": "Główną cechą charakterystyczną AWT jest:",
+                  "options": {
+                    "A": "Wykorzystanie własnych mechanizmów renderujących",
+                    "B": "Wykorzystanie natywnych widgetów danej platformy",
+                    "C": "Niezależność od platformy",
+                    "D": "Obsługa grafiki 3D"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 183,
+                  "question": "Swing został wydany w:",
+                  "options": {
+                    "A": "1995",
+                    "B": "1996",
+                    "C": "1997",
+                    "D": "1998"
+                  },
+                  "correctAnswer": "C"
+                },
+                {
+                  "id": 184,
+                  "question": "W przeciwieństwie do AWT, Swing:",
+                  "options": {
+                    "A": "Wykorzystuje natywne widgety systemu",
+                    "B": "Ma ograniczony zestaw kontrolek",
+                    "C": "Wygląd i zachowanie widgetów określone przez Javę - rysowane przy wykorzystaniu Java2D",
+                    "D": "Nie obsługuje zdarzeń"
+                  },
+                  "correctAnswer": "C"
+                },
+                {
+                  "id": 185,
+                  "question": "Mechanizm 'pluggable look and feel' w Swing oznacza:",
+                  "options": {
+                    "A": "Możliwość wymiany silnika renderującego",
+                    "B": "Możliwość zmiany tematu graficznego aplikacji",
+                    "C": "Automatyczne dostosowanie do systemu operacyjnego",
+                    "D": "Wsparcie dla różnych języków programowania"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 186,
+                  "question": "SWT (Standard Widget Toolkit) został stworzony przez:",
+                  "options": {
+                    "A": "Sun Microsystems",
+                    "B": "Oracle",
+                    "C": "IBM",
+                    "D": "Microsoft"
+                  },
+                  "correctAnswer": "C"
+                },
+                {
+                  "id": 187,
+                  "question": "W SWT konieczne jest ręczne zwalnianie zasobów za pomocą metody:",
+                  "options": {
+                    "A": "finalize()",
+                    "B": "dispose()",
+                    "C": "close()",
+                    "D": "free()"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 188,
+                  "question": "JavaFX została po raz pierwszy opublikowana w:",
+                  "options": {
+                    "A": "2007-12",
+                    "B": "2008-12",
+                    "C": "2009-12",
+                    "D": "2010-12"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 189,
+                  "question": "W JavaFX klasy Stage, Scene i Node reprezentują:",
+                  "options": {
+                    "A": "Różne typy kontrolek",
+                    "B": "Części grafu tworzącego scenę",
+                    "C": "Managery layout'u",
+                    "D": "Obsługę zdarzeń"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 190,
+                  "question": "Qt (biblioteka GUI dla C++) zostało rozpoczęte w:",
+                  "options": {
+                    "A": "1990",
+                    "B": "1991",
+                    "C": "1992",
+                    "D": "1993"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 191,
+                  "question": "wxWidgets zostało po raz pierwszy wydane w:",
+                  "options": {
+                    "A": "1991",
+                    "B": "1992",
+                    "C": "1993",
+                    "D": "1994"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 192,
+                  "question": "Microsoft WinForms:",
+                  "options": {
+                    "A": "Działa tylko z C++",
+                    "B": "Jest częścią MFC",
+                    "C": "Działa również z MS C#",
+                    "D": "Wymaga osobnej instalacji"
+                  },
+                  "correctAnswer": "C"
+                },
+                {
+                  "id": 193,
+                  "question": "WPF (Windows Presentation Foundation) umożliwia tworzenie:",
+                  "options": {
+                    "A": "Tylko standardowych kontrolek",
+                    "B": "GUI o unikalnym wyglądzie z grafiką 2D i 3D",
+                    "C": "Wyłącznie aplikacji konsolowych",
+                    "D": "Tylko aplikacji internetowych"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 194,
+                  "question": "GTK+ było pierwotnie stworzone dla:",
+                  "options": {
+                    "A": "KDE",
+                    "B": "GNOME",
+                    "C": "GIMP",
+                    "D": "Firefox"
+                  },
+                  "correctAnswer": "C"
+                },
+                {
+                  "id": 195,
+                  "question": "Ręczne pisanie kodu GUI charakteryzuje się:",
+                  "options": {
+                    "A": "Małą podatnością na błędy",
+                    "B": "Największą kontrolą nad efektem końcowym",
+                    "C": "Dużą szybkością tworzenia",
+                    "D": "Łatwością wprowadzania poprawek"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 196,
+                  "question": "Praca dwukierunkowa (bi-directional code generation) w edytorach GUI oznacza:",
+                  "options": {
+                    "A": "Tylko generowanie kodu z projektu graficznego",
+                    "B": "Edytor odzwierciedla w projekcie graficznym ręcznie naniesione zmiany w kodzie",
+                    "C": "Automatyczne tworzenie dokumentacji",
+                    "D": "Obsługę wielu języków programowania"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 197,
+                  "question": "XAML (Extensible Application Markup Language) jest wykorzystywany głównie w:",
+                  "options": {
+                    "A": "Java Swing",
+                    "B": "Qt",
+                    "C": ".NET, szczególnie w WPF",
+                    "D": "GTK+"
+                  },
+                  "correctAnswer": "C"
+                },
+                {
+                  "id": 198,
+                  "question": "Deklaratywność semantyczna w tworzeniu GUI polega na:",
+                  "options": {
+                    "A": "Definiowaniu konkretnych widgetów",
+                    "B": "Określaniu, które elementy modelu danych mają mieć widgety",
+                    "C": "Ręcznym pisaniu całego kodu",
+                    "D": "Używaniu tylko standardowych kontrolek"
+                  },
+                  "correctAnswer": "B"
+                },
+                {
+                  "id": 199,
+                  "question": "NetBeans IDE oferuje edytor GUI, który wspiera:",
+                  "options": {
+                    "A": "Tylko AWT",
+                    "B": "Tylko Swing",
+                    "C": "Całkowicie graficzne projektowanie GUI z dobrym systemem layout manager",
+                    "D": "Tylko SWT"
+                  },
+                  "correctAnswer": "C"
+                },
+                {
+                  "id": 200,
+                  "question": "Według wykładu, aktualnie najatrakcyjniejszym sposobem implementacji GUI jest:",
+                  "options": {
+                    "A": "Ręczne pisanie kodu",
+                    "B": "Wykorzystanie specjalizowanego edytora",
+                    "C": "Podejście deklaratywne",
+                    "D": "Tworzenie własnej biblioteki GUI"
+                  },
+                  "correctAnswer": "B"
+                },
     {
-      "id": 1,
-      "question": "Co to jest diagram przypadków użycia (Use Case Diagram)?",
+      "id": 201,
+      "question": "Istota podejścia deklaratywnego polega na tym, że:",
       "options": {
-        "A": "Diagram pokazujący strukturę klas w systemie",
-        "B": "Diagram przedstawiający funkcjonalności systemu z perspektywy użytkownika",
-        "C": "Diagram sekwencji operacji",
-        "D": "Diagram stanu obiektów"
+        "A": "mówimy jak ma być zrobione",
+        "B": "mówimy co ma być zrobione, a nie jak ma to zrobić",
+        "C": "komputer czyta w naszych myślach",
+        "D": "wszystko robimy ręcznie"
       },
       "correctAnswer": "B"
     },
     {
-      "id": 2,
-      "question": "Który diagram UML najlepiej pokazuje interakcje między obiektami w czasie?",
+      "id": 202,
+      "question": "Aby znaleźć złoty środek w podejściu deklaratywnym, musimy zbalansować:",
       "options": {
-        "A": "Diagram klas",
-        "B": "Diagram przypadków użycia",
-        "C": "Diagram sekwencji",
-        "D": "Diagram aktywności"
+        "A": "wydajność i funkcjonalność",
+        "B": "estetykę i użyteczność",
+        "C": "nasze zaangażowanie w definiowanie GUI a generycznością rozwiązania",
+        "D": "koszty i zyski"
       },
       "correctAnswer": "C"
     },
     {
-      "id": 3,
-      "question": "Co oznacza związek agregacji w diagramie klas?",
+      "id": 203,
+      "question": "W proponowanym podejściu deklaratywnym programista określa:",
       "options": {
-        "A": "Relację 'część-całość' gdzie części mogą istnieć niezależnie",
-        "B": "Relację dziedziczenia",
-        "C": "Relację implementacji interfejsu",
-        "D": "Relację zależności"
-      },
-      "correctAnswer": "A"
-    },
-    {
-      "id": 4,
-      "question": "Czym różni się kompozycja od agregacji?",
-      "options": {
-        "A": "Kompozycja to słabsza forma związku",
-        "B": "W kompozycji części nie mogą istnieć bez całości",
-        "C": "Kompozycja dotyczy tylko interfejsów",
-        "D": "Nie ma różnicy"
-      },
-      "correctAnswer": "B"
-    },
-    {
-      "id": 5,
-      "question": "Co to jest aktor w diagramie przypadków użycia?",
-      "options": {
-        "A": "Konkretna osoba używająca systemu",
-        "B": "Rola odgrywana przez użytkownika lub system zewnętrzny",
-        "C": "Funkcja systemu",
-        "D": "Klasa w systemie"
-      },
-      "correctAnswer": "B"
-    },
-    {
-      "id": 6,
-      "question": "Który diagram UML najlepiej przedstawia przepływ sterowania w systemie?",
-      "options": {
-        "A": "Diagram klas",
-        "B": "Diagram obiektów",
-        "C": "Diagram aktywności",
-        "D": "Diagram komponentów"
+        "A": "tylko metody",
+        "B": "tylko atrybuty",
+        "C": "atrybuty i metody które powinny mieć stworzone GUI",
+        "D": "tylko interfejs użytkownika"
       },
       "correctAnswer": "C"
     },
     {
-      "id": 7,
-      "question": "Co oznacza stereotyp <<include>> w diagramie przypadków użycia?",
+      "id": 204,
+      "question": "Refleksja (reflection) umożliwia:",
       "options": {
-        "A": "Przypadek użycia może wystąpić opcjonalnie",
-        "B": "Przypadek użycia zawsze jest wykonywany jako część innego",
-        "C": "Przypadek użycia rozszerza funkcjonalność",
-        "D": "Przypadek użycia jest abstrakcyjny"
+        "A": "tylko odczyt zawartości atrybutów",
+        "B": "tylko wywoływanie metod",
+        "C": "tworzenie instancji klas, wywoływanie metod, modyfikację i odczyt zawartości atrybutów",
+        "D": "tylko tworzenie instancji klas"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 205,
+      "question": "Refleksja jest dostępna dla:",
+      "options": {
+        "A": "tylko Javy",
+        "B": "Javy, C# i częściowo C++",
+        "C": "tylko C#",
+        "D": "wszystkich języków programowania"
       },
       "correctAnswer": "B"
     },
     {
-      "id": 8,
-      "question": "Jaka jest różnica między analizą a projektowaniem systemu?",
+      "id": 206,
+      "question": "Adnotacje w Javie mogą dotyczyć:",
       "options": {
-        "A": "Analiza dotyczy 'co', projektowanie 'jak'",
-        "B": "Analiza to projektowanie interfejsu użytkownika",
-        "C": "Projektowanie poprzedza analizę",
-        "D": "Nie ma różnicy"
+        "A": "tylko klas",
+        "B": "tylko atrybutów",
+        "C": "klas, atrybutów i metod",
+        "D": "tylko metod"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 207,
+      "question": "Parametr 'label' w adnotacji służy do:",
+      "options": {
+        "A": "określenia rodzaju widgetu",
+        "B": "opisania etykiety znajdującej się przy widgecie",
+        "C": "ustawienia kolejności elementów",
+        "D": "określenia czy element jest tylko do odczytu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 208,
+      "question": "Domyślna wartość parametru 'widgetClass' zakłada użycie:",
+      "options": {
+        "A": "JCheckBox",
+        "B": "JComboBox",
+        "C": "JTextBox (JTextField)",
+        "D": "JTextArea"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 209,
+      "question": "Parametr 'order' w adnotacji określa:",
+      "options": {
+        "A": "priorytet wykonania",
+        "B": "kolejność widgetu w formularzu",
+        "C": "numer wersji",
+        "D": "liczbę elementów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 210,
+      "question": "W rozwiązaniu generycznym wymaga się od każdej kontrolki obsługi metod:",
+      "options": {
+        "A": "getValue() i setValue()",
+        "B": "getText() i setText(String)",
+        "C": "getContent() i setContent()",
+        "D": "read() i write()"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 211,
+      "question": "Wspólny typ przesyłanych danych w generycznym rozwiązaniu to:",
+      "options": {
+        "A": "Object",
+        "B": "Integer",
+        "C": "tekst (String)",
+        "D": "byte[]"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 212,
+      "question": "Jigloo GUI Builder dla przykładowej klasy z 7 atrybutami wygenerował:",
+      "options": {
+        "A": "50 linii kodu",
+        "B": "75 linii kodu",
+        "C": "105 linii kodu",
+        "D": "150 linii kodu"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 213,
+      "question": "Adnotacja @Target(ElementType.FIELD) oznacza, że adnotacja może być stosowana do:",
+      "options": {
+        "A": "klas",
+        "B": "metod",
+        "C": "atrybutów (pól)",
+        "D": "konstruktorów"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 214,
+      "question": "@Retention(RetentionPolicy.RUNTIME) oznacza, że adnotacja będzie dostępna:",
+      "options": {
+        "A": "tylko w czasie kompilacji",
+        "B": "w czasie działania programu",
+        "C": "tylko w kodzie źródłowym",
+        "D": "tylko w dokumentacji"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 215,
+      "question": "Parametr 'showInFields' określa czy element powinien być:",
+      "options": {
+        "A": "widoczny w widoku tabelarycznym",
+        "B": "widoczny w formatce z polami",
+        "C": "dostępny w trybie wyszukiwania",
+        "D": "tylko do odczytu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 216,
+      "question": "Alternatywą dla adnotacji może być:",
+      "options": {
+        "A": "tylko pliki XML",
+        "B": "tylko pliki properties",
+        "C": "własny język dziedzinowy (DSL) z Fluent API",
+        "D": "tylko konwencja nazewnictwa"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 217,
+      "question": "GCL DSL w nowej wersji biblioteki zawiera:",
+      "options": {
+        "A": "tylko Fluent API",
+        "B": "Fluent API, walidatory, I18n i AdHocGUI",
+        "C": "tylko walidatory",
+        "D": "tylko obsługę wielojęzyczności"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 218,
+      "question": "Przykład Fluent API: create.frame.usingOnly(person) oznacza:",
+      "options": {
+        "A": "stworzenie ramki z wszystkimi elementami obiektu person",
+        "B": "stworzenie pustej ramki",
+        "C": "stworzenie ramki tylko z wybranymi elementami",
+        "D": "kopiowanie istniejącej ramki"
       },
       "correctAnswer": "A"
+    },
+    {
+      "id": 219,
+      "question": "Główną zaletą deklaratywnego podejścia do tworzenia GUI jest:",
+      "options": {
+        "A": "większa kontrola nad szczegółami",
+        "B": "oszczędność pracy programisty, szczególnie przy typowych formularzach",
+        "C": "lepsza wydajność aplikacji",
+        "D": "mniejsze zużycie pamięci"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 220,
+      "question": "Każde rozwiązanie deklaratywne jest kompromisem pomiędzy:",
+      "options": {
+        "A": "szybkością a jakością",
+        "B": "zaangażowaniem programisty a osiągniętymi efektami",
+        "C": "kosztami a funkcjonalnością",
+        "D": "prostotą a złożonością"
+      },
+      "correctAnswer": "B"
     }
-  ]
+    ]
 }
