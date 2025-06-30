@@ -527,6 +527,1139 @@
         "D": "90-95%"
       },
       "correctAnswer": "C"
+    },
+    {
+      "id": 48,
+      "question": "Która z poniższych metodyk projektowania charakteryzuje się podejściem iteracyjnym i elastycznym?",
+      "options": {
+        "A": "Model kaskadowy",
+        "B": "Model spiralny",
+        "C": "Metodyki Agile",
+        "D": "Model V"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 49,
+      "question": "Na czym koncentruje się testowanie czarnej skrzynki?",
+      "options": {
+        "A": "Na analizie wewnętrznej struktury oprogramowania",
+        "B": "Na funkcjonalności oprogramowania",
+        "C": "Na wydajności systemu",
+        "D": "Na bezpieczeństwie danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 50,
+      "question": "Co obejmuje zarządzanie konfiguracją oprogramowania?",
+      "options": {
+        "A": "Tylko instalację oprogramowania",
+        "B": "Kontrolę i zarządzanie zmianami w oprogramowaniu, w tym identyfikację, wersjonowanie i dokumentację zmian",
+        "C": "Jedynie tworzenie kopii zapasowych",
+        "D": "Optymalizację wydajności systemu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 51,
+      "question": "Czego dotyczą wymagania funkcjonalne w projekcie oprogramowania?",
+      "options": {
+        "A": "Cech systemu takich jak wydajność i bezpieczeństwo",
+        "B": "Tego, co system powinien robić",
+        "C": "Kosztów realizacji projektu",
+        "D": "Harmonogramu prac"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 52,
+      "question": "Które z poniższych są kluczowymi zasadami projektowania interfejsu użytkownika?",
+      "options": {
+        "A": "Złożoność, niespójność, brak feedbacku",
+        "B": "Prostota, konsystencja, sprawny feedback",
+        "C": "Kolorowe elementy, duże czcionki, głośne dźwięki",
+        "D": "Ukryte menu, skomplikowana nawigacja, długie formularze"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 53,
+      "question": "Która z poniższych jest przykładową techniką szacowania nakładów pracy?",
+      "options": {
+        "A": "Losowe generowanie liczb",
+        "B": "Estymacja oparta na punktach funkcyjnych",
+        "C": "Kopiowanie szacunków z innych projektów bez analizy",
+        "D": "Podwajanie każdego szacunku"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 54,
+      "question": "Czym jest konserwacja oprogramowania?",
+      "options": {
+        "A": "Jednorazowa instalacja systemu",
+        "B": "Proces usuwania oprogramowania",
+        "C": "Proces utrzymania, naprawy i ulepszania istniejącego oprogramowania w celu zapewnienia trwałości, niezawodności i efektywności systemu",
+        "D": "Tworzenie dokumentacji użytkownika"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 55,
+      "question": "Jaki jest cel audytu oprogramowania?",
+      "options": {
+        "A": "Zwiększenie kosztów projektu",
+        "B": "Niezależna ocena zgodności oprogramowania z określonymi standardami, procedurami lub wymaganiami",
+        "C": "Zmiana wymagań funkcjonalnych",
+        "D": "Przyspieszenie procesu kodowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 56,
+      "question": "Co jest istotne w zarządzaniu zespołem programistycznym?",
+      "options": {
+        "A": "Ukrywanie celów projektu przed zespołem",
+        "B": "Określenie struktury zespołu, celów projektu, komunikacja wewnątrz zespołu i budowanie kultury współpracy",
+        "C": "Eliminowanie wszelkiej komunikacji między członkami zespołu",
+        "D": "Koncentracja tylko na aspektach technicznych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 57,
+      "question": "Jakie decyzje podejmuje się w fazie strategicznej tworzenia oprogramowania?",
+      "options": {
+        "A": "Tylko dotyczące koloru interfejsu",
+        "B": "Dotyczące celów biznesowych, analizy wymagań, architektury systemu, wyboru technologii i planowania harmonogramu i zasobów",
+        "C": "Jedynie o nazwie produktu",
+        "D": "Tylko o liczbie programistów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 58,
+      "question": "Które z poniższych są technikami zmniejszania liczby błędów w oprogramowaniu?",
+      "options": {
+        "A": "Ignorowanie testów i przeglądu kodu",
+        "B": "Regularne testowanie, stosowanie standardów kodowania, przeglądy kodu, automatyzacja i narzędzia do kontroli jakości",
+        "C": "Pisanie kodu bez dokumentacji",
+        "D": "Unikanie jakichkolwiek standardów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 59,
+      "question": "Czym są transakcje w bazach danych?",
+      "options": {
+        "A": "Kopiami zapasowymi danych",
+        "B": "Jednostkami atomowymi, które zapewniają integralność i niezawodność operacji na danych w bazie danych",
+        "C": "Zapytaniami tylko do odczytu",
+        "D": "Procedurami optymalizacji"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 60,
+      "question": "Co obejmują cele fazy analizy w cyklu życia projektu oprogramowania?",
+      "options": {
+        "A": "Tylko kodowanie aplikacji",
+        "B": "Zrozumienie potrzeb użytkowników, analizę dziedziny biznesowej, identyfikację ryzyka i ustalenie zakresu projektu",
+        "C": "Jedynie testowanie końcowe",
+        "D": "Tylko wdrożenie systemu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 61,
+      "question": "Testowanie białej skrzynki charakteryzuje się:",
+      "options": {
+        "A": "Koncentracją na funkcjonalności systemu",
+        "B": "Analizą wewnętrznej struktury oprogramowania",
+        "C": "Testowaniem tylko interfejsu użytkownika",
+        "D": "Ignorowaniem kodu źródłowego"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 62,
+      "question": "Model kaskadowy i spiralny to podejścia:",
+      "options": {
+        "A": "Iteracyjne i elastyczne",
+        "B": "Sekwencyjne",
+        "C": "Chaotyczne i nieprzewidywalne",
+        "D": "Wyłącznie dla małych projektów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 63,
+      "question": "Jakie są główne zagadnienia inżynierii oprogramowania?",
+      "options": {
+        "A": "Tylko programowanie i testowanie",
+        "B": "Sposoby prowadzenia przedsięwzięć informatycznych, techniki planowania, metody analizy i projektowania, techniki zwiększania niezawodności",
+        "C": "Wyłącznie dokumentacja techniczna",
+        "D": "Sprzedaż i marketing oprogramowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 64,
+      "question": "Co jest główną przyczyną kryzysu oprogramowania?",
+      "options": {
+        "A": "Brak wykwalifikowanych programistów",
+        "B": "Wysokie koszty sprzętu komputerowego",
+        "C": "Sprzeczność między odpowiedzialnością współczesnych SI a ich zawodnością wynikającą ze złożoności",
+        "D": "Niewystarczająca moc obliczeniowa"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 65,
+      "question": "Jaka jest główna wada modelu kaskadowego?",
+      "options": {
+        "A": "Zbyt krótki czas realizacji",
+        "B": "Wysoki koszt błędów popełnionych we wczesnych fazach i długa przerwa w kontaktach z klientem",
+        "C": "Brak możliwości dokumentowania",
+        "D": "Niemożliwość testowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 66,
+      "question": "Na czym polega modelowanie pojęciowe?",
+      "options": {
+        "A": "Tworzenie fizycznych modeli systemów",
+        "B": "Projektowanie interfejsu użytkownika",
+        "C": "Przedstawienie rzeczywistości opisywanej przez dane oraz procesów zachodzących w rzeczywistości",
+        "D": "Kodowanie w określonym języku programowania"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 67,
+      "question": "Jakie są główne metody prototypowania?",
+      "options": {
+        "A": "Niepełna realizacja, języki wysokiego poziomu, wykorzystanie gotowych komponentów, generatory interfejsu",
+        "B": "Tylko programowanie w językach niskiego poziomu",
+        "C": "Wyłącznie dokumentacja papierowa",
+        "D": "Testowanie bez implementacji"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 68,
+      "question": "Co powinien zawierać raport z fazy strategicznej?",
+      "options": {
+        "A": "Tylko kod źródłowy",
+        "B": "Definicję celów, opis zakresu, ogólny model systemu, oszacowanie kosztów, harmonogram",
+        "C": "Wyłącznie testy jednostkowe",
+        "D": "Instrukcję obsługi dla użytkowników"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 69,
+      "question": "Jaka jest różnica między zakresem a kontekstem przedsięwzięcia?",
+      "options": {
+        "A": "Nie ma żadnej różnicy",
+        "B": "Zakres to fragmenty procesów objęte przedsięwzięciem, kontekst to systemy zewnętrzne współpracujące",
+        "C": "Zakres dotyczy tylko kosztów, kontekst tylko czasu",
+        "D": "Zakres to technologia, kontekst to personel"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 70,
+      "question": "Jakie są główne techniki szacowania kosztów oprogramowania?",
+      "options": {
+        "A": "Tylko intuicja kierownika projektu",
+        "B": "Modele algorytmiczne, ocena przez eksperta, ocena przez analogię, szacowanie wstępujące",
+        "C": "Wyłącznie losowe generowanie liczb",
+        "D": "Kopiowanie kosztów z innych projektów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 71,
+      "question": "Na czym polega metoda punktów funkcyjnych (FPA)?",
+      "options": {
+        "A": "Liczeniu linii kodu źródłowego",
+        "B": "Oszacowaniu kosztu na podstawie funkcji użytkowych, które system ma realizować",
+        "C": "Pomiarze szybkości wykonywania programu",
+        "D": "Obliczaniu liczby błędów w kodzie"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 72,
+      "question": "Jakie są główne metody rozpoznania wymagań?",
+      "options": {
+        "A": "Wywiady, studia istniejącego oprogramowania, studia wymagań systemowych, prototypowanie",
+        "B": "Tylko czytanie dokumentacji",
+        "C": "Wyłącznie obserwacja użytkowników",
+        "D": "Testowanie gotowego oprogramowania"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 73,
+      "question": "Jaka jest różnica między wymaganiami funkcjonalnymi a niefunkcjonalnymi?",
+      "options": {
+        "A": "Nie ma różnicy",
+        "B": "Funkcjonalne opisują czynności systemu, niefunkcjonalne dotyczą produktu, procesu i wymagań zewnętrznych",
+        "C": "Funkcjonalne dotyczą tylko interfejsu",
+        "D": "Niefunkcjonalne są nieważne"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 74,
+      "question": "Jaki jest cel fazy analizy?",
+      "options": {
+        "A": "Napisanie kodu programu",
+        "B": "Ustalenie czynników wpływających na decyzje projektowe i stworzenie logicznego modelu systemu",
+        "C": "Testowanie oprogramowania",
+        "D": "Szkolenie użytkowników"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 75,
+      "question": "Jakie są główne cechy modelu analitycznego?",
+      "options": {
+        "A": "Pokazuje co system musi robić, jest hierarchiczny, unika terminologii implementacyjnej",
+        "B": "Zawiera tylko kod źródłowy",
+        "C": "Opisuje wyłącznie interfejs użytkownika",
+        "D": "Jest identyczny z kodem końcowym"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 76,
+      "question": "Jaka jest różnica między metodyka strukturalną a obiektową?",
+      "options": {
+        "A": "Strukturalna używa diagramów DFD, obiektowa wykorzystuje pojęcia obiektowości i diagramy klas",
+        "B": "Nie ma żadnej różnicy",
+        "C": "Strukturalna jest nowsza",
+        "D": "Obiektowa nie używa diagramów"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 77,
+      "question": "Jaki jest cel fazy projektowania?",
+      "options": {
+        "A": "Określenie wymagań użytkownika",
+        "B": "Opracowanie szczegółowego opisu implementacji systemu",
+        "C": "Testowanie gotowego systemu",
+        "D": "Instalacja oprogramowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 78,
+      "question": "Czym różnią się wyniki fazy projektowania od analizy?",
+      "options": {
+        "A": "Projektowanie uwzględnia środowisko implementacji i składowe nie związane z dziedziną problemu",
+        "B": "Nie ma żadnej różnicy",
+        "C": "Projektowanie jest prostsze",
+        "D": "Analiza jest bardziej szczegółowa"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 79,
+      "question": "Co oznacza RAD (Rapid Application Development)?",
+      "options": {
+        "A": "Wolne tworzenie aplikacji",
+        "B": "Narzędzia i techniki umożliwiające szybką budowę prototypów, oparte o programowanie wizyjne",
+        "C": "Testowanie aplikacji",
+        "D": "Dokumentowanie kodu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 80,
+      "question": "Jakie są podstawowe reguły projektowania interfejsu użytkownika?",
+      "options": {
+        "A": "Spójność, skróty dla doświadczonych, potwierdzenie akcji, prosta obsługa błędów, możliwość cofania",
+        "B": "Tylko kolorowy design",
+        "C": "Jak najwięcej opcji na ekranie",
+        "D": "Brak zasad"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 81,
+      "question": "Co to jest reguła Millera 7 +/- 2?",
+      "options": {
+        "A": "Liczba programistów w zespole",
+        "B": "Człowiek może się jednocześnie skupić na 5-9 elementach",
+        "C": "Liczba błędów w programie",
+        "D": "Czas wykonania programu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 82,
+      "question": "Jakie składowe systemu (nie związane z dziedziną) uwzględnia projektowanie?",
+      "options": {
+        "A": "Interfejs użytkownika, zarządzanie danymi, zarządzanie pamięcią, zarządzanie zadaniami",
+        "B": "Tylko interfejs użytkownika",
+        "C": "Wyłącznie bazę danych",
+        "D": "Żadne składowe"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 83,
+      "question": "Jakie są główne problemy przy przejściu z modelu obiektowego na relacyjny?",
+      "options": {
+        "A": "Konieczność przeprowadzenia nietrywialnych odwzorowań, trudności z polami zmiennej długości",
+        "B": "Brak problemów",
+        "C": "Tylko problemy z wydajnością",
+        "D": "Wyłącznie kwestie bezpieczeństwa"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 84,
+      "question": "Na czym polega optymalizacja projektu?",
+      "options": {
+        "A": "Zmniejszaniu funkcjonalności",
+        "B": "Zwiększeniu wydajności przez sprawdzenie algorytmów, wyłowienie wąskich gardeł, denormalizację BD",
+        "C": "Dodawaniu nowych funkcji",
+        "D": "Zmianie interfejsu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 85,
+      "question": "Co oznacza poprawność projektu?",
+      "options": {
+        "A": "Projekt jest kompletny, niesprzeczny, spójny i zgodny z regułami składniowymi notacji",
+        "B": "Projekt działa szybko",
+        "C": "Projekt wygląda ładnie",
+        "D": "Projekt jest tani"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 86,
+      "question": "Dlaczego niezawodność oprogramowania jest ważna?",
+      "options": {
+        "A": "Rosnące oczekiwania klientów, potencjalnie duże koszty błędów, nieprzewidywalność efektów",
+        "B": "Tylko ze względu na marketing",
+        "C": "Wyłącznie dla poprawy wydajności",
+        "D": "Nie jest ważna"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 87,
+      "question": "Jaka jest różnica między unikaniem błędów a tolerancją błędów?",
+      "options": {
+        "A": "Tolerancja oznacza, że program działa poprawnie także gdy zawiera błędy",
+        "B": "Nie ma różnicy",
+        "C": "Unikanie jest gorsze",
+        "D": "Tolerancja jest niemożliwa"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 88,
+      "question": "Jakie techniki programowania są uważane za niebezpieczne?",
+      "options": {
+        "A": "Go to, zmienne ze zmiennym przecinkiem, wskaźniki, obliczenia równoległe, rekurencja",
+        "B": "Wszystkie techniki są bezpieczne",
+        "C": "Tylko pętle",
+        "D": "Wyłącznie instrukcje warunkowe"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 89,
+      "question": "Co to jest typ w programowaniu i jaki jest jego cel?",
+      "options": {
+        "A": "Typ specyfikuje rodzaj wartości i służy kontroli formalnej poprawności programu",
+        "B": "Typ to tylko nazwa zmiennej",
+        "C": "Typ nie ma znaczenia",
+        "D": "Typ określa tylko rozmiar pamięci"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 90,
+      "question": "Co charakteryzuje mocną kontrolę typów?",
+      "options": {
+        "A": "Każdy deklarowany byt musi mieć deklarację typu sprawdzaną podczas kompilacji",
+        "B": "Typy są sprawdzane losowo",
+        "C": "Kontrola typów jest wyłączona",
+        "D": "Typy można zmieniać w trakcie wykonania"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 91,
+      "question": "Jakie zadania wykonuje się w fazie instalacji?",
+      "options": {
+        "A": "Szkolenie użytkowników, instalacja sprzętu, wypełnienie baz danych, usuwanie błędów",
+        "B": "Tylko programowanie",
+        "C": "Wyłącznie dokumentowanie",
+        "D": "Jedynie testowanie"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 92,
+      "question": "Na czym polega inżynieria odwrotna?",
+      "options": {
+        "A": "Odtworzenie bardziej abstrakcyjnej postaci oprogramowania z postaci szczegółowej",
+        "B": "Pisanie nowego kodu",
+        "C": "Testowanie oprogramowania",
+        "D": "Instalacja systemu"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 93,
+      "question": "Jakie są rodzaje modyfikacji w fazie konserwacji?",
+      "options": {
+        "A": "Poprawiające (usuwanie błędów), ulepszające (poprawa jakości), dostosowujące (zmiany wymagań)",
+        "B": "Tylko estetyczne",
+        "C": "Wyłącznie funkcjonalne",
+        "D": "Nie ma rodzajów modyfikacji"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 94,
+      "question": "Co wpływa na koszty konserwacji oprogramowania?",
+      "options": {
+        "A": "Stabilność środowiska, stabilność platformy, czas użytkowania systemu",
+        "B": "Tylko liczba programistów",
+        "C": "Wyłącznie cena sprzętu",
+        "D": "Nic nie wpływa"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 95,
+      "question": "Jakie sposoby zmniejszania kosztów konserwacji znasz?",
+      "options": {
+        "A": "Znajomość dziedziny, wysoka jakość modelu, dokumentacji, stabilność personelu",
+        "B": "Tylko szybsze programowanie",
+        "C": "Wyłącznie tańszy sprzęt",
+        "D": "Brak sposobów"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 96,
+      "question": "Jaka jest różnica między weryfikacją a atestowaniem?",
+      "options": {
+        "A": "Weryfikacja to testowanie zgodności z wymaganiami, atestowanie to weryfikacja końcowa",
+        "B": "Nie ma różnicy",
+        "C": "Atestowanie jest szybsze",
+        "D": "Weryfikacja jest droższa"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 97,
+      "question": "Co to jest inspekcja oprogramowania?",
+      "options": {
+        "A": "Formalna technika oceny przez osoby nie będące autorami w celu identyfikacji błędów",
+        "B": "Zwykłe czytanie kodu",
+        "C": "Automatyczne sprawdzanie składni",
+        "D": "Testowanie wydajności"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 98,
+      "question": "Jaka jest różnica między błędem a błędnym wykonaniem?",
+      "options": {
+        "A": "Błąd to niepoprawna konstrukcja w programie, błędne wykonanie to niepoprawne działanie systemu",
+        "B": "To samo pojęcie",
+        "C": "Błąd jest gorszy",
+        "D": "Błędne wykonanie nie istnieje"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 99,
+      "question": "Co charakteryzuje testowanie czarnej skrzynki?",
+      "options": {
+        "A": "Sprawdzanie funkcji bez zaglądania do środka programu, podział na klasy równoważności",
+        "B": "Sprawdzanie tylko kodu źródłowego",
+        "C": "Testowanie tylko interfejsu",
+        "D": "Brak testowania"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 100,
+      "question": "Co charakteryzuje testowanie białej skrzynki?",
+      "options": {
+        "A": "Sprawdzanie wewnętrznej logiki oprogramowania, każda ścieżka powinna być przetestowana",
+        "B": "Testowanie tylko wyglądu",
+        "C": "Sprawdzanie tylko dokumentacji",
+        "D": "Testowanie szybkości"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 101,
+      "question": "Jakie są typowe fazy testowania systemu?",
+      "options": {
+        "A": "Testowanie modułów, testowanie integracji, testowanie całości systemu, testowanie akceptacji",
+        "B": "Tylko testowanie końcowe",
+        "C": "Wyłącznie testowanie jednostkowe",
+        "D": "Brak faz testowania"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 102,
+      "question": "Co to są testy obciążeniowe?",
+      "options": {
+        "A": "Badanie wydajności i niezawodności pod pełnym lub nadmiernym obciążeniem",
+        "B": "Testowanie tylko interfejsu",
+        "C": "Sprawdzanie dokumentacji",
+        "D": "Testowanie tylko bezpieczeństwa"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 103,
+      "question": "Jaka jest różnica między testem funkcjonalnym a strukturalnym?",
+      "options": {
+        "A": "Funkcjonalny zakłada znajomość wymagań (czarna skrzynka), strukturalny znajomość implementacji",
+        "B": "Nie ma różnicy",
+        "C": "Funkcjonalny jest szybszy",
+        "D": "Strukturalny jest niepotrzebny"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 104,
+      "question": "Na czym polega technika posiewania błędów?",
+      "options": {
+        "A": "Celowe wprowadzenie błędów do programu w celu przetestowania skuteczności metod testowania",
+        "B": "Usuwanie wszystkich błędów",
+        "C": "Ignorowanie błędów",
+        "D": "Automatyczne generowanie błędów"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 105,
+      "question": "Co to jest jakość oprogramowania według TQM?",
+      "options": {
+        "A": "Ogół cech decydujący o zdolności do zaspokojenia potrzeb użytkownika",
+        "B": "Tylko szybkość działania",
+        "C": "Wyłącznie wygląd interfejsu",
+        "D": "Cena oprogramowania"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 106,
+      "question": "Jakie są poziomy dojrzałości w modelu CMM?",
+      "options": {
+        "A": "Początkowy (chaotyczny), powtarzalny, zdefiniowany, zarządzany, optymalizujący",
+        "B": "Tylko jeden poziom",
+        "C": "Trzy poziomy podstawowe",
+        "D": "Dziesięć poziomów szczegółowych"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 107,
+      "question": "Jaka jest różnica między metryką a pomiarem?",
+      "options": {
+        "A": "Pomiar to proces przydzielania liczb atrybutom, metryka to proponowana miara",
+        "B": "To samo pojęcie",
+        "C": "Metryka jest dokładniejsza",
+        "D": "Pomiar jest niepotrzebny"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 108,
+      "question": "Co można mierzyć w oprogramowaniu?",
+      "options": {
+        "A": "Proces (działania w projekcie), produkt (kod, dokumentacja), zasób (osoby, narzędzia)",
+        "B": "Tylko kod źródłowy",
+        "C": "Wyłącznie czas wykonania",
+        "D": "Nic nie można zmierzyć"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 109,
+      "question": "Jakie są podstawowe zadania kierownictwa przedsięwzięcia?",
+      "options": {
+        "A": "Opracowanie propozycji prowadzenia, kosztorysowanie, planowanie, monitorowanie, dobór personelu",
+        "B": "Tylko programowanie",
+        "C": "Wyłącznie testowanie",
+        "D": "Jedynie dokumentowanie"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 110,
+      "question": "Jakie cechy powinien mieć dobry inżynier oprogramowania?",
+      "options": {
+        "A": "Umiejętność pracy w stresie, zdolności adaptacyjne, ciągłe uczenie się",
+        "B": "Tylko znajomość jednego języka programowania",
+        "C": "Wyłącznie szybkość pisania kodu",
+        "D": "Jedynie doświadczenie w jednej technologii"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 111,
+      "question": "Jaka jest różnica między wiedzą semantyczną a składniową?",
+      "options": {
+        "A": "Semantyczna to zrozumienie znaczenia, składniowa to mechaniczne zapamiętanie faktów",
+        "B": "Nie ma różnicy",
+        "C": "Składniowa jest ważniejsza",
+        "D": "Semantyczna jest niepotrzebna"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 112,
+      "question": "Jakie są podstawowe typy psychologiczne w zespole?",
+      "options": {
+        "A": "Zorientowani na zadania, na siebie, na interakcję",
+        "B": "Tylko zorientowani na zadania",
+        "C": "Wszyscy są identyczni",
+        "D": "Typy nie mają znaczenia"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 113,
+      "question": "Jaka jest różnica między strukturą sieciową a gwiaździstą zespołu?",
+      "options": {
+        "A": "Sieciowa - wszyscy współpracują (max 8 osób), gwiaździsta - szef kontroluje wszystkich",
+        "B": "Nie ma różnicy",
+        "C": "Sieciowa jest gorsza",
+        "D": "Gwiaździsta nie istnieje"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 114,
+      "question": "Co to jest zarządzanie konfiguracją oprogramowania?",
+      "options": {
+        "A": "Planowanie, organizowanie i kontrolowanie identyfikacji, przechowywania i zmian oprogramowania",
+        "B": "Tylko instalacja programów",
+        "C": "Wyłącznie backup danych",
+        "D": "Jedynie aktualizacje systemu"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 115,
+      "question": "Co to jest pozycja konfiguracji (PK)?",
+      "options": {
+        "A": "Dokument, moduł z kodem, interfejs użytkownika, pliki z danymi, narzędzia - wszystko w projekcie",
+        "B": "Tylko kod źródłowy",
+        "C": "Wyłącznie dokumentacja",
+        "D": "Jedynie pliki wykonywalne"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 116,
+      "question": "Co to jest produkt bazowy w zarządzaniu konfiguracją?",
+      "options": {
+        "A": "Pozycja konfiguracji oceniona i zaakceptowana formalnie jako zakończona",
+        "B": "Pierwszy napisany kod",
+        "C": "Ostatnia wersja programu",
+        "D": "Dokumentacja użytkownika"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 117,
+      "question": "Jakie są główne czynniki ryzyka w projektach programistycznych?",
+      "options": {
+        "A": "Czynniki doświadczenia, planowania, technologiczne, zewnętrzne",
+        "B": "Tylko czynniki finansowe",
+        "C": "Wyłącznie czynniki techniczne",
+        "D": "Jedynie czynniki ludzkie"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 118,
+      "question": "Na czym polega zarządzanie ryzykiem?",
+      "options": {
+        "A": "Redukcja prawdopodobieństwa zagrożeń i minimalizacja ich skutków",
+        "B": "Ignorowanie wszystkich zagrożeń",
+        "C": "Przeniesienie odpowiedzialności na innych",
+        "D": "Zwiększanie ryzyka projektu"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 119,
+      "question": "Jakie są główne moduły narzędzi CASE?",
+      "options": {
+        "A": "Edytory notacji graficznych, repozytorium, kontrola poprawności, generatory kodu i dokumentacji",
+        "B": "Tylko edytory tekstu",
+        "C": "Wyłącznie kompilatory",
+        "D": "Jedynie debuggery"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 120,
+      "question": "Jaka jest różnica między Upper-CASE a Lower-CASE?",
+      "options": {
+        "A": "Upper wspomaga wczesne fazy (analiza), Lower wspomaga projektowanie i implementację",
+        "B": "Upper jest gorszy od Lower",
+        "C": "Nie ma różnicy",
+        "D": "Lower jest przestarzały"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 121,
+      "question": "Co jest podstawowym powodem kryzysu oprogramowania?",
+      "options": {
+        "A": "Brak funduszy na projekty informatyczne",
+        "B": "Niewystarczająca moc obliczeniowa komputerów",
+        "C": "Złożoność produktów informatyki i procesów ich wytwarzania",
+        "D": "Brak wykwalifikowanych programistów"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 122,
+      "question": "Która z poniższych zasad NIE należy do sposobów walki ze złożonością?",
+      "options": {
+        "A": "Zasada dekompozycji",
+        "B": "Zasada abstrakcji",
+        "C": "Zasada ponownego użycia",
+        "D": "Zasada losowości"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 123,
+      "question": "Jakie są główne wady modelu kaskadowego?",
+      "options": {
+        "A": "Zbyt wysokie koszty sprzętu",
+        "B": "Narzucenie twórcom ścisłej kolejności wykonywania prac, wysoki koszt błędów we wczesnych fazach, długa przerwa w kontaktach z klientem",
+        "C": "Brak możliwości dokumentowania",
+        "D": "Niemożność przeprowadzenia testów"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 124,
+      "question": "W którym modelu rozwoju oprogramowania najpierw wybierany jest podstawowy zestaw funkcji, a następnie realizowany iteracyjnie?",
+      "options": {
+        "A": "Model kaskadowy",
+        "B": "Model spiralny",
+        "C": "Realizacja przyrostowa",
+        "D": "Prototypowanie"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 125,
+      "question": "Jakie są główne fazy prototypowania?",
+      "options": {
+        "A": "Ogólne określenie wymagań, budowa prototypu, weryfikacja prototypu przez klienta, pełne określenie wymagań, realizacja pełnego systemu",
+        "B": "Analiza, projektowanie, implementacja, testowanie",
+        "C": "Planowanie, kodowanie, testowanie, wdrożenie",
+        "D": "Specyfikacja, konstrukcja, instalacja, konserwacja"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 126,
+      "question": "Co należy do wymagań niefunkcjonalnych?",
+      "options": {
+        "A": "Lista funkcji jakie mają być wykonywane przez system",
+        "B": "Wymagania dotyczące produktu, procesu i zewnętrzne",
+        "C": "Algorytmy przetwarzania danych",
+        "D": "Interfejsy użytkownika"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 127,
+      "question": "Które z poniższych wymagań NIE jest weryfikowalne?",
+      "options": {
+        "A": "Liczba transakcji obsłużonych w ciągu sekundy",
+        "B": "Czas odpowiedzi systemu",
+        "C": "System ma być łatwy w obsłudze",
+        "D": "Procent czasu w którym system jest dostępny"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 128,
+      "question": "Metoda COCOMO służy do:",
+      "options": {
+        "A": "Projektowania interfejsów użytkownika",
+        "B": "Szacowania złożoności na podstawie oszacowanej liczby linii kodu",
+        "C": "Testowania oprogramowania",
+        "D": "Zarządzania bazami danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 129,
+      "question": "Atrybutami produktywności w metodzie punktów funkcyjnych są:",
+      "options": {
+        "A": "Szybkość procesora, wielkość pamięci, przepustowość sieci",
+        "B": "Wejścia użytkownika, wyjścia użytkownika, zbiory danych wewnętrzne, zbiory danych zewnętrzne, zapytania zewnętrzne",
+        "C": "Liczba programistów, czas projektu, budżet",
+        "D": "Rodzaj języka programowania, system operacyjny, baza danych"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 130,
+      "question": "Ile instrukcji w języku C odpowiada w przybliżeniu jednemu punktowi funkcyjnemu (FP)?",
+      "options": {
+        "A": "50 instrukcji",
+        "B": "100 instrukcji",
+        "C": "125 instrukcji",
+        "D": "200 instrukcji"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 131,
+      "question": "Reguła Millera 7 +/- 2 mówi, że:",
+      "options": {
+        "A": "Projekt powinien trwać maksymalnie 7 miesięcy",
+        "B": "Zespół powinien liczyć 5-9 osób",
+        "C": "Człowiek może się jednocześnie skupić na 5-9 elementach",
+        "D": "System powinien mieć 5-9 modułów"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 132,
+      "question": "Które z poniższych NIE należy do zalet baz danych?",
+      "options": {
+        "A": "Wysoka efektywność i stabilność",
+        "B": "Bezpieczeństwo i prywatność danych",
+        "C": "Możliwość geograficznego rozproszenia danych",
+        "D": "Brak możliwości rozszerzalności typów"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 133,
+      "question": "Najlepszym rodzajem spójności w podziale projektu jest:",
+      "options": {
+        "A": "Podział przypadkowy",
+        "B": "Podział logiczny",
+        "C": "Podział czasowy",
+        "D": "Podział funkcjonalny"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 134,
+      "question": "Która z poniższych technik programistycznych jest uznawana za niebezpieczną?",
+      "options": {
+        "A": "Używanie pętli for",
+        "B": "Instrukcja goto",
+        "C": "Używanie funkcji",
+        "D": "Używanie tablic"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 135,
+      "question": "Modyfikacje dostosowujące to:",
+      "options": {
+        "A": "Usuwanie błędów popełnionych w fazach implementacji",
+        "B": "Poprawa jakości oprogramowania",
+        "C": "Dostosowanie oprogramowania do zmian w wymaganiach użytkownika lub środowisku komputerowym",
+        "D": "Optymalizacja wydajności systemu"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 136,
+      "question": "Dokument zgłoszenia błędu powinien zawierać:",
+      "options": {
+        "A": "Tylko opis problemu",
+        "B": "Nazwę elementu konfiguracji, wersję, priorytet problemu, opis problemu, opis środowiska operacyjnego",
+        "C": "Tylko nazwę osoby zgłaszającej",
+        "D": "Tylko datę wystąpienia błędu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 137,
+      "question": "Co to jest weryfikacja w kontekście inżynierii oprogramowania?",
+      "options": {
+        "A": "Tworzenie kopii zapasowych systemu",
+        "B": "Przeglądy, inspekcje, testowanie ustalające czy składowe spełniają wyspecyfikowane wymagania",
+        "C": "Instalacja oprogramowania na serwerze",
+        "D": "Tworzenie dokumentacji użytkownika"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 138,
+      "question": "Jakie są główne korzyści z inspekcji oprogramowania?",
+      "options": {
+        "A": "Zmniejszenie kosztów sprzętu",
+        "B": "Wzrost produktywności od 30% do 100%, skrócenie czasu projektu od 10% do 30%",
+        "C": "Zwiększenie liczby programistów w zespole",
+        "D": "Zmniejszenie liczby linii kodu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 139,
+      "question": "Testy białej skrzynki to:",
+      "options": {
+        "A": "Testowanie funkcji bez zaglądania do kodu programu",
+        "B": "Testowanie wewnętrznej logiki programów poprzez odpowiedni dobór danych wejściowych",
+        "C": "Testowanie tylko interfejsu użytkownika",
+        "D": "Testowanie wydajności systemu"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 140,
+      "question": "Klasy równoważności w testowaniu służą do:",
+      "options": {
+        "A": "Podziału programistów na zespoły",
+        "B": "Podziału danych wejściowych na grupy, które prawdopodobnie będą produkować te same błędy",
+        "C": "Klasyfikacji błędów według ich ważności",
+        "D": "Podziału czasu testowania"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 141,
+      "question": "Technika posiewania błędów polega na:",
+      "options": {
+        "A": "Celowym wprowadzeniu błędów do programu w celu oceny skuteczności testów",
+        "B": "Przypadkowym generowaniu błędów",
+        "C": "Ukrywaniu błędów przed klientem",
+        "D": "Automatycznym wykrywaniu błędów"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 142,
+      "question": "Według modelu jakości ISO, funkcjonalność obejmuje:",
+      "options": {
+        "A": "Odpowiedniość, dokładność, współdziałanie, zgodność, bezpieczeństwo",
+        "B": "Szybkość, efektywność, wydajność",
+        "C": "Łatwość uczenia, zrozumiałość",
+        "D": "Przenośność, instalacyjność"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 143,
+      "question": "Audyt jakości to:",
+      "options": {
+        "A": "Proces tworzenia oprogramowania",
+        "B": "Systematyczne i niezależne badanie, mające określić, czy działania dotyczące jakości odpowiadają zaplanowanym ustaleniom",
+        "C": "Testowanie wydajności systemu",
+        "D": "Szkolenie użytkowników"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 144,
+      "question": "Które z poniższych należy do czynników poprawy jakości oprogramowania?",
+      "options": {
+        "A": "Poprawa zarządzania projektem, wzmocnienie inżynierii wymagań, zwiększenie nacisku na jakość",
+        "B": "Zwiększenie liczby programistów",
+        "C": "Skrócenie czasu projektu",
+        "D": "Zmniejszenie budżetu projektu"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 145,
+      "question": "Plan Zapewnienia Jakości Oprogramowania (PZJO) powinien być podzielony na ile rozdziałów odpowiadających fazom rozwoju?",
+      "options": {
+        "A": "2 rozdziały",
+        "B": "3 rozdziały",
+        "C": "4 rozdziały",
+        "D": "5 rozdziałów"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 146,
+      "question": "W metodyce inżynierii oprogramowania, co to jest repozytorium danych w narzędziach CASE?",
+      "options": {
+        "A": "Baza danych zawierająca kod źródłowy",
+        "B": "Składowa narzędzi CASE służąca do przechowywania informacji o projekcie",
+        "C": "Narzędzie do testowania oprogramowania",
+        "D": "Generator dokumentacji"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 147,
+      "question": "Testowanie wstępujące (bottom-up) oznacza:",
+      "options": {
+        "A": "Testowanie rozpoczynające się od modułów wyższego poziomu",
+        "B": "Testowanie najpierw pojedynczych modułów, następnie modułów coraz wyższego poziomu",
+        "C": "Testowanie wszystkich modułów jednocześnie",
+        "D": "Testowanie tylko interfejsu użytkownika"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 148,
+      "question": "Które z poniższych należy do zasad projektowania interfejsu użytkownika?",
+      "options": {
+        "A": "Spójność, skróty dla doświadczonych użytkowników, potwierdzenie przyjęcia zlecenia",
+        "B": "Maksymalna złożoność interfejsu",
+        "C": "Ukrywanie wszystkich funkcji systemu",
+        "D": "Brak możliwości cofania operacji"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 149,
+      "question": "W kontekście cyklu życia oprogramowania, faza strategiczna obejmuje:",
+      "options": {
+        "A": "Kodowanie i testowanie",
+        "B": "Określenie strategicznych celów, planowanie i definicja projektu",
+        "C": "Instalację i wdrożenie",
+        "D": "Konserwację i pielęgnację"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 150,
+      "question": "Słownik w dokumentacji projektu służy do:",
+      "options": {
+        "A": "Tłumaczenia dokumentacji na inne języki",
+        "B": "Precyzowania terminów niejednoznacznych i określania ich znaczenia w kontekście dokumentu",
+        "C": "Sprawdzania poprawności pisowni",
+        "D": "Generowania indeksu dokumentu"
+      },
+      "correctAnswer": "B"
     }
   ]
 }
